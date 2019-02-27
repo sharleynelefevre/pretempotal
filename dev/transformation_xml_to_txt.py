@@ -45,9 +45,4 @@ for foldername in os.listdir(path):
             
             fileW = codecs.open("dev/TBAQ_txt/"+filename+".txt", "w", "utf8")
             fileW.write(soup)
-            
-            
-            
-            
-            
-#            
+     
