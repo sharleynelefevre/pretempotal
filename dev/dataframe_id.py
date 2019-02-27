@@ -32,6 +32,9 @@ dfId['idTimex'] = []
 dfId['signal'] = []
 dfId['idSignal'] = []
 
+dfId['event-4'] = []
+dfId['event+4'] = []
+
 
 for foldername in os.listdir(path):
     if os.path.isdir(path+foldername):
