@@ -14,6 +14,10 @@ from os import path
 path_tbaq = "dev/TBAQ-cleaned/"
 for foldername in os.listdir(path_tbaq):
     if os.path.isdir(path.join(path_tbaq, foldername)):
+        output_dir = path.join("dev", "TBAQ_txt", foldername)
+        if not path.isdir(output_dir):
+            os.mkdir(path.join("dev", "TBAQ_txt", foldername))
+            
         for filename in os.listdir(path.join(path_tbaq, foldername)):
             (basename, ext) = path.splitext(filename)
             if ext == '.tml':
@@ -39,5 +43,5 @@ for foldername in os.listdir(path_tbaq):
                 signalTag.string.replace_with(new_signal)
 
             txt = soup.text.rstrip('\n')
-            with open(path.join("dev/TBAQ_txt", basename+".txt"), "w", encoding="utf8") as fileW:
+            with open(path.join(output_dir, basename+".txt"), "w", encoding="utf8") as fileW:
                 fileW.write(txt)
