@@ -16,9 +16,8 @@ for foldername in os.listdir(path_tbaq):
     if os.path.isdir(path.join(path_tbaq, foldername)):
         for filename in os.listdir(path.join(path_tbaq, foldername)):
             if '.tml' in filename:
-                file = codecs.open(path.join(path_tbaq, foldername, filename), 'r', 'utf8')
-                soup = BeautifulSoup(file.read(), 'xml') # parsing xml
-                file.close()
+                with open(path.join(path_tbaq, foldername, filename), 'r', encoding='utf8') as file:
+                    soup = BeautifulSoup(file.read(), 'xml') # parsing xml
 
 
             for eventTag in soup.find_all('EVENT'):  
@@ -44,6 +43,5 @@ for foldername in os.listdir(path_tbaq):
             
             filename = re.sub("(.tml)", '', filename) # nom du fichier sans extension
             
-            fileW = codecs.open(path.join("dev/TBAQ_txt", filename+".txt"), "w", "utf8")
-            fileW.write(soup)
-     
+            with open(path.join("dev/TBAQ_txt", filename+".txt"), "w", encoding="utf8") as fileW:
+                fileW.write(soup)
