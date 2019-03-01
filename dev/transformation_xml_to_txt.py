@@ -42,7 +42,5 @@ for foldername in os.listdir(path_tbaq):
             soup = re.sub('<[^<]+>', '', str(soup)) # remove tags
             soup = soup.rstrip("\n\r") # remove empty lines
             
-            filename = re.sub("(.tml)", '', filename) # nom du fichier sans extension
-            
-            with open(path.join("dev/TBAQ_txt", filename+".txt"), "w", encoding="utf8") as fileW:
+            with open(path.join("dev/TBAQ_txt", basename+".txt"), "w", encoding="utf8") as fileW:
                 fileW.write(soup)
