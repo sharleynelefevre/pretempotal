@@ -1,0 +1,61 @@
+
+wsj_0585
+10/30/89#t0
+
+WSJ891030-0114 = 891030 891030-0114.
+OTC Focus: @ Sell Programs @ Are Hurting @ Market Makers @ ---- @ By Sonja Steptoe and Craig Smith @ Staff Reporters of The Wall Street Journal 10/30/89 WALL STREET JOURNAL (J) STOCK MARKET, OFFERINGS (STK) STOCK INDEXES (NDX) SECURITIES INDUSTRY (SCR) NEW YORK
+
+
+Market makers in Nasdaq over-the-counter stocks are adding#e1 their voices to the swelling chorus of complaints about program trading.
+
+Their motivation, however, has a strong practical aspect: Program trading is hazardous to their paychecks. The most controversial form of program trading, stock-index arbitrage, is " making#e298 it tough for traders to make money," declares#e297 Robert Antolini, head of OTC trading at Donaldson, Lufkin amp Jenrette.
+
+Stock-index arbitrage#e17 -- the computer-guided buying and selling of stocks with offsetting trades in stock-index futures to profit from fleeting price discrepancies -- affects#e25 the OTC market directly through the 31 stocks included in Standard amp Poor's 500-stock index. The SampP 500 is often used in arbitrage strategies.
+
+The portion of OTC volume attributable to program trading isn't known, as it is on the New York Stock Exchange, where it amounted#e34 to more than 13% in September#t295. Estimates#e35 from traders put it at less than 5% of Nasdaq's average daily volume of roughly 133 million shares.
+
+Other market-maker gripes: Program trading#e38 also causes#e39 the Nasdaq Composite Index to lose#e41 ground against other segments of the stock market. Because of program trading#e43 it is more difficult#e299 to trade#e45 many OTC stocks without sharp price moves#e46, a condition known as illiquidity. Moreover, the price volatility#e302 that is amplified#e48 by program trading#e49 is undercutting#e50 efforts#e51 to woo#e53 individual investors back to an OTC market that sorely misses#e55 them.
+
+Some of these problems#e547 are neither new nor unique to the OTC market. But the big, often tumultuous slide#e57 in stock prices this#t303 month#t303 has turned#e58 some of those who have been profiting#e59 from the practice against it.
+
+Peter DaPuzzo, head of retail equity trading at Shearson Lehman Hutton, acknowledges#e63 that he wasn't troubled#e305 by program trading#e64 when it began#e66 in the pre-crash bull market because it added#e69 liquidity and people were pleased#e308 to see#e71 stock prices rising#e72.
+
+"We weren't as concerned until they became#e75 sell programs," says#e76 Mr. DaPuzzo, who now#t311 thinks#e77 it adds#e78 unnecessary volatility. Shearson Lehman, however, executes program trades for clients.
+
+Merrill Lynch, Goldman Sachs and Kidder Peabody, in addition to Shearson, do program-trade OTC stocks. Shearson, Merrill Lynch and Goldman Sachs say they do so only for customers, however. Kidder Peabody does program trading for its own as well as clients' accounts.
+
+Of course, there were sell programs#e318 in past#t320 years#t320, too, but they seem#e90 to hurt#e92 market makers more painfully these#t321 days#t321. That's largely because of defensive measures they adopted#e94 after the 1987#t323 crash#e95, when individual investors fled#e98 the market and trading activity dwindled#e101. Market makers, to cut#e103 costs, slashed#e104 inventories of stocks they keep on hand to sell investors when other holders aren't selling.
+
+And to protect#e114 their reduced capital investment from eroding#e117 further, market makers became quicker to lower#e324 price quotes when sell programs are in#e1093 progress. On days when prices are tumbling, they must be willing#e326 to buy#e127 shares from sellers when no one else will. In such an environment, market makers can suffer#e130 huge losses#e327 both on trades made that day at steadily dropping prices and in the value of their inventories of shares.
+
+"It makes#e329 no sense#e140 for us to put#e142 money at risk when you know#e147 you're going to lose," says#e151 Mr. Antolini, of Donaldson Lufkin.
+
+But this skittishness#e330, Mr. Antolini says, is creating#e153 liquidity problems#e331 in certain OTC stocks. "It's harder to sell stocks when the sell programs come in because some market makers don't want to { take the orders}. No one has big positions and no one wants to take big risks."
+
+Joseph Hardiman, president of the National Association of Securities Dealers, which oversees trading on Nasdaq, agrees#e171 that program trading is hurting#e173 the market's efforts#e175 to bring#e177 back small investors. But, he observes#e178, while makers suffer#e180 losses#e333 when program trading drags#e184 the market down, they also make#e185 money when program trading pushes#e190 the prices higher. "Sometimes {traders} lose#e191 sight of that," he says#e193.
+
+The OTC stocks in the SampP 500 include Nasdaq's biggest, such as Apple Computer, MCI Communications, Tele-Communications and Liz Claiborne. These big stocks greatly influence the Nasdaq Composite Index. When the computers say "sell," the composite tumbles as well as the Dow Jones Industrial Average.
+
+The problem, market makers say, is that while the industrial average and the SampP 500 usually recover as buy programs kick in, the Nasdaq Composite frequently is left behind.
+
+Eight#t336 trading#t336 days#t336 after Oct.#t335 12#t335, the#t338 day#t338 before the stock market plunge#e205, for instance, the Nasdaq Composite had fallen#e208 4.3%, compared with 3.3% for the SampP 500, 3.5% for the New York Stock Exchange Composite Index and 3.6% for the industrial average. This gap eventually closes#e210, but slowly. Three#t341 days#t341 later, as of Friday#t340's close#e211, the Nasdaq Composite was down 6%, compared with 5.9% for the industrial average, 5.7% for the SampP 500 and 5.8% for the Big Board Composite.
+
+The main reason for this lag#e214 is that individual investors own#e345 65% of the OTC market's capitalization, according#e346 to Mr. Hardiman, much more than on the Big Board. Such investors tend to be more cautious than institutional investors are about re-entering the market after massive selloffs, market makers say.
+
+The Nasdaq Composite Index tumbled#e223 5.39, or 1.2% to 452.76 on Friday#t356. For the#t357 week#t357, the index dropped#e225 3.8%.
+
+Weakness#e358 in big technology stocks hurt#e227 the composite as well as the Nasdaq 100 Index, which fell#e228 1.4%, or 6.43, on Friday#t362, to 437.68. The Nasdaq Financial Index lost#e229 about 1%, or 3.95, to 448.80.
+
+Friday#t365's trading volume totaled#e230 132.8 million shares. The average daily share turnover for October#t366 is almost 148 million shares.
+
+LIN Broadcasting surged#e231 4 5/8 to 112 5/8; LIN and BellSouth sweetened#e232 their merger agreement in an attempt#e234 to keep#e237 shareholders from tendering#e239 their shares to McCaw Cellular Communications. McCaw, which dropped#e240 2 1/2 to 37 3/4, has offered#e241 $125 a share for a majority of LIN's shares.
+
+The revised LIN-BellSouth agreement boosts#e243 the dollar amount of the special dividend LIN promises to pay shareholders. LIN now#t368 plans#e247 to dole#e249 out $42 a share in cash, up from the earlier $20 amount.
+
+Intel eased#e252 1/8 to 31 7/8. The semiconductor concern said#e253 the interruption#e254 in shipment#e371 of its 80486 computer chip will be brief#e372 and have#e373 little impact#e256 on the company's earnings. The stock fell#e257 7/8 Thursday#t1082 amid concerns#e1085 over problems discovered with the chip. Intel told#e259 analysts that the company will resume#e260 shipments#e261 of the chips within two#t1111 to#t1111 three#t1111 weeks#t1111.
+
+Weisfield's rocketed#e262 9 1/2 to 39 after the jewelry store operator said#e263 it is in preliminary discussions#e1091, with a party it wouldn't identify#e267, regarding the possible acquisition#e271 of the company.
+
+Starpointe Savings Bank rose#e272 3 to 20 after the Federal Deposit Insurance Corp. approved#e273 Dime Savings Bank of New York's $21-a-share acquisition#e274 of Starpointe.
+
+Kirschner Medical fell#e275 4 to 15. The company said#e276 its third-quarter#t380 earnings will probably be lower#e381 than the 16 cents a share it reported#e277 last#t387 year#t387, despite a rise#e278 in the company's revenue. Kirschner earned#e279 $376,000 on revenue of $14.5 million in the#t386 1988#t386 quarter#t386. The company blamed#e280 a number of factors for the earnings decline#e390, including softer sales#e392 of joint-implants.
