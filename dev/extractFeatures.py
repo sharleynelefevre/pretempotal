@@ -264,7 +264,7 @@ def writeCsvSignal(documents):
     f.close()
      
             
-def getContextEvent():
+def getContextEvent(): """A AMELIORER"""
     files = openFilesTXT()
     tokenizer = TweetTokenizer()
     
