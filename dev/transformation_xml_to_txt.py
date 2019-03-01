@@ -38,9 +38,6 @@ for foldername in os.listdir(path_tbaq):
                 new_signal = ' '.join(['{}#{}'.format(w, signalTag.get('sid')) for w in signalTag.text.split(' ')]) 
                 signalTag.string.replace_with(new_signal)
 
-            
-            soup = re.sub('<[^<]+>', '', str(soup)) # remove tags
-            soup = soup.rstrip("\n\r") # remove empty lines
-            
+            txt = soup.text.rstrip('\n')
             with open(path.join("dev/TBAQ_txt", basename+".txt"), "w", encoding="utf8") as fileW:
-                fileW.write(soup)
+                fileW.write(txt)
