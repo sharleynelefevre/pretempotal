@@ -15,7 +15,8 @@ path_tbaq = "dev/TBAQ-cleaned/"
 for foldername in os.listdir(path_tbaq):
     if os.path.isdir(path.join(path_tbaq, foldername)):
         for filename in os.listdir(path.join(path_tbaq, foldername)):
-            if '.tml' in filename:
+            (basename, ext) = path.splitext(filename)
+            if ext == '.tml':
                 with open(path.join(path_tbaq, foldername, filename), 'r', encoding='utf8') as file:
                     soup = BeautifulSoup(file.read(), 'xml') # parsing xml
 
