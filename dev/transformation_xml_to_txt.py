@@ -9,15 +9,20 @@ import codecs
 import os
 import re
 
+from os import path
 
-path = "dev/TBAQ-cleaned/"
-for foldername in os.listdir(path):
-    if os.path.isdir(path+foldername):
-        for filename in os.listdir(path+foldername):
-            if '.tml' in filename:
-                file = codecs.open(path+foldername+'/'+filename, 'r', 'utf8')
-                soup = BeautifulSoup(file.read(), 'xml') # parsing xml
-                file.close()
+path_tbaq = "dev/TBAQ-cleaned/"
+for foldername in os.listdir(path_tbaq):
+    if os.path.isdir(path.join(path_tbaq, foldername)):
+        output_dir = path.join("dev", "TBAQ_txt", foldername)
+        if not path.isdir(output_dir):
+            os.mkdir(path.join("dev", "TBAQ_txt", foldername))
+            
+        for filename in os.listdir(path.join(path_tbaq, foldername)):
+            (basename, ext) = path.splitext(filename)
+            if ext == '.tml':
+                with open(path.join(path_tbaq, foldername, filename), 'r', encoding='utf8') as file:
+                    soup = BeautifulSoup(file.read(), 'xml') # parsing xml
 
 
             for eventTag in soup.find_all('EVENT'):  
@@ -37,12 +42,6 @@ for foldername in os.listdir(path):
                 new_signal = ' '.join(['{}#{}'.format(w, signalTag.get('sid')) for w in signalTag.text.split(' ')]) 
                 signalTag.string.replace_with(new_signal)
 
-            
-            soup = re.sub('<[^<]+>', '', str(soup)) # remove tags
-            soup = soup.rstrip("\n\r") # remove empty lines
-            
-            filename = re.sub("(.tml)", '', filename) # nom du fichier sans extension
-            
-            fileW = codecs.open("dev/TBAQ_txt/"+filename+".txt", "w", "utf8")
-            fileW.write(soup)
-     
+            txt = soup.text.rstrip('\n')
+            with open(path.join(output_dir, basename+".txt"), "w", encoding="utf8") as fileW:
+                fileW.write(txt)
