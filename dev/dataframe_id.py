@@ -69,7 +69,7 @@ def createId():
            iterSent += 1
            tokens = nltk.word_tokenize(sent)
            new = []
-           sep = '$'
+           sep = '>'
            
            i = 0
            while i < len(tokens):

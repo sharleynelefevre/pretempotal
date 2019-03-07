@@ -25,19 +25,20 @@ for foldername in os.listdir(path_tbaq):
 
             for eventTag in soup.find_all('EVENT'):  
                 # mettre les events au format libelleE#eid
-                new_event = '$'.join(['{}#{}'.format(w, eventTag.get('eid')) for w in eventTag.text.split(' ')]) 
+                # separateur d'unite lexicale : >
+                new_event = '>'.join(['{}#{}'.format(w, eventTag.get('eid')) for w in eventTag.text.split(' ')]) 
                 eventTag.string.replace_with(new_event)
                 
 
             for timexTag in soup.find_all('TIMEX3'):   
                 # mettre les timexs au format libelleT#tid
-                new_timex = '$'.join(['{}#{}'.format(w, timexTag.get('tid')) for w in timexTag.text.split(' ')]) 
+                new_timex = '>'.join(['{}#{}'.format(w, timexTag.get('tid')) for w in timexTag.text.split(' ')]) 
                 timexTag.string.replace_with(new_timex)
 
                 
             for signalTag in soup.find_all('SIGNAL'):
                 # mettre les signaux au format libelleS#sid
-                new_signal = '$'.join(['{}#{}'.format(w, signalTag.get('sid')) for w in signalTag.text.split(' ')]) 
+                new_signal = '>'.join(['{}#{}'.format(w, signalTag.get('sid')) for w in signalTag.text.split(' ')]) 
                 signalTag.string.replace_with(new_signal)
 
             txt = soup.text.rstrip('\n')
