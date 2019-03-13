@@ -9,13 +9,14 @@ import os
 import nltk
 import pandas as pd
 from os import path
-import nltk
 
 dfId  = {}  
 
+dfId['docID'] = []
 dfId['word'] = []
 dfId['idWord'] = []
 dfId['idSent'] = []
+dfId['id'] = []
 
 dfId['event'] = []
 dfId['idEvent'] = []
@@ -29,14 +30,14 @@ dfId['idSignal'] = []
 
 def openFilesTxt():
     path_tbaq = 'dev/TBAQ-txt/'
-    texts = []
+    texts = {}
     for foldername in os.listdir(path_tbaq):
         if os.path.isdir(path.join(path_tbaq, foldername)):
            for filename in os.listdir(path.join(path_tbaq, foldername)):
                (basename, ext) = path.splitext(filename)
                if ext == '.txt':
                    with open(path.join(path_tbaq, foldername, filename), 'r', encoding='utf8') as file:
-                       texts.append(file.read())
+                       texts[filename.replace(".txt","")] = file.read()
     return texts
 
 
@@ -47,24 +48,14 @@ def createId():
    timexsTexts = []
    signauxTexts = []
    
-   for file in files:
+   for fileName, fileContent in files.items():
        iterSent  = 0 # iterateur pour les identifiants de phrases
        iterWord  = 0 # iterateur pour les identifiants de mots
        iterEvent = 0 # iterateur pour les identifiants d'events
        iterTimex = 0 # iterateur pour les identifiants de timex
        iterSignal = 0 # iterateur pour les identifiants de signaux
-       
-       for w in file.split():
-           if '#e' in w:
-               eventsTexts.append(w)
-               
-           if '#t' in w:
-               timexsTexts.append(w)
-              
-           if '#s' in w:
-               signauxTexts.append(w)
-           
-       sents = nltk.sent_tokenize(file)
+
+       sents = nltk.sent_tokenize(fileContent)
        for sent in sents:
            iterSent += 1
            tokens = nltk.word_tokenize(sent)
@@ -90,28 +81,45 @@ def createId():
                new.remove(new[indexSep+1])
                new.remove(new[indexSep])
 
+           for w in new:
+               if '#e' in w:
+                   eventsTexts.append(w)
+                   
+               if '#t' in w:
+                   timexsTexts.append(w)
+                  
+               if '#s' in w:
+                   signauxTexts.append(w)
+
            for word in new:
                iterWord += 1
                dfId['word'].append(word)
                dfId['idWord'].append(iterWord)
                dfId['idSent'].append(iterSent)  
+               dfId['docID'].append(fileName)
+               if '#' in word:
+                   w = nltk.word_tokenize(word)
+                   dfId['id'].append(w[2])
+               else:                   
+                   dfId['id'].append('')
                
                if word in eventsTexts:
                    iterEvent += 1
                    # et on ajoute le token event dans la colonne event
                    dfId['event'].append(word)
                    # on ajoute aussi son numero d'identifiant
-                   dfId['idEvent'].append(iterEvent)  
+                   dfId['idEvent'].append(iterEvent) 
+
                else:
                    # sinon on ajoute une chaine vide
                    dfId['event'].append('')
-                   dfId['idEvent'].append('')   
-                   
+                   dfId['idEvent'].append('')
                    
                if word in timexsTexts :
                    iterTimex += 1
                    dfId['timex'].append(word)
                    dfId['idTimex'].append(iterTimex)
+
                else:
                    dfId['timex'].append('')
                    dfId['idTimex'].append('')
@@ -121,14 +129,15 @@ def createId():
                    iterSignal += 1
                    dfId['signal'].append(word)
                    dfId['idSignal'].append(iterSignal)
+
                else:
                    dfId['signal'].append('')
                    dfId['idSignal'].append('') 
-
-
+                   
+    
        # mise en dataframe du dictionnaire de listes
        res = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in dfId.items()]))
        # ecriture dans le csv
-       res.to_csv('dev/CSV/dataframe_id_ponctuation.csv', sep=';', encoding='utf-8') 
+       res.to_csv('dev/CSV/dataframe_id.csv', sep=';', encoding='utf-8') 
 
 createId()
