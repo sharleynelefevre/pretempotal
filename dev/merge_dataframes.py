@@ -25,7 +25,8 @@ for i in df:
     result = pd.merge(result,
                      artificial_id[['docID', 'id', 'idWord', 'idSent', i[2]]],
                      on=['id', 'docID'])
-    
+
+    result[i[2]] = pd.to_numeric(result[i[2]], downcast = 'unsigned')
 
     result.to_csv('dev/CSV/'+i[1]+'.csv', sep=';', encoding='utf-8') 
 

@@ -438,11 +438,11 @@ def dataframeContext():
         word_segment = nltk.word_tokenize(word) # on tokenize -> 'said#e1" = 'said', '#', 'e1'
         env['id'].append(word_segment[2]) # on recupere l'element 2 qui est l'identifiant
 
+    # ajout le dict
     env['docID'] = context[4]
-    # ajout dans les listes et dict
     env['word'] = context[0] 
-    env['context-4'] = context[1]
-    env['context+4'] = context[2]
+    env['context-4'] = [','.join(ctx) for ctx in context[1]]
+    env['context+4'] = [','.join(ctx) for ctx in context[2]]
     
     
     # appel de la fonction negation_advModality() avec le parametre context[3] soit contextPos de la fonction getContext()
