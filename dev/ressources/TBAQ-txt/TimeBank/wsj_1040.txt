@@ -1,0 +1,9 @@
+
+wsj_1040
+10/26/89#t0
+
+WSJ891026-0016 = 891026 891026-0016.
+Dividend News: @ Oneida Ltd. 10/26/89 WALL STREET JOURNAL (J) OCQ DIVIDENDS (DIV)
+
+
+ONEIDA Ltd. declared#e1 a 10% stock dividend, payable Dec.#t16>15#t16 to stock of record Nov.#t17>17#t17. The Oneida, N.Y., maker of consumer, food-service and industrial products also declared#e3 a quarterly cash dividend of 12 cents a share, with the same payable and record dates. The cash dividend paid#e4 on the common stock also will apply#e6 to the new shares, the company said#e7. The move rewards shareholders and should improve#e8 the stock's liquidity, Oneida said#e10. The company has#e11 about 8.8 million shares outstanding. In New York Stock Exchange composite trading yesterday#t63, Oneida's shares closed#e12 at $18.375 a share, unchanged.
