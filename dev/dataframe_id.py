@@ -29,7 +29,7 @@ dfId['idSignal'] = []
 
 
 def openFilesTxt():
-    path_tbaq = 'dev/TBAQ-txt/'
+    path_tbaq = 'ressources/TBAQ-new/' # modif path
     texts = {}
     for foldername in os.listdir(path_tbaq):
         if os.path.isdir(path.join(path_tbaq, foldername)):
@@ -97,6 +97,7 @@ def createId():
                dfId['idWord'].append(iterWord)
                dfId['idSent'].append(iterSent)  
                dfId['docID'].append(fileName)
+               
                if '#' in word:
                    w = nltk.word_tokenize(word)
                    dfId['id'].append(w[2])
@@ -108,8 +109,7 @@ def createId():
                    # et on ajoute le token event dans la colonne event
                    dfId['event'].append(word)
                    # on ajoute aussi son numero d'identifiant
-                   dfId['idEvent'].append(iterEvent) 
-
+                   dfId['idEvent'].append(iterEvent)
                else:
                    # sinon on ajoute une chaine vide
                    dfId['event'].append('')
@@ -138,6 +138,6 @@ def createId():
        # mise en dataframe du dictionnaire de listes
        res = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in dfId.items()]))
        # ecriture dans le csv
-       res.to_csv('dev/CSV/dataframe_id.csv', sep=';', encoding='utf-8') 
+       res.to_csv('CSV/dataframe_id.csv', sep=';', encoding='utf-8') 
 
 createId()
