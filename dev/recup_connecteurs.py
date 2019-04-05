@@ -16,8 +16,8 @@ def stanfordParser():
     os.environ['JAVAHOME'] = "D:/Program Files/java/bin"
 
     parser = StanfordParser(model_path = "edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz")
-    path_input = "ressources/TBAQ-txt-annot/TimeBank/"    
-    path_output = 'ressources/TBAQ-txt-annot/TimeBank_StanfordParser/' 
+    path_input = "ressources/TBAQ-txt-annot/TimeBank-txt-annot/TimeBank/"    
+    path_output = 'ressources/TBAQ-txt-annot/TimeBank-txt-annot/TimeBank_StanfordParser/' 
      
     for filename in os.listdir(path_input):
         print(filename)
@@ -42,8 +42,8 @@ def stanfordParser():
 
 def addDiscourse():
     path_addDiscourse = "C:/Users/Sharleyne-Lefevre/Desktop/stage_LIFO/pretempotal/dev/addDiscourse/addDiscourse.pl"
-    path_input = 'ressources/TBAQ-txt-annot/TimeBank_StanfordParser/' 
-    path_output = "ressources/TBAQ-txt-annot/TimeBank_AddDiscourse/"
+    path_input = 'ressources/TBAQ-txt-annot/TimeBank-txt-annot/TimeBank_StanfordParser/' 
+    path_output = "ressources/TBAQ-txt-annot/TimeBank-txt-annot/TimeBank_AddDiscourse/"
 
     for filename in os.listdir(path_input):
         file = path_input+filename
@@ -51,8 +51,8 @@ def addDiscourse():
     
 
 def cleanTexts():
-    path_input = "ressources/TBAQ-txt-annot/TimeBank_AddDiscourse/"
-    path_output = "ressources/TBAQ-txt-annot/TimeBank_Connecteurs/"
+    path_input = "ressources/TBAQ-txt-annot/TimeBank-txt-annot/TimeBank_AddDiscourse/"
+    path_output = "ressources/TBAQ-txt-annot/TimeBank-txt-annot/TimeBank_Connecteurs/"
     
     texts = {}
     for filename in os.listdir(path_input):
@@ -107,8 +107,8 @@ def cleanTexts():
             
 
 def addSignalId(): # A AMELIORER + COMMENTER
-    path_input = "ressources/TBAQ-txt-annot/TimeBank_Connecteurs/"
-    path_output = "ressources/TBAQ-txt-annot/TimeBank_NewInput/"
+    path_input = "ressources/TBAQ-txt-annot/TimeBank-txt-annot/TimeBank_Connecteurs/"
+    path_output = "ressources/TBAQ-txt-annot/TimeBank-txt-annot/TimeBank_NewInput/"
 
     regex = re.compile(r'(\#)[0-9]{1,}(\#)(0|Temporal|Contingency|Comparison|Expansion)')
     
@@ -121,19 +121,23 @@ def addSignalId(): # A AMELIORER + COMMENTER
             word.append(w)
         
         for i in range(len(word)): 
-            afterTimex = word[i+1 : i+2]
-            beforeTimex = word[i-1]
-            beforeEvent = word[i-1]
-            envBeforeEvent = word[i-3 : i-1]
-            
             ### TIMEX ###
             if '#t' in word[i]:
+                afterTimex = word[i+1 : i+2]
+                beforeTimex = word[i-1]
+                
+                if regex.search(word[i]):
+                    word[i] = re.sub(regex, '' , word[i])
+                    print(word[i])
+                    
+                    
                 if regex.search(beforeTimex) : 
                     if not beforeTimex.split('#')[0] in ['but', 'But', 'next', 'separately']:
                         for e in beforeTimex.split():
                             if regex.search(e):
                                 word[i-1] = re.sub(regex, '#s'+str(j), e)
                                 j += 1 
+                
             
                 elif beforeTimex in ['in','In', 'on', 'On', 'over', 'Over', 'during', 'During', 'at', 'At'] :
                     word[i-1] = beforeTimex.replace(beforeTimex, beforeTimex+'#s'+str(j))               
@@ -147,10 +151,13 @@ def addSignalId(): # A AMELIORER + COMMENTER
                                 word[indexConnecteur] = re.sub(regex, '#s'+str(j), word[indexConnecteur])
                                 j += 1 
             
+
             # TODO : gestion des as early as / so far...
 
             ### EVENTS ###
-            elif '#e' in word[i]:                
+            elif '#e' in word[i]: 
+                beforeEvent = word[i-1]
+                envBeforeEvent = word[i-3 : i-1]               
                 if regex.search(beforeEvent):
                     if beforeEvent.split('#')[0] in ['after', 'before', 'After', 'Before']:
                         for e in beforeEvent.split():
@@ -180,7 +187,7 @@ def addSignalId(): # A AMELIORER + COMMENTER
             fileW.write(file)
 
 
-stanfordParser() 
-addDiscourse()
-cleanTexts()
+#stanfordParser() 
+#addDiscourse()
+#cleanTexts()
 addSignalId()
