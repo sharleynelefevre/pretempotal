@@ -125,26 +125,23 @@ def addSignalId(): # A AMELIORER + COMMENTER
             if '#t' in word[i]:
                 afterTimex = word[i+1 : i+2]
                 beforeTimex = word[i-1]
-                
+                envBeforeTimex = word[i-4 : i-1]  
                 if regex.search(word[i]):
-                    word[i] = re.sub(regex, '' , word[i])
-                    print(word[i])
-                    
+                    word[i] = re.sub(regex, '' , word[i])                    
                     
                 if regex.search(beforeTimex) : 
-                    if not beforeTimex.split('#')[0] in ['but', 'But', 'next', 'separately']:
+                    if not beforeTimex.split('#')[0].lower() in ['but', 'next', 'separately']:
                         for e in beforeTimex.split():
                             if regex.search(e):
                                 word[i-1] = re.sub(regex, '#s'+str(j), e)
                                 j += 1 
                 
-            
-                elif beforeTimex in ['in','In', 'on', 'On', 'over', 'Over', 'during', 'During', 'at', 'At'] :
+                elif beforeTimex.lower() in ['in', 'on', 'over', 'during', 'at', 'between']:
                     word[i-1] = beforeTimex.replace(beforeTimex, beforeTimex+'#s'+str(j))               
                     j += 1  
             
                 if regex.search(str(afterTimex)): 
-                    if str(afterTimex).split('#')[0].replace("['", '') in ['before', 'after', 'later']:
+                    if str(afterTimex).split('#')[0].replace("['", '') in ['before', 'after', 'later', 'earlier']:
                         for e in afterTimex:
                             if regex.search(e):
                                 indexConnecteur = word.index(e)
@@ -152,21 +149,29 @@ def addSignalId(): # A AMELIORER + COMMENTER
                                 j += 1 
             
 
-            # TODO : gestion des as early as / so far...
+                # TODO : gestion des as early as / so far...
+#                if regex.search(str(envBeforeTimex)):
+#                    if 'as' in str(envBeforeTimex) and 'early' in str(envBeforeTimex):
+#                        print(str(envBeforeTimex)+" " + str(word[i]))
+            
 
             ### EVENTS ###
             elif '#e' in word[i]: 
                 beforeEvent = word[i-1]
-                envBeforeEvent = word[i-3 : i-1]               
+                envBeforeEvent = word[i-3 : i-1]      
+                listConn = ['after', 'before', 'until', 'when']
+                
                 if regex.search(beforeEvent):
-                    if beforeEvent.split('#')[0] in ['after', 'before', 'After', 'Before']:
+                    
+                    if beforeEvent.split('#')[0].lower() in listConn:
+                        print(beforeEvent)
                         for e in beforeEvent.split():
                             if regex.search(e):
                                 word[i-1] = re.sub(regex, '#s'+str(j), e)
                                 j += 1 
                                     
                 if regex.search(str(envBeforeEvent)):
-                    if str(envBeforeEvent).split('#')[0].replace("['", '') in ['after', 'before', 'After', 'Before', 'until', 'Until']:
+                    if str(envBeforeEvent).split('#')[0].lower().replace("['", '') in listConn:
                         for e in envBeforeEvent:
                             if regex.search(e):
                                 # recuperation de l'index du connecteur 
@@ -187,7 +192,7 @@ def addSignalId(): # A AMELIORER + COMMENTER
             fileW.write(file)
 
 
-#stanfordParser() 
-#addDiscourse()
-#cleanTexts()
+stanfordParser() 
+addDiscourse()
+cleanTexts()
 addSignalId()
