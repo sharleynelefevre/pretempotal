@@ -35,6 +35,7 @@ def stanfordParser():
         parsedText = ""
         # pour chaque phrase on passe le stanford parser
         for sent in sents:
+            sent = re.sub('(\.){6,}', '', sent)
             constituancies = list(parser.raw_parse(sent))
             # regex pour mettre en forme la sortie pour que le format convienne à addDiscourse
             constituancies = re.sub(r'''(\[)(Tree)(\()('ROOT')(\,)( )(\[)(Tree)''', '(S1 (S ', str(constituancies))
@@ -83,8 +84,6 @@ def cleanTexts():
         cleanedContent = re.sub(r'''(\()|(\))(\,)?|(\[)(')?|(')?(\])|(SBARQ|SINV|WHPP|CONJP|SBAR|SYM|PDT|RBS|FRAG|ROOT|INTJ|JJS|NNPS|NNP|VBZ|PRP\$|WHADVP|WRB|PRN|PRT|PP|IN|DT|JJR|POS|JJ|ADVP|ADJP|CC|EX|VBG|VBN|WHNP|NNS|VP|\-RRB\-|\-LRB\-|RBR|RB|WDT|WP|VBP|PRP|CD|SQ|NN|NP|VBD|VB|TO|RP|QP|MD|S1|UH|S)(( )|(\,))''', '', fileContent)
         # rassembler les docId avec ponct  _ 
         cleanedContent = re.sub(r'([a-zA-Z]*?)( )*(\_)( )*([0-9]*)', r'\1\3\5', cleanedContent) 
-        # pour wsj _ 0376 -> wsj_0376
-        cleanedContent = re.sub(r'(wsj)( )(\_)( )', 'wsj_', cleanedContent) 
         # rassembler les events/timex """
         cleanedContent = re.sub(r'( )*(\#)', '#', cleanedContent) 
         # rassembler les timex multi-mots 
@@ -99,7 +98,7 @@ def cleanTexts():
         cleanedContent = re.sub(r'''( )(?!(#|\$|\_))((\.)|(\,)|(\:))(\,)( )?''', '', cleanedContent) 
         cleanedContent = re.sub(r'''(\"\")(\,)( )''', "''", cleanedContent)
         # traiter les # qui ne font pas partie des #e/#t.. 
-        cleanedContent = re.sub(r'''( )(#)(\,)(\#)( )''', '  #  ', cleanedContent) 
+        cleanedContent = re.sub(r'''(#)(\,)(\#)''', '', cleanedContent) 
         # traiter les $ pour qu'ils ne soient pas collés aux mots 
         cleanedContent = re.sub(r'''( )(\$)(\,)( )(\$)( )''', '  $  ', cleanedContent) 
         # traiter les _ pour qu'ils ne soient pas collés aux mots 
@@ -116,10 +115,12 @@ def cleanTexts():
         cleanedContent = re.sub(r'( d )', '\'d ', cleanedContent)
         cleanedContent = re.sub(r'( re )', '\'re ', cleanedContent)
         cleanedContent = re.sub(r'''(\`\`)(\,)( )''', '', cleanedContent) 
-        #pour les # 50 million on # 980 million -> #50 million on #980 million
-        cleanedContent = re.sub(r'''(\#)(\,)(\#)( )''', ' #', cleanedContent) 
         # pour les next#t90>year s#t90>first#t90>quarter#t90 -> next#t90>year's#t90>first#t90>quarter#t90
         cleanedContent = re.sub(r'( )(s)(\#)(t)', ''''s#t''', cleanedContent) 
+        # pour wsj _ 0376 -> wsj_0376
+        cleanedContent = re.sub(r'(wsj )(\_)( ){1,}', 'wsj_', cleanedContent) 
+        # rassembler les dates au format 00/00/00 
+        cleanedContent = re.sub(r'(\/)( )', '/', cleanedContent) 
 
         # ouverture des fichiers d'écriture
         with open((path_output+fileName+'.txt'), 'w', encoding='utf8') as fileW:
@@ -135,6 +136,7 @@ def addSignalId(): # A AMELIORER + COMMENTER
     regex = re.compile(r'(\#)[0-9]{1,}(\#)(0|Temporal|Contingency|Comparison|Expansion)')
     
     for filename in os.listdir(path_input):
+        print(filename)
         file = codecs.open(path_input+filename, 'r', 'utf8').read()   
         
         # initialisation d'un compteur
@@ -153,7 +155,7 @@ def addSignalId(): # A AMELIORER + COMMENTER
             if '#t' in word[i]:
                 afterTimex = word[i+1 : i+2] # 2 mots après le timex
                 beforeTimex = word[i-1] # 1 mot avant le timex
-                envBeforeTimex = word[i-4 : i-1] # 4 mots avant le timex
+#                envBeforeTimex = word[i-4 : i-1] # 4 mots avant le timex
                 # si le mot courant match avec la regex
                 if regex.search(word[i]):
                     # on remplace la partie trouvée par la regex par rien (car on ne veut pas de connecteur annoté dans un timex, le timex est déjà annoté)
@@ -190,9 +192,9 @@ def addSignalId(): # A AMELIORER + COMMENTER
             
 
                 # TODO : gestion des as early as / so far...
-                if regex.search(str(envBeforeTimex)):
-                    if 'as' in str(envBeforeTimex) and 'early' in str(envBeforeTimex):
-                        print(str(envBeforeTimex)+" " + str(word[i]))
+#                if regex.search(str(envBeforeTimex)):
+#                    if 'as' in str(envBeforeTimex) and 'early' in str(envBeforeTimex):
+#                        print(str(envBeforeTimex)+" " + str(word[i]))
             
 
             ### EVENTS ###
@@ -235,7 +237,7 @@ def addSignalId(): # A AMELIORER + COMMENTER
         for word in file.split():
             if regex.search(word):
                 file = (file.replace(regex.search(word).group(), ''))
-                
+#        print(file)        
         # écriture des fichiers dans un nouveau dossier        
         with open((path_output+filename), 'w', encoding='utf8') as fileW:
             fileW.write(file)
@@ -243,5 +245,5 @@ def addSignalId(): # A AMELIORER + COMMENTER
 
 #stanfordParser() 
 #addDiscourse()
-#cleanTexts()
+cleanTexts()
 addSignalId()

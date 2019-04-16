@@ -16,12 +16,13 @@ from nltk.stem.porter import *
 from nltk.stem import *
 import nltk
 import pandas as pd
-
+import re
+from nltk.corpus import wordnet
 
 def openFilesTML():
     """ ouverture des fichiers .tml """
     # ouverture de chaque fichier du repertoire 
-    path = "dev/TBAQ-cleaned/"
+    path = "ressources/TBAQ-cleaned/"
     soup = []
     # pour chaque fichier dans les fichiers du repertoire
     for foldername in os.listdir(path):
@@ -70,19 +71,16 @@ def extractEvents(file, document):
 
         # creation d'un dictionnaire pour stocker l'event
         verb = {}    
-        
         # ajout de event dans le dictionnaire verbe
         verb['libelle'] = eventTag.text
-        
         # ajout du dictEvent dans le dictionnaire verbe
         verb['event'] = dictEvent
-        
         # creation de l'instance de l'event
         verb['instance'] = instances.get(eventTag.get('eid'))
-        
         # creation du lemme de l'event
         verb['event']['lemmeNltk'] = lemmatizeEvent(verb)
-        
+        # creation des synsets / hyperonymes
+        verb['event']['Wordnet'] = extractSynset(verb)
         # ajout du dictionnaire verbe dans le dictionnaire events
         events[eventTag.get('eid')] = verb
         
@@ -109,17 +107,6 @@ def extractTimex(file, document):
     document['timexs'] = timexs
     
     
-def extractSignaux(file, document):
-    """ extraction des signaux """
-    signaux = {}
-    for signalTag in file.find_all('SIGNAL'):
-        strSignal = {}
-        strSignal['libelle'] = signalTag.text
-        strSignal['signal'] = {'sid':signalTag.get('sid')}
-        signaux[signalTag.get('sid')] = strSignal
-    document['signaux'] = signaux
-  
-    
 def creationDocument(file):
     """ le contenu d'un fichier (event, timex, signaux) se trouve dans le dictionnaire 'document' """
     # recuperation du docId unique au fichier passe en parametre
@@ -133,8 +120,7 @@ def creationDocument(file):
     extractEvents(file, document)       
     # Timex     
     extractTimex(file, document)
-    # Signaux        
-    extractSignaux(file, document)
+    
     return document
     
 
@@ -150,6 +136,7 @@ def extractDocuments():
         document = creationDocument(file)
         # ajout du document dans la liste de documents
         documents.append(document)
+
     print('Documents crées \n')
     return documents
 
@@ -183,12 +170,25 @@ def lemmatizeEvent(event):
     return lemmatizer.lemmatize(event['libelle'], pos)
 
 
+def extractSynset(event):
+    synset = {}
+    syns = wordnet.synsets(event['libelle'])
+    s = str(syns).replace("Synset(","").replace(")","").replace("[","").replace(']',"")
+    synset["synonymes"] = s
+    
+#    for elem in syns:
+#        hyper = elem.hypernyms()
+#        synset["hyperonymes"] = str(hyper).replace("Synset(","").replace(")","").replace("[","").replace(']',"")
+
+    return synset
+
+
 def writeCsvEvent(documents): 
     print('ecriture csv event')
     # ouverture du csv en ecriture
-    with open('Dev/CSV/features_events.csv', 'w', newline='') as f:
+    with open('CSV/features_events.csv', 'w', newline='') as f:
         # en-tete des colonnes
-        fieldnames = ['Libelle', 'docID', 'id', 'eiid', 'Class', 'Stem', 'StemNltk', 'LemmeNltk', 'Aspect', 'Tense', 'POS', 'Polarity', 'Modality', 'Cardinality']
+        fieldnames = ['Libelle', 'docID', 'id', 'eiid', 'Class', 'Stem', 'StemNltk', 'LemmeNltk', 'Aspect', 'Tense', 'POS', 'Polarity', 'Modality', 'Cardinality', 'Synsets']#'Hyperonyme'
         # le writer est au format dictionnaire
         writer = csv.DictWriter(f, fieldnames = fieldnames, delimiter = ';')
 
@@ -212,14 +212,16 @@ def writeCsvEvent(documents):
                                      'POS' : verb['instance']['pos'],
                                      'Polarity' : verb['instance']['polarity'],
                                      'Modality' : verb['instance']['modality'],
-                                     'Cardinality' : verb['instance']['cardinality']})
+                                     'Cardinality' : verb['instance']['cardinality'],
+                                     'Synsets' : verb['event']["Wordnet"]['synonymes']})
+#                                     'Hyperonyme' : verb['event']["Wordnet"]['hyperonymes']})
     print('ecriture csv event finie \n')
     f.close()
 
 
 def writeCsvTimex(documents):
     print('ecriture csv timex')    
-    with open('Dev/CSV/features_timex.csv', 'w', newline='') as f:
+    with open('CSV/features_timex.csv', 'w', newline='') as f:
         fieldnames = ['Libelle', 'docID', 'id', 'Type', 'Value', 'Mod', 'temporalFunction', 'functionInDocument', 'beginPoint', 'endPoint', 'quant', 'freq', 'anchorTimeID']
         writer = csv.DictWriter(f, fieldnames = fieldnames, delimiter = ';')
 
@@ -244,28 +246,10 @@ def writeCsvTimex(documents):
     print('ecriture csv timex finie \n')
     f.close()
     
-    
-def writeCsvSignal(documents): 
-    print('ecriture csv signaux')
-    with open('Dev/CSV/features_signaux.csv', 'w', newline='') as f:
-        fieldnames = ['Libelle', 'docID', 'id']
-        writer = csv.DictWriter(f, fieldnames = fieldnames, delimiter = ';')
-
-        writer.writeheader()
-        
-        for document in documents:
-            for sign in document['signaux']:
-                sign = document['signaux'][sign]
-                writer.writerow({'docID' : document['docId'], 
-                                 'Libelle' : sign['libelle'],
-                                 'id' : sign['signal']['sid']})
-    print('ecriture csv signaux finie \n')
-    f.close()
-
 
 def openFilesTXT():
     """ ouverture des fichiers .txt """
-    path = "dev/TBAQ-txt/"
+    path = 'ressources/TBAQ-new/'
     texts = {}
     for foldername in os.listdir(path):
         if os.path.isdir(path+foldername):
@@ -274,8 +258,35 @@ def openFilesTXT():
                     file = codecs.open(path+foldername+'/'+filename, 'r', 'utf8').read()
                     texts[filename.replace(".txt","")] = file
     return texts 
+
+
+def extractSignaux():
+    files = openFilesTXT()
+
+    dataframeConnecteurs = {}
+    dataframeConnecteurs['word'] = []
+    dataframeConnecteurs['docID'] = []
+    dataframeConnecteurs['id'] = []
     
-            
+    # pour chaque fichier
+    for fileName, fileContent in files.items():
+        print(fileName)
+        for w in fileContent.split():
+            if '#s' in w:
+                signal = re.split('\#|\>', w)
+                dataframeConnecteurs['docID'].append(fileName)
+                dataframeConnecteurs['id'].append(signal[1])
+                if len(signal) > 2:
+                    dataframeConnecteurs['word'].append(str(signal[0])+' '+str(signal[2]))
+                else:
+                    dataframeConnecteurs['word'].append(signal[0])
+
+        # mise en dataframe du dictionnaire de listes
+        res = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in dataframeConnecteurs.items()]))
+        # ecriture dans le csv
+        res.to_csv('CSV/features_signaux.csv', sep=';', encoding='utf-8') 
+ 
+        
 def tokenizeTexts(): 
     # appel de la fonction pour ouvrir les fichiers txt
     files = openFilesTXT()
@@ -289,6 +300,7 @@ def tokenizeTexts():
         for sent in sents:
             # on tokenize les phrase en mots
             tokens = nltk.word_tokenize(sent)
+                    
             new = []
             # definition d'un séparateur de mots (pour les timex)
             sep = '>'
@@ -319,17 +331,51 @@ def tokenizeTexts():
                     # et on incremente le compteur de 1 pour dire que le mot qui suit t est t+1
                     i += 1
                     
+            """ pour retirer les doublons : on on#s1 / for for#s1 et doublons dans les dates """
+            for i in reversed(range(len(new))):
+                if '#s' in new[i]:
+                    if new[i-1] == new[i].split('#')[0]:
+                        indexDoublon = new.index(new[i-1])
+                        new.remove(new[indexDoublon])  
+                    
+                elif '#t' in new[i]:
+                    # fichier wsj 122, un espace de trop dans le fichier tml = ">t0" en trop
+                    if ">" in new[i]:
+                        new.remove(new[i])
+                    
+                    if new[i-1] == new[i].split('#')[0]:
+                        indexDoublon = new.index(new[i-1])
+                        new.remove(new[indexDoublon]) 
+
+            finalText = []
+            """ rassembler les mots composés d'une apostrophe qui ont été tokenisés """ # 'next#t90>year', "'s#t90>first#t90>quarter#t90"
+            while i < (len(new)):
+                if new[i].startswith("'"):
+                    t2 = new[i-1]+new[i]
+                    finalText.append(t2)
+                    indexT2 = finalText.index(t2)
+                    finalText.remove(finalText[indexT2-1])
+                    i += 2
+                else:
+                    finalText.append(new[i])
+                    i += 1
+
+            for i in reversed(range(len(finalText))):
+                if "#t" in finalText[i] and "'s" in finalText[i]:
+                    index = finalText.index(finalText[i])                    
+                    finalText[index:index+2] = ['>'.join(finalText[index:index+2])]
+
             """ pour rassembler les timex tokenizes sur le > (timex multi-mots) """
             # tant qu'il y a le separateur dans la liste new
-            while sep in new:
+            while sep in finalText:
                 # on recupere l'index du separateur
-                indexSep = new.index(sep)
+                indexSep = finalText.index(sep)
                 # on ajoute au mot qui precede le separateur : le separateur + le mot qui suit le separateur
-                new[indexSep-1] += new[indexSep] + new[indexSep+1]
+                finalText[indexSep-1] += finalText[indexSep] + finalText[indexSep+1]
                 # on supprime le mots qui suit le separateur et le separateur
-                new.remove(new[indexSep+1])
-                new.remove(new[indexSep])
-            newToken.append(new)
+                finalText.remove(finalText[indexSep+1])
+                finalText.remove(finalText[indexSep])
+            newToken.append(finalText)
         files[fileName] = newToken
     return files
 
@@ -337,6 +383,9 @@ def tokenizeTexts():
 def getContext():
     # appel de la fonction pour tokenizer
     tokens = tokenizeTexts()
+    stemmer = PorterStemmer()
+    regex = re.compile(r'(t|s)[0-9]{1,}')
+
     # definition du nombre de mots dans le contexte que l'on souhaite recuperer
     nbContext = 4 
     
@@ -344,8 +393,10 @@ def getContext():
     contextM4 = [] # juste le contexte -4 mots
     contextP4 = [] # juste le contexte +4 mots
     fileNames = []
+    contextPosM4 = []
+    contextPosP4 = []
     contextPos = []
-    
+
     # pour trouver les events, timex, signaux parmi tous les mots
     sep = ['#e', '#t', '#s']  
     
@@ -362,32 +413,87 @@ def getContext():
                         annotatedWords.append(word)
                         # on recupere l'index du mot
                         indexEvent = sent.index(word)
-                        
-                        before = []
-                        # context -4
+                    
+                        beforeEvent = []
+                        # context -4/+4
                         for i in range(nbContext,0,-1):
                             if i <= indexEvent:
-                                before.append(sent[indexEvent-i])
-                        contextM4.append(before)
-                        
-                        # context +4, recuperation avec des slices : index de l'event +1 jusqu'a +5
+                                beforeEvent.append(sent[indexEvent-i])
+                        contextM4.append(beforeEvent)
                         contextP4.append(sent[indexEvent+1 : indexEvent+nbContext+1])
-                            
-                        # context pos -4/+4 (avec slices)
-                        contextPosM4 = nltk.pos_tag(sent[indexEvent-nbContext : indexEvent])
-                        contextPosP4 = nltk.pos_tag(sent[indexEvent+1 : indexEvent+nbContext+1]) 
                         
-                        # pour rassembler le context-4 et le context+4 des pos
+                        posBefore = []
+                        # context -4/+4
+                        for i in range(nbContext,0,-1):
+                            if i <= indexEvent:
+                                posBefore.append(nltk.pos_tag(sent[indexEvent-i].split('#')[0].split()))
+                        contextPosM4.append(posBefore)
+                        
+                        contextPosP4.append(nltk.pos_tag(sent[indexEvent+1 : indexEvent+nbContext+1]))
+                        
+                        # pour rassembler le context-4 et le context+4 des pos = vérifier si dans le contexte il y a une negation ou adv de modalité
                         # au lieu d'avoir une liste de tuples pour le context pos -4 et une liste de tuples pour le context pos +4
                         # on a une seule liste de tuples pour les deux contexts confondus
                         # servira pour savoir si on a une negation ou un adverbe de modalite dans le context
                         contextGlobal = []
-                        contextGlobal.extend(contextPosM4)
-                        contextGlobal.extend(contextPosP4)
+                        contextPosM = nltk.pos_tag(sent[indexEvent-nbContext : indexEvent])
+                        contextPosP = nltk.pos_tag(sent[indexEvent+1 : indexEvent+nbContext+1]) 
+                        contextGlobal.extend(contextPosM)
+                        contextGlobal.extend(contextPosP)
                         contextPos.append(contextGlobal)
                         fileNames.append(fileName)
         
-    return [annotatedWords, contextM4, contextP4 , contextPos, fileNames]
+        """contexte en POS"""                
+        ctxPOSM4 = []
+        ctxPOSP4 = []              
+        for context in contextPosM4:
+            ctxPosM4 = []
+            for l in context:
+                for tupl in l:
+                    ctxPosM4.append(tupl[1])
+            ctxPOSM4.append(ctxPosM4)
+
+        for context in contextPosP4:
+            ctxPosP4 = []
+            for tupl in context:
+                ctxPosP4.append(tupl[1])
+            ctxPOSP4.append(ctxPosP4)
+            
+            
+        """contexte en stems"""    
+        contextM4Stem = []
+        contextP4Stem = []
+        for ctx in contextM4:
+            beforeEventSTEM = []
+            for w in ctx:
+                if '#' in w and not '>' in w:
+                    w = w.split('#')
+                    beforeEventSTEM.append(stemmer.stem(w[0]))
+                elif '#' in w and '>' in w:
+                    w = re.split('(\#|>)', w)
+                    for mot in w:
+                        if mot != '#' and mot != '>' and not regex.search(str(mot)):
+                            beforeEventSTEM.append(stemmer.stem(mot))
+                else:
+                    beforeEventSTEM.append(stemmer.stem(w))
+            contextM4Stem.append(beforeEventSTEM)
+            
+        for ctx in contextP4:
+            afterEventSTEM = [] 
+            for w in ctx:
+                if '#' in w and not '>' in w:
+                    w = w.split('#')
+                    afterEventSTEM.append(stemmer.stem(w[0]))
+                elif '#' in w and '>' in w:
+                    w = re.split('(\#|>)', w)
+                    for mot in w:
+                        if mot != '#' and mot != '>' and not regex.search(str(mot)):
+                            afterEventSTEM.append(stemmer.stem(mot))
+                else:
+                    afterEventSTEM.append(stemmer.stem(w))
+            contextP4Stem.append(afterEventSTEM)
+            
+    return [annotatedWords, contextM4, contextP4 , contextPos, fileNames, ctxPOSM4, ctxPOSP4, contextM4Stem, contextP4Stem]
 
 
 def negation_advModality(contextPos):
@@ -441,9 +547,12 @@ def dataframeContext():
     # ajout le dict
     env['docID'] = context[4]
     env['word'] = context[0] 
-    env['context-4'] = [','.join(ctx) for ctx in context[1]]
-    env['context+4'] = [','.join(ctx) for ctx in context[2]]
-    
+    env['context-4'] = ['|'.join(ctx) for ctx in context[1]]
+    env['context+4'] = ['|'.join(ctx) for ctx in context[2]]
+    env['contextPOS-4'] = ['|'.join(ctx) for ctx in context[5]]
+    env['contextPOS+4'] = ['|'.join(ctx) for ctx in context[6]] 
+    env['contextSTEM-4'] = ['|'.join(ctx) for ctx in context[7]]
+    env['contextSTEM+4'] = ['|'.join(ctx) for ctx in context[8]] 
     
     # appel de la fonction negation_advModality() avec le parametre context[3] soit contextPos de la fonction getContext()
     neg_adv = negation_advModality(context[3])
@@ -453,11 +562,11 @@ def dataframeContext():
     # mise en dataframe
     res = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in env.items()]))
     # ecriture dans le csv
-    res.to_csv('dev/CSV/dataframe_contexts.csv', sep=';', encoding='utf-8') 
+    res.to_csv('CSV/dataframe_contexts.csv', sep=';', encoding='utf-8') 
     
         
 documents = extractDocuments()
 writeCsvEvent(documents)
 writeCsvTimex(documents)
-writeCsvSignal(documents)
+extractSignaux()
 dataframeContext()

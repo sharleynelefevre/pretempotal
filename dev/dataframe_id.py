@@ -58,10 +58,14 @@ def createId():
        sents = nltk.sent_tokenize(fileContent)
        for sent in sents:
            iterSent += 1
+           # on tokenize les phrase en mots
            tokens = nltk.word_tokenize(sent)
+                   
            new = []
+           # definition d'un séparateur de mots (pour les timex)
            sep = '>'
-           
+            
+           """ pour rassembler les timex tokenizes sur le # """
            i = 0
            while i < len(tokens):
                t = tokens[i]
@@ -74,14 +78,48 @@ def createId():
                else:
                    new.append(t)
                    i += 1
+                   
+           """ pour retirer les doublons : on on#s1 / for for#s1 et doublons dans les dates """
+           for i in reversed(range(len(new))):
+               if '#s' in new[i]:
+                   if new[i-1] == new[i].split('#')[0]:
+                       indexDoublon = new.index(new[i-1])
+                       new.remove(new[indexDoublon])  
+                   
+               elif '#t' in new[i]:
+                   if ">" in new[i]:
+                       new.remove(new[i])
+                   
+                   if new[i-1] == new[i].split('#')[0]:
+                       indexDoublon = new.index(new[i-1])
+                       new.remove(new[indexDoublon]) 
+         
+           finalText = []
+           """ rassembler les mots composés d'une apostrophe qui ont été tokenisés """ 
+           while i < (len(new)):
+               if new[i].startswith("'"):
+                   t2 = new[i-1]+new[i]
+                   finalText.append(t2)
+                   indexT2 = finalText.index(t2)
+                   finalText.remove(finalText[indexT2-1])
+                   i += 2
+               else:
+                   finalText.append(new[i])
+                   i += 1
+           
+           for i in reversed(range(len(finalText))):
+               if "#t" in finalText[i] and "'s" in finalText[i]:
+                   index = finalText.index(finalText[i])                    
+                   finalText[index:index+2] = ['>'.join(finalText[index:index+2])]
+          
+           """ pour rassembler les timex tokenizes sur le > (timex multi-mots) """
+           while sep in finalText:
+               indexSep = finalText.index(sep)
+               finalText[indexSep-1] += finalText[indexSep] + finalText[indexSep+1]
+               finalText.remove(finalText[indexSep+1])
+               finalText.remove(finalText[indexSep])
 
-           while sep in new:
-               indexSep = new.index(sep)
-               new[indexSep-1] += new[indexSep] + new[indexSep+1]
-               new.remove(new[indexSep+1])
-               new.remove(new[indexSep])
-
-           for w in new:
+           for w in finalText:
                if '#e' in w:
                    eventsTexts.append(w)
                    
@@ -91,7 +129,7 @@ def createId():
                if '#s' in w:
                    signauxTexts.append(w)
 
-           for word in new:
+           for word in finalText:
                iterWord += 1
                dfId['word'].append(word)
                dfId['idWord'].append(iterWord)
@@ -134,7 +172,6 @@ def createId():
                    dfId['signal'].append('')
                    dfId['idSignal'].append('') 
                    
-    
        # mise en dataframe du dictionnaire de listes
        res = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in dfId.items()]))
        # ecriture dans le csv
