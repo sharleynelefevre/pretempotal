@@ -29,7 +29,7 @@ dfId['idSignal'] = []
 
 
 def openFilesTxt():
-    path_tbaq = 'ressources/TBAQ-new/' # modif path
+    path_tbaq = 'ressources/TBAQ-new_input/' # modif path
     texts = {}
     for foldername in os.listdir(path_tbaq):
         if os.path.isdir(path.join(path_tbaq, foldername)):
@@ -38,6 +38,7 @@ def openFilesTxt():
                if ext == '.txt':
                    with open(path.join(path_tbaq, foldername, filename), 'r', encoding='utf8') as file:
                        texts[filename.replace(".txt","")] = file.read()
+               
     return texts
 
 
@@ -49,6 +50,9 @@ def createId():
    signauxTexts = []
    
    for fileName, fileContent in files.items():
+       print()
+       print(fileName)
+       print()
        iterSent  = 0 # iterateur pour les identifiants de phrases
        iterWord  = 0 # iterateur pour les identifiants de mots
        iterEvent = 0 # iterateur pour les identifiants d'events
@@ -60,12 +64,11 @@ def createId():
            iterSent += 1
            # on tokenize les phrase en mots
            tokens = nltk.word_tokenize(sent)
-                   
            new = []
            # definition d'un séparateur de mots (pour les timex)
            sep = '>'
-            
-           """ pour rassembler les timex tokenizes sur le # """
+
+           """ pour rassembler les events/timex/signaux tokenizes sur le # """
            i = 0
            while i < len(tokens):
                t = tokens[i]
@@ -73,59 +76,58 @@ def createId():
                    t2 = tokens[i-1] + t + tokens[i+1]
                    new.append(t2)
                    indexT2 = new.index(t2)
-                   new.remove(new[indexT2-1])
+                   if new[indexT2].split("#")[0] == new[indexT2-1]:
+                       del new[indexT2-1]
                    i += 2
                else:
                    new.append(t)
                    i += 1
-                   
+
            """ pour retirer les doublons : on on#s1 / for for#s1 et doublons dans les dates """
-           for i in reversed(range(len(new))):
-               if '#s' in new[i]:
-                   if new[i-1] == new[i].split('#')[0]:
-                       indexDoublon = new.index(new[i-1])
+           for k in reversed(range(len(new))):
+               if '#s' in new[k]:
+                   if new[k-1] == new[k].split('#')[0]:
+                       indexDoublon = new.index(new[k-1])
                        new.remove(new[indexDoublon])  
                    
-               elif '#t' in new[i]:
-                   if ">" in new[i]:
-                       new.remove(new[i])
-                   
-                   if new[i-1] == new[i].split('#')[0]:
-                       indexDoublon = new.index(new[i-1])
+               elif '#t' in new[k]:                   
+                   if ">" in new[k]:
+                       new.remove(new[k])
+                   if new[k-1] == new[k].split('#')[0]:
+                       indexDoublon = new.index(new[k-1])
                        new.remove(new[indexDoublon]) 
-         
+                   
+                   # fichier wsj 159 un espace en trop au debut du timex   
+                   if new[0] == ">":
+                       new.remove(new[0])    
+           
            finalText = []
+           j = 0
            """ rassembler les mots composés d'une apostrophe qui ont été tokenisés """ 
-           while i < (len(new)):
-               if new[i].startswith("'"):
-                   t2 = new[i-1]+new[i]
+           while j < (len(new)):
+               if "#t" in new[j] and new[j].startswith("'s"):
+                   t2 = new[j-1]+new[j]
                    finalText.append(t2)
                    indexT2 = finalText.index(t2)
                    finalText.remove(finalText[indexT2-1])
-                   i += 2
+                   j += 1
                else:
-                   finalText.append(new[i])
-                   i += 1
+                   finalText.append(new[j])
+                   j += 1
+
            
-           for i in reversed(range(len(finalText))):
-               if "#t" in finalText[i] and "'s" in finalText[i]:
-                   index = finalText.index(finalText[i])                    
-                   finalText[index:index+2] = ['>'.join(finalText[index:index+2])]
-          
            """ pour rassembler les timex tokenizes sur le > (timex multi-mots) """
            while sep in finalText:
                indexSep = finalText.index(sep)
                finalText[indexSep-1] += finalText[indexSep] + finalText[indexSep+1]
                finalText.remove(finalText[indexSep+1])
                finalText.remove(finalText[indexSep])
-
+#           print(finalText)
            for w in finalText:
                if '#e' in w:
                    eventsTexts.append(w)
-                   
                if '#t' in w:
                    timexsTexts.append(w)
-                  
                if '#s' in w:
                    signauxTexts.append(w)
 
@@ -138,10 +140,13 @@ def createId():
                
                if '#' in word:
                    w = nltk.word_tokenize(word)
-                   dfId['id'].append(w[2])
+                   if w[1] == "'s":
+                       dfId['id'].append(w[3])
+                   else:
+                       dfId['id'].append(w[2])
                else:                   
                    dfId['id'].append('')
-               
+
                if word in eventsTexts:
                    iterEvent += 1
                    # et on ajoute le token event dans la colonne event
@@ -162,7 +167,6 @@ def createId():
                    dfId['timex'].append('')
                    dfId['idTimex'].append('')
                    
-                   
                if word in signauxTexts :
                    iterSignal += 1
                    dfId['signal'].append(word)
@@ -171,7 +175,6 @@ def createId():
                else:
                    dfId['signal'].append('')
                    dfId['idSignal'].append('') 
-                   
        # mise en dataframe du dictionnaire de listes
        res = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in dfId.items()]))
        # ecriture dans le csv

@@ -172,13 +172,23 @@ def lemmatizeEvent(event):
 
 def extractSynset(event):
     synset = {}
-    syns = wordnet.synsets(event['libelle'])
-    s = str(syns).replace("Synset(","").replace(")","").replace("[","").replace(']',"")
+    synonyms = wordnet.synsets(event['libelle'])
+    s = str(synonyms).replace("Synset(","").replace(")","").replace("[","").replace(']',"").replace("'", "").replace(" ", "")
     synset["synonymes"] = s
     
-#    for elem in syns:
-#        hyper = elem.hypernyms()
-#        synset["hyperonymes"] = str(hyper).replace("Synset(","").replace(")","").replace("[","").replace(']',"")
+    for syn in synonyms:
+        hyper = syn.hypernyms()
+        h = str(hyper).replace("Synset(","").replace(")","").replace("[","").replace(']',"")
+        synset["hyperonymes"] = h
+        for l in syn.lemmas(): 
+            if l.antonyms(): 
+                synset["antonymes"] = l.antonyms()[0].name()
+            
+    if not "hyperonymes" in synset:
+        synset["hyperonymes"] = ''
+        
+    if not "antonymes" in synset:
+        synset["antonymes"] = ''
 
     return synset
 
@@ -188,7 +198,7 @@ def writeCsvEvent(documents):
     # ouverture du csv en ecriture
     with open('CSV/features_events.csv', 'w', newline='') as f:
         # en-tete des colonnes
-        fieldnames = ['Libelle', 'docID', 'id', 'eiid', 'Class', 'Stem', 'StemNltk', 'LemmeNltk', 'Aspect', 'Tense', 'POS', 'Polarity', 'Modality', 'Cardinality', 'Synsets']#'Hyperonyme'
+        fieldnames = ['Libelle', 'docID', 'id', 'eiid', 'Class', 'Stem', 'StemNltk', 'LemmeNltk', 'Aspect', 'Tense', 'POS', 'Polarity', 'Modality', 'Cardinality', 'Synsets', 'Hyperonyme', 'Antonyme']#'Hyperonyme'
         # le writer est au format dictionnaire
         writer = csv.DictWriter(f, fieldnames = fieldnames, delimiter = ';')
 
@@ -198,6 +208,7 @@ def writeCsvEvent(documents):
             for verb in document['verbes']:
                 verb = document['verbes'][verb]
                 if verb['instance'] != None:
+#                    if verb['event']["Wordnet"]['synonymes'] != '':
                     # remplissage des colonnes avec les elements provenant de event et instance + docId
                     writer.writerow({'docID' : document['docId'], 
                                      'Libelle' : verb['libelle'],
@@ -213,8 +224,10 @@ def writeCsvEvent(documents):
                                      'Polarity' : verb['instance']['polarity'],
                                      'Modality' : verb['instance']['modality'],
                                      'Cardinality' : verb['instance']['cardinality'],
-                                     'Synsets' : verb['event']["Wordnet"]['synonymes']})
-#                                     'Hyperonyme' : verb['event']["Wordnet"]['hyperonymes']})
+                                     'Synsets' : verb['event']["Wordnet"]['synonymes'],
+                                     'Hyperonyme' : verb['event']["Wordnet"]['hyperonymes'],
+                                     'Antonyme' : verb['event']["Wordnet"]['antonymes']})
+    
     print('ecriture csv event finie \n')
     f.close()
 
@@ -249,7 +262,7 @@ def writeCsvTimex(documents):
 
 def openFilesTXT():
     """ ouverture des fichiers .txt """
-    path = 'ressources/TBAQ-new/'
+    path = 'ressources/TBAQ-new_input/'
     texts = {}
     for foldername in os.listdir(path):
         if os.path.isdir(path+foldername):
@@ -264,7 +277,7 @@ def extractSignaux():
     files = openFilesTXT()
 
     dataframeConnecteurs = {}
-    dataframeConnecteurs['word'] = []
+    dataframeConnecteurs['Libelle'] = []
     dataframeConnecteurs['docID'] = []
     dataframeConnecteurs['id'] = []
     
@@ -277,9 +290,9 @@ def extractSignaux():
                 dataframeConnecteurs['docID'].append(fileName)
                 dataframeConnecteurs['id'].append(signal[1])
                 if len(signal) > 2:
-                    dataframeConnecteurs['word'].append(str(signal[0])+' '+str(signal[2]))
+                    dataframeConnecteurs['Libelle'].append(str(signal[0])+' '+str(signal[2]))
                 else:
-                    dataframeConnecteurs['word'].append(signal[0])
+                    dataframeConnecteurs['Libelle'].append(signal[0])
 
         # mise en dataframe du dictionnaire de listes
         res = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in dataframeConnecteurs.items()]))
@@ -300,7 +313,6 @@ def tokenizeTexts():
         for sent in sents:
             # on tokenize les phrase en mots
             tokens = nltk.word_tokenize(sent)
-                    
             new = []
             # definition d'un séparateur de mots (pour les timex)
             sep = '>'
@@ -312,6 +324,7 @@ def tokenizeTexts():
             while i < len(tokens):
                 # t est le mot
                 t = tokens[i]
+
                 # si t est un #
                 if t == '#':
                     # nouvelle string qui est composee du mot qui precede le # et du mot qui le suit
@@ -321,50 +334,53 @@ def tokenizeTexts():
                     # pour redefinir l'index du mot qui comporte un #
                     indexT2 = new.index(t2)
                     # suppression du mot-1 (car il y a une repetition)
-                    new.remove(new[indexT2-1])
-                    # on incremente le compteur de 2 pour definir quel sera le mot suivant le mot qui possede un #
+                    if new[indexT2].split("#")[0] == new[indexT2-1]:
+                        del new[indexT2-1]
                     i += 2
+                    
                 else:
                     # sinon si t n'est pas un #
                     # on met t dans la liste new
                     new.append(t)
                     # et on incremente le compteur de 1 pour dire que le mot qui suit t est t+1
-                    i += 1
-                    
+                    i += 1            
+            
             """ pour retirer les doublons : on on#s1 / for for#s1 et doublons dans les dates """
-            for i in reversed(range(len(new))):
-                if '#s' in new[i]:
-                    if new[i-1] == new[i].split('#')[0]:
-                        indexDoublon = new.index(new[i-1])
+            for k in reversed(range(len(new))):
+                if '#s' in new[k]:
+                    if new[k-1] == new[k].split('#')[0]:
+                        indexDoublon = new.index(new[k-1])
                         new.remove(new[indexDoublon])  
                     
-                elif '#t' in new[i]:
-                    # fichier wsj 122, un espace de trop dans le fichier tml = ">t0" en trop
-                    if ">" in new[i]:
-                        new.remove(new[i])
+                elif '#t' in new[k]:
+                    # fichier wsj 122, un espace de trop en fin de timex dans le fichier tml = ">t0" en trop
+                    if ">" in new[k]:
+                        new.remove(new[k])
                     
-                    if new[i-1] == new[i].split('#')[0]:
-                        indexDoublon = new.index(new[i-1])
+                    
+                    if new[k-1] == new[k].split('#')[0]:
+                        indexDoublon = new.index(new[k-1])
                         new.remove(new[indexDoublon]) 
+                        
+                    # fichier wsj 159 un espace en trop au debut du timex   
+                    if new[0] == ">":
+                        new.remove(new[0])
 
             finalText = []
+            j = 0
             """ rassembler les mots composés d'une apostrophe qui ont été tokenisés """ # 'next#t90>year', "'s#t90>first#t90>quarter#t90"
-            while i < (len(new)):
-                if new[i].startswith("'"):
-                    t2 = new[i-1]+new[i]
+            while j < (len(new)):
+
+                if "#t" in new[j] and new[j].startswith("'s"):
+                    t2 = new[j-1]+new[j]
                     finalText.append(t2)
                     indexT2 = finalText.index(t2)
                     finalText.remove(finalText[indexT2-1])
-                    i += 2
+                    j += 1
                 else:
-                    finalText.append(new[i])
-                    i += 1
-
-            for i in reversed(range(len(finalText))):
-                if "#t" in finalText[i] and "'s" in finalText[i]:
-                    index = finalText.index(finalText[i])                    
-                    finalText[index:index+2] = ['>'.join(finalText[index:index+2])]
-
+                    finalText.append(new[j])
+                    j += 1
+            
             """ pour rassembler les timex tokenizes sur le > (timex multi-mots) """
             # tant qu'il y a le separateur dans la liste new
             while sep in finalText:
@@ -375,6 +391,7 @@ def tokenizeTexts():
                 # on supprime le mots qui suit le separateur et le separateur
                 finalText.remove(finalText[indexSep+1])
                 finalText.remove(finalText[indexSep])
+#            print(finalText)
             newToken.append(finalText)
         files[fileName] = newToken
     return files
@@ -383,6 +400,7 @@ def tokenizeTexts():
 def getContext():
     # appel de la fonction pour tokenizer
     tokens = tokenizeTexts()
+#    print(tokens)
     stemmer = PorterStemmer()
     regex = re.compile(r'(t|s)[0-9]{1,}')
 
@@ -542,7 +560,10 @@ def dataframeContext():
     # pour chaque mot dans context[0] soit annotatedWords
     for word in context[0]:
         word_segment = nltk.word_tokenize(word) # on tokenize -> 'said#e1" = 'said', '#', 'e1'
-        env['id'].append(word_segment[2]) # on recupere l'element 2 qui est l'identifiant
+        if word_segment[1] == "'s":
+            env['id'].append(word_segment[3])
+        else:
+            env['id'].append(word_segment[2]) # on recupere l'element 2 qui est l'identifiant
 
     # ajout le dict
     env['docID'] = context[4]
@@ -564,7 +585,7 @@ def dataframeContext():
     # ecriture dans le csv
     res.to_csv('CSV/dataframe_contexts.csv', sep=';', encoding='utf-8') 
     
-        
+    
 documents = extractDocuments()
 writeCsvEvent(documents)
 writeCsvTimex(documents)

@@ -19,24 +19,22 @@ def stanfordParser():
     # chemin du parser Stanford Parser
     parser = StanfordParser(model_path = "edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz")
     # chemin de l'input / output
-    path_input = "ressources/TBAQ-txt-annot/TimeBank-txt-annot/TimeBank/"    
-    path_output = 'ressources/TBAQ-txt-annot/TimeBank-txt-annot/TimeBank_StanfordParser/' 
+    path_input = "ressources/TBAQ-txt-annot-StanfordParser/TimeBank-txt-annot/TimeBank/"    
+    path_output = 'ressources/TBAQ-txt-annot-StanfordParser/TimeBank-txt-annot/TimeBank_StanfordParser/' 
      
     for filename in os.listdir(path_input):
         print(filename)
         file = codecs.open(path_input+filename, 'r', 'utf8').read()
-        
         # pour remplacer les retours à la ligne en debut de fichier -> empechaient le tagging des phrases
         file = file.lstrip().replace('\r\n\r\n\r\n', ' ').replace('\r\n\r\n', ' ').replace('\r\n', ' ')
         # tokenization en phrase
         sents = nltk.sent_tokenize(file)
-    
         # chaine vide
         parsedText = ""
         # pour chaque phrase on passe le stanford parser
         for sent in sents:
-            sent = re.sub('(\.){6,}', '', sent)
             constituancies = list(parser.raw_parse(sent))
+#            print(constituancies)
             # regex pour mettre en forme la sortie pour que le format convienne à addDiscourse
             constituancies = re.sub(r'''(\[)(Tree)(\()('ROOT')(\,)( )(\[)(Tree)''', '(S1 (S ', str(constituancies))
             constituancies = re.sub(r'''(((\,)( )(\[)(Tree))|((\,)( )(Tree)))''', ' ', str(constituancies))
@@ -45,7 +43,7 @@ def stanfordParser():
             constituancies = re.sub(r'''(')''', '', str(constituancies))
             # ajout des phrases tagguées dans la chaine vide
             parsedText += str(constituancies)
-        
+            
         # ouverture des fichiers 
         with open((path_output+filename), 'w', encoding='utf8') as fileW:
             # écriture des fichiers
@@ -56,8 +54,8 @@ def addDiscourse():
     # chemin de addDiscourse
     path_addDiscourse = "C:/Users/Sharleyne-Lefevre/Desktop/stage_LIFO/pretempotal/dev/addDiscourse/addDiscourse.pl"
     # chemins d'input / d'output
-    path_input = 'ressources/TBAQ-txt-annot/TimeBank-txt-annot/TimeBank_StanfordParser/' 
-    path_output = "ressources/TBAQ-txt-annot/TimeBank-txt-annot/TimeBank_AddDiscourse/"
+    path_input = 'ressources/TBAQ-txt-annot-StanfordParser/TimeBank-txt-annot/TimeBank_StanfordParser/' 
+    path_output = "ressources/TBAQ-txt-annot-StanfordParser/TimeBank-txt-annot/TimeBank_AddDiscourse/"
 
     for filename in os.listdir(path_input):
         file = path_input+filename
@@ -66,8 +64,8 @@ def addDiscourse():
     
 
 def cleanTexts():
-    path_input = "ressources/TBAQ-txt-annot/TimeBank-txt-annot/TimeBank_AddDiscourse/"
-    path_output = "ressources/TBAQ-txt-annot/TimeBank-txt-annot/TimeBank_Connecteurs/"
+    path_input = "ressources/TBAQ-txt-annot-StanfordParser/TimeBank-txt-annot/TimeBank_AddDiscourse/"
+    path_output = "ressources/TBAQ-txt-annot-StanfordParser/TimeBank-txt-annot/TimeBank_Connecteurs/"
     
     # initialisation d'un dictionnaire vide
     texts = {}
@@ -81,7 +79,7 @@ def cleanTexts():
         """Application des regex de nettoyage"""
         
         # remplacement des balises, des syntagmes et des postags par un espace 
-        cleanedContent = re.sub(r'''(\()|(\))(\,)?|(\[)(')?|(')?(\])|(SBARQ|SINV|WHPP|CONJP|SBAR|SYM|PDT|RBS|FRAG|ROOT|INTJ|JJS|NNPS|NNP|VBZ|PRP\$|WHADVP|WRB|PRN|PRT|PP|IN|DT|JJR|POS|JJ|ADVP|ADJP|CC|EX|VBG|VBN|WHNP|NNS|VP|\-RRB\-|\-LRB\-|RBR|RB|WDT|WP|VBP|PRP|CD|SQ|NN|NP|VBD|VB|TO|RP|QP|MD|S1|UH|S)(( )|(\,))''', '', fileContent)
+        cleanedContent = re.sub(r'''(\()|(\))(\,)?|(\[)(')?|(')?(\])|(SBARQ|SINV|WHPP|CONJP|SBAR|SYM|PDT|RBS|FRAG|ROOT|INTJ|JJS|NNPS|NNP|VBZ|PRP\$|WHADVP|WRB|PRN|PRT|PP|IN|DT|JJR|POS|JJ|ADVP|ADJP|CC|EX|VBG|VBN|WHNP|NNS|VP|\-RRB\-|\-LRB\-|RBR|RB|WDT|WP|VBP|PRP|CD|SQ|NN|NP|VBD|VB|TO|RP|QP|MD|S1|UH|S|X)(( )|(\,))''', '', fileContent)
         # rassembler les docId avec ponct  _ 
         cleanedContent = re.sub(r'([a-zA-Z]*?)( )*(\_)( )*([0-9]*)', r'\1\3\5', cleanedContent) 
         # rassembler les events/timex """
@@ -121,22 +119,26 @@ def cleanTexts():
         cleanedContent = re.sub(r'(wsj )(\_)( ){1,}', 'wsj_', cleanedContent) 
         # rassembler les dates au format 00/00/00 
         cleanedContent = re.sub(r'(\/)( )', '/', cleanedContent) 
-
+        # décoler les events/timexs/signaux de ponctuations suivies de mots collés -> pb d'annotation de addDiscourse qui a annoté par exemple : (,, an)
+        cleanedContent = re.sub(r'(\#)(e)([0-9]{1,})((\,|\.)([a-zA-Z])+)', r'\1\2\3 \4', cleanedContent)
+        cleanedContent = re.sub(r'(\#)(e)([0-9]{1,})(([a-zA-Z]){1,})', r'\1\2\3 \4', cleanedContent)                                
+        cleanedContent = re.sub(r'(\#)(e)([0-9]{1,})((\,|\.){2,})', r'\1\2\3 \4', cleanedContent) 
+        # retirer les , dans les timexs : Tuesday,#t0>December#t0>3,#t0>1991#t0.
+        cleanedContent = re.sub(r'(\,)(\#t)', r'\2', cleanedContent)                                    
+                                   
         # ouverture des fichiers d'écriture
         with open((path_output+fileName+'.txt'), 'w', encoding='utf8') as fileW:
             # écriture des fichiers avec le contenu nettoyé
             fileW.write(cleanedContent)
             
-
 def addSignalId(): # A AMELIORER + COMMENTER
-    path_input = "ressources/TBAQ-txt-annot/TimeBank-txt-annot/TimeBank_Connecteurs/"
-    path_output = "ressources/TBAQ-txt-annot/TimeBank-txt-annot/TimeBank_NewInput/"
+    path_input = "ressources/TBAQ-txt-annot-StanfordParser/TimeBank-txt-annot/TimeBank_Connecteurs/"
+    path_output = "ressources/TBAQ-txt-annot-StanfordParser/TimeBank-txt-annot/TimeBank_NewInput/"
 
     # regex permettant de trouver la partie annotée par addDiscourse d'un mot : mot#0#0 -> #0#0
     regex = re.compile(r'(\#)[0-9]{1,}(\#)(0|Temporal|Contingency|Comparison|Expansion)')
     
     for filename in os.listdir(path_input):
-        print(filename)
         file = codecs.open(path_input+filename, 'r', 'utf8').read()   
         
         # initialisation d'un compteur
@@ -189,13 +191,6 @@ def addSignalId(): # A AMELIORER + COMMENTER
                                 word[indexConnecteur] = re.sub(regex, '#s'+str(j), word[indexConnecteur])
                                 # incrémentation du compteur
                                 j += 1 
-            
-
-                # TODO : gestion des as early as / so far...
-#                if regex.search(str(envBeforeTimex)):
-#                    if 'as' in str(envBeforeTimex) and 'early' in str(envBeforeTimex):
-#                        print(str(envBeforeTimex)+" " + str(word[i]))
-            
 
             ### EVENTS ###
             # sinon si le mot courant est un event
@@ -228,22 +223,31 @@ def addSignalId(): # A AMELIORER + COMMENTER
                                     word[indexConnecteur] = re.sub(regex, '#s'+str(j),  word[indexConnecteur])
                                     # incrémentation du compteur
                                     j += 1
+                                    
+        # pour trouver les signaux qui se trouvent dans un timex                             
+        signauxETtimexDansMot =  re.compile(r'((\#s)([0-9]{1,}))((\#t)([0-9]{1,}))')
+                                                
         # réécriture du fichier dans une chaine vide
         file = ""
         for w in word:
+            if "#s" in w and "," in w or "#s" in w and "." in w:
+                w = w.replace(","," ,").replace("."," .")
+            # si il y a un signal dans un timex, on lui enlève son annotation #s    
+            if signauxETtimexDansMot.search(w):
+                w = re.sub(signauxETtimexDansMot, r'\4', w)
             file += w + " "
         
         # suppression des connecteurs annotés par addDiscourse (ceux qui ne nous intéressent pas)
         for word in file.split():
             if regex.search(word):
                 file = (file.replace(regex.search(word).group(), ''))
-#        print(file)        
+                
         # écriture des fichiers dans un nouveau dossier        
         with open((path_output+filename), 'w', encoding='utf8') as fileW:
             fileW.write(file)
 
 
-#stanfordParser() 
-#addDiscourse()
+stanfordParser() 
+addDiscourse()
 cleanTexts()
 addSignalId()
