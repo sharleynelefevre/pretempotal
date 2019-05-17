@@ -19,6 +19,7 @@ import pandas as pd
 import re
 from nltk.corpus import wordnet
 
+
 def openFilesTML():
     """ ouverture des fichiers .tml """
     # ouverture de chaque fichier du repertoire 
@@ -39,25 +40,19 @@ def openFilesTML():
 def extractInstances(file):
     """ recuperation des attributs des makeinstances et ajout dans le dictionnaire instance """
     attributes = ['eventID','eiid','aspect','tense','pos','polarity','modality','cardinality']
-    
     instances = {}
-    
     for makeinstance in file.find_all('MAKEINSTANCE'):
         instance = {}
-        
         for attribute in attributes :
             instance[attribute] = makeinstance.get(attribute)
         instances[makeinstance.get('eventID')] = instance
-        
     return instances
         
         
 def extractEvents(file, document):
     """ extraction des events """
     stemmer = PorterStemmer()
-    
     instances = extractInstances(file)
-    
     events = {}
     # recuperation des events
     for eventTag in file.find_all('EVENT'):
@@ -91,11 +86,8 @@ def extractTimex(file, document):
     """ extraction des timex """
     timexs = {}
     for timexTag in file.find_all('TIMEX3'):
-
         dictTimex = {}
-        
         attributes = ['tid','type','value','mod','temporalFunction','functionInDocument','beginPoint','endPoint','quant','freq','anchorTimeID']
-        
         for attribute in attributes :
             dictTimex[attribute] = timexTag.get(attribute)
         
@@ -114,13 +106,10 @@ def creationDocument(file):
     # creation d'un dictionnaire document
     document = {}
     document['docId'] = docId
-    print(docId)
-    
     # Events
     extractEvents(file, document)       
     # Timex     
     extractTimex(file, document)
-    
     return document
     
 
@@ -136,8 +125,7 @@ def extractDocuments():
         document = creationDocument(file)
         # ajout du document dans la liste de documents
         documents.append(document)
-
-    print('Documents crées \n')
+    print('\tDocuments crées')
     return documents
 
 
@@ -157,7 +145,6 @@ def lemmatizeEvent(event):
 #        print(event) # /!\ Events sans instance 
         # sinon on assigne 'None' au pos des events n'ayant pas d'instance
         pos = None
-    
     if pos in ['u', 'p', 'o', None]:  # NLTK ne prend pas en compte les p et les o (OTHER), les u (UNKNOWN) et None pour les events sans instance
         # si le temps de l'event est 'NONE', il y a de grandes chances pour que l'event soit un nom
         if tense == 'NONE':
@@ -166,7 +153,6 @@ def lemmatizeEvent(event):
         else:
             # sinon par defaut on lui donne le pos v (verb) et on retourne l'event lemmatise
             pos = 'v'
-    
     return lemmatizer.lemmatize(event['libelle'], pos)
 
 
@@ -189,12 +175,10 @@ def extractSynset(event):
         
     if not "antonymes" in synset:
         synset["antonymes"] = ''
-
     return synset
 
 
 def writeCsvEvent(documents): 
-    print('ecriture csv event')
     # ouverture du csv en ecriture
     with open('CSV/features_events.csv', 'w', newline='') as f:
         # en-tete des colonnes
@@ -203,7 +187,6 @@ def writeCsvEvent(documents):
         writer = csv.DictWriter(f, fieldnames = fieldnames, delimiter = ';')
 
         writer.writeheader()
-        
         for document in documents:
             for verb in document['verbes']:
                 verb = document['verbes'][verb]
@@ -228,18 +211,17 @@ def writeCsvEvent(documents):
                                      'Hyperonyme' : verb['event']["Wordnet"]['hyperonymes'],
                                      'Antonyme' : verb['event']["Wordnet"]['antonymes']})
     
-    print('ecriture csv event finie \n')
+    
     f.close()
 
 
 def writeCsvTimex(documents):
-    print('ecriture csv timex')    
+     
     with open('CSV/features_timex.csv', 'w', newline='') as f:
         fieldnames = ['Libelle', 'docID', 'id', 'Type', 'Value', 'Mod', 'temporalFunction', 'functionInDocument', 'beginPoint', 'endPoint', 'quant', 'freq', 'anchorTimeID']
         writer = csv.DictWriter(f, fieldnames = fieldnames, delimiter = ';')
 
         writer.writeheader()
-        
         for document in documents:
             for word in document['timexs']:
                 word = document['timexs'][word]
@@ -256,7 +238,7 @@ def writeCsvTimex(documents):
                                  'quant' : word['timex']['quant'],
                                  'freq' : word['timex']['freq'],
                                  'anchorTimeID' : word['timex']['anchorTimeID']})
-    print('ecriture csv timex finie \n')
+    
     f.close()
     
 
@@ -274,8 +256,9 @@ def openFilesTXT():
 
 
 def extractSignaux():
+    print("\tOuverture des fichiers .txt...")
     files = openFilesTXT()
-
+    print("\tTerminé : Ouverture des fichiers .txt.")
     dataframeConnecteurs = {}
     dataframeConnecteurs['Libelle'] = []
     dataframeConnecteurs['docID'] = []
@@ -283,7 +266,7 @@ def extractSignaux():
     
     # pour chaque fichier
     for fileName, fileContent in files.items():
-        print(fileName)
+#        print(fileName)
         for w in fileContent.split():
             if '#s' in w:
                 signal = re.split('\#|\>', w)
@@ -298,11 +281,14 @@ def extractSignaux():
         res = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in dataframeConnecteurs.items()]))
         # ecriture dans le csv
         res.to_csv('CSV/features_signaux.csv', sep=';', encoding='utf-8') 
- 
+    
         
 def tokenizeTexts(): 
+    print("\t\tTokenization des fichiers...")
     # appel de la fonction pour ouvrir les fichiers txt
+    print("\t\t\tOuverture des fichiers .txt...")
     files = openFilesTXT()
+    print("\t\t\tTerminé : Ouverture des fichiers .txt.")
     
     # pour chaque fichier
     for fileName, fileContent in files.items():
@@ -394,10 +380,12 @@ def tokenizeTexts():
 #            print(finalText)
             newToken.append(finalText)
         files[fileName] = newToken
+    print("\t\tTerminé : Tokenization des fichiers.")
     return files
 
 
 def getContext():
+    print("\tRécupération du contexte des events/timex/signaux...")
     # appel de la fonction pour tokenizer
     tokens = tokenizeTexts()
 #    print(tokens)
@@ -461,6 +449,7 @@ def getContext():
                         contextPos.append(contextGlobal)
                         fileNames.append(fileName)
         
+        
         """contexte en POS"""                
         ctxPOSM4 = []
         ctxPOSP4 = []              
@@ -510,11 +499,12 @@ def getContext():
                 else:
                     afterEventSTEM.append(stemmer.stem(w))
             contextP4Stem.append(afterEventSTEM)
-            
+    print("\tTerminé : Récupération du contexte des events/timex/signaux.") 
     return [annotatedWords, contextM4, contextP4 , contextPos, fileNames, ctxPOSM4, ctxPOSP4, contextM4Stem, contextP4Stem]
 
 
 def negation_advModality(contextPos):
+    print("\tDétection de la négation et des adverbes de modalité...")
     # listes des negations et des adverbes de modalite
     RB_neg = ['not', 'no', 'neither', 'nor', 'n\'t', 'never', 'off']
     RB_modality = ['probably', 'possibly', 'evidently', 'allegedly', 'surely', 'certainly', 'apparently', 'previously', 'definitively'] 
@@ -546,6 +536,7 @@ def negation_advModality(contextPos):
         # on met le tout dans des listes et on retourne ces listes
         allNeg.append(l[0])
         allMd.append(l[1])
+    print("\tTerminé : Détection de la négation et des adverbes de modalité.")
     return allNeg, allMd
 
 
@@ -585,9 +576,152 @@ def dataframeContext():
     # ecriture dans le csv
     res.to_csv('CSV/dataframe_contexts.csv', sep=';', encoding='utf-8') 
     
+
+dfId  = {}  
+
+dfId['docID'] = []
+dfId['word'] = []
+dfId['idWord'] = []
+dfId['idSent'] = []
+dfId['id'] = []
+
+dfId['event'] = []
+dfId['idEvent'] = []
+
+dfId['timex'] = []
+dfId['idTimex'] = []
+
+dfId['signal'] = []
+dfId['idSignal'] = []
+
+def createId():
+   finalTokenizedTexts = tokenizeTexts()
+
+   
+   eventsTexts = []
+   timexsTexts = []
+   signauxTexts = []
+   
+   for fileName, tokenizedText in finalTokenizedTexts.items():
+#       print(tokenizedText)
+       iterSent  = 0 # iterateur pour les identifiants de phrases
+       iterWord  = 0 # iterateur pour les identifiants de mots
+       iterEvent = 0 # iterateur pour les identifiants d'events
+       iterTimex = 0 # iterateur pour les identifiants de timex
+       iterSignal = 0 # iterateur pour les identifiants de signaux
+
+       for sent in tokenizedText:
+           
+           for w in sent:
+               if '#e' in w:
+                   eventsTexts.append(w)
+               if '#t' in w:
+                   timexsTexts.append(w)
+               if '#s' in w:
+                   signauxTexts.append(w)
+
+       for sent in tokenizedText:
+           iterSent += 1
+           for word in sent:
+#               print(word)
+               iterWord += 1
+               
+               dfId['word'].append(word)
+               dfId['idWord'].append(iterWord)
+               dfId['idSent'].append(iterSent)  
+               dfId['docID'].append(fileName)
+               
+               if '#' in word:
+                   w = nltk.word_tokenize(word)
+                   if w[1] == "'s":
+                       dfId['id'].append(w[3])
+                   else:
+                       dfId['id'].append(w[2])
+               else:                   
+                   dfId['id'].append('')
     
-documents = extractDocuments()
-writeCsvEvent(documents)
-writeCsvTimex(documents)
-extractSignaux()
-dataframeContext()
+               if word in eventsTexts:
+                   iterEvent += 1
+                   # et on ajoute le token event dans la colonne event
+                   dfId['event'].append(word)
+                   # on ajoute aussi son numero d'identifiant
+                   dfId['idEvent'].append(iterEvent)
+               else:
+                   # sinon on ajoute une chaine vide
+                   dfId['event'].append('')
+                   dfId['idEvent'].append('')
+                   
+               if word in timexsTexts :
+                   iterTimex += 1
+                   dfId['timex'].append(word)
+                   dfId['idTimex'].append(iterTimex)
+    
+               else:
+                   dfId['timex'].append('')
+                   dfId['idTimex'].append('')
+                   
+               if word in signauxTexts :
+                   iterSignal += 1
+                   dfId['signal'].append(word)
+                   dfId['idSignal'].append(iterSignal)
+    
+               else:
+                   dfId['signal'].append('')
+                   dfId['idSignal'].append('') 
+       # mise en dataframe du dictionnaire de listes
+       res = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in dfId.items()]))
+       # ecriture dans le csv
+       res.to_csv('CSV/dataframe_id.csv', sep=';', encoding='utf-8') 
+   
+
+def mergeCSV():  
+    events = pd.read_csv('CSV/features_events.csv', sep=';')
+    timexs = pd.read_csv('CSV/features_timex.csv', sep=';')
+    signaux = pd.read_csv('CSV/features_signaux.csv', sep=';')
+    contexts = pd.read_csv('CSV/dataframe_contexts.csv', sep=';')
+    artificial_id = pd.read_csv('CSV/dataframe_id.csv', sep=';')
+    
+    df = [[events,'events_contexts_id', 'idEvent'], [timexs, 'timexs_contexts_id', 'idTimex'], [signaux, 'signaux_contexts_id', 'idSignal']]
+    
+    for i in df:
+        result = pd.merge(i[0],
+                         contexts[['docID', 'id', 'context-4', 'context+4', 'contextPOS-4', 'contextPOS+4', 'contextSTEM-4', 'contextSTEM+4', 'Adv_Negation', 'Adv_Modality']],
+                         on=['id', 'docID'])
+    
+        result = pd.merge(result,
+                         artificial_id[['docID', 'id', 'idWord', 'idSent', i[2]]],
+                         on=['id', 'docID'])
+    
+        result[i[2]] = pd.to_numeric(result[i[2]], downcast = 'unsigned')
+        result = result.drop_duplicates()
+        result.to_csv('CSV/'+i[1]+'.csv', sep=';', encoding='utf-8')    
+    
+    
+    
+print("Ouverture des fichiers .tml...")    
+#documents = extractDocuments()
+print("Terminé : Ouverture des fichiers .tml.\n")
+
+print('Ecriture du CSV des events...')
+#writeCsvEvent(documents)
+print('Terminé : Ecriture du CSV des events.\n')
+
+print('Ecriture du CSV des timex...')   
+#writeCsvTimex(documents)
+print('Terminé : Ecriture du CSV des timex.\n')
+
+print("Création du CSV des signaux...")
+#extractSignaux()
+print("Terminé : Création du CSV des signaux.\n")
+
+print("Création du CSV des identifiants artificiels...") 
+createId()
+print("Terminé : Création du CSV des identifiants artificiels.")
+
+print("Création du CSV des contexts...")
+#dataframeContext()
+print("Terminé : Création du CSV des contexts.\n")
+
+print("Fusion de tous les CSV...")
+#mergeCSV()
+print("Terminé : Fusion de tous les CSV.")
