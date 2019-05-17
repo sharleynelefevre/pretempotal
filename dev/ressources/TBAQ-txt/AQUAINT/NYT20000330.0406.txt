@@ -1,18 +1,5 @@
-
-NYT20000330.0406
-2000-03-30#t0
-IN MIAMI, THE ISSUE IS NOT A BOY, BUT A MAN: CASTRO
-
-NYT20000330.0406  NEWS STORY  2000-03-30 21:35
-A2779 &Cx1f; taf-z
-u a BC-CUBAN-BOY-1STLD-WRITE     03-30 1007
-BC-CUBAN-BOY-1STLD-WRITETHRU-NYT
-IN MIAMI, THE ISSUE IS NOT A BOY, BUT A MAN: CASTRO
-(Subs for complete writethru; adds developments, quotes; note newbylines) (See also CUBAN-BOY-GORE and CUBAN-BOY OUTLOOK) (jt)
-By RICK BRAGG and LIZETTE ALVAREZ
-c.2000 N.Y. Times News Service
-
-
+2000-03-30#t0.
+IN MIAMI, THE ISSUE IS NOT A BOY, BUT A MAN: CASTRO.
 
 MIAMI _
 
@@ -65,7 +52,3 @@ Among non-Cuban Americans, there was a drastic shift in their feelings on the ca
 Eric Pichardo, 44, is from Nicaragua, and said#e92 the Cuban-Americans ``need#e93 to follow#e94 the law. What about all the other poor kids in South and Central America?''
 
 Not all Cuban-Americans insist#e95 that Elian be allowed#e96 to stay#e97. Diana de Cardenas, 33, was born#e98 in Cuba in#s2 1984#t7. ``I think#e99 he deserves to be with his father,'' she said#e100. ``It would be ideal if his father came#e101,'' and then stayed#e102, in Miami.
-
-
-
-NYT-03-30-00 2135EST &QL;

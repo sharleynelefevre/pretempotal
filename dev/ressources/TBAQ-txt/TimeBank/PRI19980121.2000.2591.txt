@@ -1,9 +1,4 @@
-
-PRI19980121.2000.2591
-19980121#t0
-
-PRI19980121.2000.2591 NEWS STORY
-
+19980121#t0.
 
 Now for today#t33's geography quiz#e1985.
 

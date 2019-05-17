@@ -1,18 +1,5 @@
-
-NYT20000105.0325
-2000-01-05#t0
-CUBAN BOY, SYMBOL FOR EXILES, MUST BE RETURNED TO FATHER
-
-NYT20000105.0325  NEWS STORY  2000-01-05 20:17
-A7656 &Cx1f; tdt-z
-u i BC-CUBA-BOY-BOS &LR;      01-05 0896
-BC-CUBA-BOY-BOS
-CUBAN BOY, SYMBOL FOR EXILES, MUST BE RETURNED TO FATHER
-(For use by New York Times News Service clients)
-By SUSAN MILLIGAN
-c.2000 The Boston Globe
-
-
+2000-01-05#t0.
+CUBAN BOY, SYMBOL FOR EXILES, MUST BE RETURNED TO FATHER.
 
 WASHINGTON _
 
@@ -65,7 +52,3 @@ Cuba experts and child custody lawyers said#e74 the INS ruling#e129 was appropri
 With the political implications so strong, it's unlikely the case of Elian Gonzalez will be closed#e81 quickly, said#e82 Richard Nuccio, a former Clinton administration Cuba adviser.
 
 ``With two members of Congress representing#e83 Elian's family's constituency, I don't see#e85 how Elian could be returned#e86 by the federal government without it going#e87 through the court system,'' Nuccio said#e88.
-
-
-
-NYT-01-05-00 2017EST &QL;

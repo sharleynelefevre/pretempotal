@@ -1,10 +1,4 @@
-
-wsj_0189
-11/02/89#t0
-
-WSJ891102-0001 = 891102 891102-0001.
-Ralston Profit @ Declined 47% @ In 4th Quarter @ --- @ By Richard Gibson @ Staff Reporter of The Wall Street Journal 11/02/89 WALL STREET JOURNAL (J) RAL EARNINGS (ERN) FOOD PRODUCTS (FOD)
-
+11/02/89#t0.
 
 Ralston Purina Co. reported#e1 a 47% decline#e1991 in fourth-quarter#t38 earnings#e2018, reflecting#e2 restructuring costs#e2033 as well as a more difficult pet food market.
 

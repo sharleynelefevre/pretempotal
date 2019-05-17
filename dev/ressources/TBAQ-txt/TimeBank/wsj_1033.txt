@@ -1,10 +1,4 @@
-
-wsj_1033
-10/26/89#t0
-
-WSJ891026-0023 = 891026 891026-0023.
-Business Brief -- Esselte AB: @ Bid to Buy Remaining 22% @ Of Unit Is Made by Firm 10/26/89 WALL STREET JOURNAL (J) S.ESL ESB TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) EARNINGS (ERN)
-
+10/26/89#t0.
 
 Esselte AB, the Stockholm office supplies company, as expected#e31, proposed#e1 to acquire#e3 the 22% it doesn't own#e52 of its U.S. unit, Esselte Business Systems Inc.
 

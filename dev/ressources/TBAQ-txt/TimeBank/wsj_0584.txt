@@ -1,10 +1,4 @@
-
-wsj_0584
-10/30/89#t0
-
-WSJ891030-0115 = 891030 891030-0115.
-BellSouth, LIN @ Sweeten Plan @ To Merge Lines @ --- @ Accord Involves Huge Debt @ And May Fail to Thwart @ Rival Suitor McCaw @ ---- @ By Julie Amparano Lopez @ Staff Reporter of The Wall Street Journal 10/30/89 WALL STREET JOURNAL (J) BLS LINB MCAWA TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) TELEPHONE SYSTEMS (TLS) MEDIA, PUBLISHING, BROADCASTING, ELECTRONIC PUBLISHING (MED)
-
+10/30/89#t0.
 
 The bolstered cellular agreement between BellSouth Corp. and LIN Broadcasting Corp. carries heightened risks and could fail#e4 to fend#e7 off McCaw Cellular Communications Inc., the rival suitor for LIN.
 

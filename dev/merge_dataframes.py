@@ -27,7 +27,6 @@ for i in df:
                      on=['id', 'docID'])
 
     result[i[2]] = pd.to_numeric(result[i[2]], downcast = 'unsigned')
-    
     result = result.drop_duplicates()
     result.to_csv('CSV/'+i[1]+'.csv', sep=';', encoding='utf-8') 
     

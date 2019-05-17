@@ -1,10 +1,4 @@
-
-wsj_0168
-11/02/89#t0
-
-WSJ891102-0022 = 891102 891102-0022.
-Business Brief -- Meridian National Corp.: @ McAlpines Acquire 10.2% @ Of Common for $1 Million 11/02/89 WALL STREET JOURNAL (J) MRCO TENDER OFFERS, MERGERS, ACQUISITIONS (TNM)
-
+11/02/89#t0.
 
 Meridian National Corp. said#e1 it sold#e2 750,000 shares of its common stock to the McAlpine family interests, for $1 million, or $1.35 a share. The sale#e4 represents#e5 10.2% of Meridian's shares outstanding.
 

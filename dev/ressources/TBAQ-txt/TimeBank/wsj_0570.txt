@@ -1,11 +1,4 @@
-
-wsj_0570
-10/30/89#t0
-
-WSJ891030-0130 = 891030 891030-0130.
-Crane Co.
-Holds 8.9% @ Of Milton Roy Corp., @ May Seek Control 10/30/89 WALL STREET JOURNAL (J) CR MRC TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) NEW YORK
-
+10/30/89#t0.
 
 Crane Co. said#e1 it holds#e2 an 8.9% stake in Milton Roy Corp., an analytical-instruments maker, and may seek#e4 control of the company.
 

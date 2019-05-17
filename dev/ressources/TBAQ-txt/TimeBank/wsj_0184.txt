@@ -1,10 +1,4 @@
-
-wsj_0184
-11/02/89#t0
-
-WSJ891102-0006 = 891102 891102-0006.
-Upjohn Offers @ Plan to Reduce @ Its Work Force @ ---- @ By Bradley A. Stertz @ Staff Reporter of The Wall Street Journal 11/02/89 WALL STREET JOURNAL (J) UPJ DRUG MANUFACTURERS (DRG) KALAMAZOO, Mich.
-
+11/02/89#t0.
 
 Upjohn Co. said#e1 it will offer#e2 an early retirement package to as many as 1,100 employees in a cost-cutting move#e3 expected#e5 to result#e7 in a fourth-quarter#t79 charge#e80.
 

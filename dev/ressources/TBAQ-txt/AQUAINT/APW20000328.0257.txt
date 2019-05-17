@@ -1,12 +1,5 @@
-
-APW20000328.0257
-2000-03-28#t0
-Cuba Fears Elian Move Outside US
-
-APW20000328.0257  NEWS STORY  2000-03-28 23:12
-Cuba Fears Elian Move Outside US
-
-
+2000-03-28#t0.
+Cuba Fears Elian Move Outside US.
 
 HAVANA (AP) --
 
@@ -23,7 +16,3 @@ In Miami, the boy's great-uncle, Lazaro Gonzalez, denied#e16 that he would send#
 The Cuban leader first raised#e21 those worries during another live television appearance#e37 Sunday#t2>night#t2 during a speech#e38 to about 700 Cuban university students.
 
 But it was not until Tuesday#t3 that Castro revealed#e23 that those concerns had been shared#e24 directly with the U.S. government.
-
-
-
-AP-NY-03-28-00 2312

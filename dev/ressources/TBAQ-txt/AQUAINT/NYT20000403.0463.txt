@@ -1,19 +1,5 @@
-
-NYT20000403.0463
-2000-04-03#t0
-FEDERAL OFFICIALS LOOK TO TURN ELIAN OVER TO FATHER _ SOON
-
-NYT20000403.0463  NEWS STORY  2000-04-03 19:49
-A6069 &Cx1f; tad-z
-u w BC-CUBA-ELIAN-0404-COX     04-03 0867
-BC-CUBA-ELIAN-0404-COX
-&HT;
-&HT;    FEDERAL OFFICIALS LOOK TO TURN ELIAN OVER TO FATHER _ SOON
-&HT;    Moving in both (i) International and (w) Washington categories.
-&HT;    By MIKE WILLIAMS
-&HT;    c.2000 Cox News Service
-
-
+2000-04-03#t0.
+FEDERAL OFFICIALS LOOK TO TURN ELIAN OVER TO FATHER _ SOON.
 
 MIAMI _
 
@@ -62,10 +48,3 @@ Moves to keep#e89 Elian in this country through federal legislation appear#e90 t
 But in Miami, Cuban exiles insist#e98 the majority of Americans don't understand#e100 the dynamics of life in Cuba. Just how far they are willing to go#e101 to prove#e102 their point remains to be seen#e146.
 
 ``If he goes#e103 back, he won't be with his real father,'' said#e104 Elias Hernandez, who joined#e105 the crowd outside the Little Havana home of Elian's Miami relatives. ``His father will be Fidel Castro, the worst dictator in history.''
-
-
-
-ENDIT
-Story Filed By Cox Newspapers
-For Use By Clients of the New York Times News Service
-NYT-04-03-00 1949EDT &QL;

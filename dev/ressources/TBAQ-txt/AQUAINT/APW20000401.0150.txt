@@ -1,12 +1,5 @@
-
-APW20000401.0150
-2000-04-01#t0
-Thousands Rally for Elian in Cuba
-
-APW20000401.0150  NEWS STORY  2000-04-01 19:14
-Thousands Rally for Elian in Cuba
-
-
+2000-04-01#t0.
+Thousands Rally for Elian in Cuba.
 
 HAVANA (AP) --
 
@@ -16,9 +9,9 @@ With the historic yacht Granma towering behind him, Raul Castro, younger brother
 
 ''Here, no one gives#e5 up!'' Castro declared#e6.
 
-The demonstrators, wearing#e7 T-shirts with Elian's portrait, waved#e8 red, white and blue Cuban flags on the shore of the community of Niquero, where the Granma landed#e9 on#s1 Dec.#t4>2,#t4>1956#t4, with 82 armed men led#e10 by Fidel Castro.
+The demonstrators, wearing#e7 T-shirts with Elian's portrait, waved#e8 red, white and blue Cuban flags on the shore of the community of Niquero, where the Granma landed#e9 on#s1 Dec.#t4>2#t4>1956#t4, with 82 armed men led#e10 by Fidel Castro.
 
-In the years#t8 that followed#e11, the guerrilla fighters waged#e12 war on the troops of dictator Fulgencio Batista, declaring#e13 victory#e44 on#s2 Jan.#t5>1,#t5>1959#t5 when Batista fled#e14 the country.
+In the years#t8 that followed#e11, the guerrilla fighters waged#e12 war on the troops of dictator Fulgencio Batista, declaring#e13 victory#e44 on#s2 Jan.#t5>1#t5>1959#t5 when Batista fled#e14 the country.
 
 Castro noted#e60 the importance that Cuba's younger generations have played#e15 in the communist government's battle#e46 to secure#e16 Elian's return#e47 from the United States, where the boy's Miami relatives are fighting#e17 for permanent custody.
 
@@ -29,7 +22,3 @@ Gonzalez has cited#e21 his rights as the child's sole surviving parent in his ca
 ''Elian today#t7 is the symbol of our unity,'' Castro said#e26 to cheers.
 
 ''And our struggle will not end#e27 with the return#e54 of Elian,'' added Castro. He said#e28 the Cuban people would continue#e29 to protest#e30 American laws and policies aimed#e31 at Cuba, including a four-decade economic embargo and continued#e33 U.S. military presence at the Guantanamo Naval Station on the easternmost end of the island.
-
-
-
-AP-NY-04-01-00 1914

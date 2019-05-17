@@ -1,10 +1,4 @@
-
-wsj_0171
-11/02/89#t0
-
-WSJ891102-0019 = 891102 891102-0019.
-Business Brief -- Valley Federal SampL: @ California SampL Had Charge, @ Loss in the Third Quarter 11/02/89 WALL STREET JOURNAL (J) VFED EARNINGS (ERN)
-
+11/02/89#t0.
 
 Valley Federal Savings amp Loan Association took#e1 an $89.9 million charge#e1994 as it reported#e2 a third-quarter#t28 loss#e1995 of $70.7 million, or $12.09 a share.
 

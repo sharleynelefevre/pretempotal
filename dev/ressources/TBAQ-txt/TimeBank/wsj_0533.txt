@@ -1,10 +1,4 @@
-
-wsj_0533
-10/30/89#t0
-
-WSJ891030-0168 = 891030 891030-0168.
-Two Rival Bidders @ Extend Offers @ To Buy Connaught @ ---- @ By Suzanne McGee @ Staff Reporter of The Wall Street Journal 10/30/89 WALL STREET JOURNAL (J) CSESF F.INM Z.CIG CHIR EUROP RHPOY CANDA TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) MEDICAL AND BIOTECHNOLOGY (MTC) TORONTO
-
+10/30/89#t0.
 
 Two rival bidders for Connaught BioSciences extended#e1 their offers#e2 to acquire#e4 the Toronto-based vaccine manufacturer Friday#t102.
 

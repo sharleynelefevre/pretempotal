@@ -1,14 +1,5 @@
-
-APW19990410.0123
-1999-04-10#t0>06:27:43#t0
-Rifle Found Near Dead Doctor's Home
-
-APW19990410.0123 
-1999-04-10 06:27:43
-usa 
-Rifle Found Near Dead Doctor's Home
-
-
+1999-04-10#t0>06:27:43#t0.
+Rifle Found Near Dead Doctor's Home.
 
 AMHERST, N.Y. (AP) --
 

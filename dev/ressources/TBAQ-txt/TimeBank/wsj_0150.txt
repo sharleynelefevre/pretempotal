@@ -1,11 +1,4 @@
-
-wsj_0150
-11/02/89#t0
-
-WSJ891102-0041 = 891102 891102-0041.
-Business Brief -- Primerica Corp.: @ A.L. Williams Corp.
-Merges @ Into Firm on Holders' Vote 11/02/89 WALL STREET JOURNAL (J) PA TENDER OFFERS, MERGERS, ACQUISITIONS (TNM)
-
+11/02/89#t0.
 
 A.L. Williams Corp. was merged#e1 into Primerica Corp., New York, after a special meeting#e2 of Williams shareholders cleared#e4 the transaction#e23, the companies said#e5.
 

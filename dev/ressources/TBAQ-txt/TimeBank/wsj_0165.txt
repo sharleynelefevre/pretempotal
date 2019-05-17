@@ -1,10 +1,4 @@
-
-wsj_0165
-11/02/89#t0
-
-WSJ891102-0026 = 891102 891102-0026.
-Marketing Brief -- Heritage Media Corp.: @ Firm to Buy Rest of Shares @ Of POP Radio in a Swap 11/02/89 WALL STREET JOURNAL (J) HTG POPX TENDER OFFERS, MERGERS, ACQUISITIONS (TNM)
-
+11/02/89#t0.
 
 Heritage Media Corp., New York, said#e1 it offered#e2 to buy#e3 the shares of POP Radio Corp. it doesn't already own in a stock swap#e6.
 

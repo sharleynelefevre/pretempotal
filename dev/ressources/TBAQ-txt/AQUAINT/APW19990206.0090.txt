@@ -1,14 +1,5 @@
-
-APW19990206.0090
-1999-02-06#t0>06:22:26#t0
-Internet Provider Closes Web Site
-
-APW19990206.0090 
-1999-02-06 06:22:26
-usa 
-Internet Provider Closes Web Site
-
-
+1999-02-06#t0>06:22:26#t0.
+Internet Provider Closes Web Site.
 
 ATLANTA (AP) --
 

@@ -1,10 +1,4 @@
-
-wsj_0760
-10/27/89#t0
-
-WSJ891027-0135 = 891027 891027-0135.
-Norton Net Declined @ 6% in Third Quarter 10/27/89 WALL STREET JOURNAL (J) NRT EARNINGS (ERN) INDUSTRIAL EQUIPMENT, MACHINE TOOLS (IND) WORCESTER, Mass.
-
+10/27/89#t0.
 
 Norton Co. said#e1 net income for the#t50>third#t50>quarter#t50 fell#e2 6% to $20.6 million, or 98 cents a share, from $22 million, or $1.03 a share.
 

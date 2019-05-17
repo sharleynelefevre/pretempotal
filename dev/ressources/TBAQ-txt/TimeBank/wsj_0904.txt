@@ -1,10 +1,4 @@
-
-wsj_0904
-10/26/89#t0
-
-WSJ891026-0155 = 891026 891026-0155.
-Technology amp Health: @ Compaq Computer @ Posts a 51% Surge @ In 3rd-Period Net @ ---- @ By Robert Tomsho @ Staff Reporter of The Wall Street Journal 10/26/89 WALL STREET JOURNAL (J) CPQ COMPUTERS AND INFORMATION TECHNOLOGY (CPR) EARNINGS (ERN) HOUSTON
-
+10/26/89#t0.
 
 Compaq Computer Corp. said#e1 that its net income rose#e2 51% in the#t106>third#t106>quarter#t106, bolstered#e3 by unusual gains#e117 from its investment#e4 in a disk-drive maker and reflecting continued growth#e52 in its European operations.
 

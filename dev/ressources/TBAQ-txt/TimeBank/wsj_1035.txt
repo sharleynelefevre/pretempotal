@@ -1,10 +1,4 @@
-
-wsj_1035
-10/26/89#t0
-
-WSJ891026-0021 = 891026 891026-0021.
-Business Brief -- Consolidated Freightways Inc.: @ Third-Quarter Net Fell 77% @ On Emery's Expected Loss 10/26/89 WALL STREET JOURNAL (J) CNF EARNINGS (ERN) TRANSPORTATION, TRUCK AND SHIP LINES, RAILROADS (TRA)
-
+10/26/89#t0.
 
 Consolidated Freightways Inc. reported#e1 a 77% drop#e28 in third-quarter#t25 net income, citing#e2 expected losses#e29 in its Emery Worldwide shipping business.
 

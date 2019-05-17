@@ -1,14 +1,5 @@
-
-APW20000124.0182
-2000-01-24#t0>19:48#t0
-Warrant Issued for U.S. Fugitive
-
-APW20000124.0182 
- NEWS STORY 
-2000-01-24 19:48
-Warrant Issued for U.S. Fugitive
-
-
+2000-01-24#t0>19:48#t0.
+Warrant Issued for U.S. Fugitive.
 
 HAMILTON (AP) --
 
@@ -29,7 +20,3 @@ Kopp purports#e25 to be#e26 a devout Roman Catholic, and the majority of jobs he
 The FBI says#e33 Kopp has used#e34 29 aliases. He was#e35 the 456th person to be placed#e36 on the FBI's most wanted list, which began#e37 in#s3 1950#t9. Since#s4 then, 427 fugitives have been taken#e38 into custody or located#e39, 133 of them as a result of citizen assistance#e40, the FBI said#e41.
 
 A total of $650,000 is being offered#e42 in the United States for information leading#e43 to Kopp's arrest#e44.
-
-
-
-AP-NY-01-24-00 1948

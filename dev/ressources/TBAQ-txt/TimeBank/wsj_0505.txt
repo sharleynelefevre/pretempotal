@@ -1,10 +1,4 @@
-
-wsj_0505
-10/31/89#t0
-
-WSJ891031-0006 = 891031 891031-0006.
-International Brief -- Ratners Group PLC: @ British Jeweler's U.S. Unit @ Agrees to Buy Weisfield's 10/31/89 WALL STREET JOURNAL (J) RATNY WEIS TENDER OFFERS, MERGERS, ACQUISITIONS (TNM)
-
+10/31/89#t0.
 
 Ratners Group PLC's U.S. subsidiary has agreed#e1 to acquire#e3 jewelry retailer Weisfield's Inc. for $50 a share, or about $55 million.
 

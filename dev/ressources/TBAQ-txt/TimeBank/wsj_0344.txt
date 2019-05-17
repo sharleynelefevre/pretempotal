@@ -1,10 +1,4 @@
-
-wsj_0344
-11/01/89#t0
-
-WSJ891101-0020 = 891101 891101-0020.
-Publishing Firm Hires @ Financial Adviser @ To Weigh Alternatives 11/01/89 WALL STREET JOURNAL (J) PSSP EARNINGS (ERN) TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) LOS ANGELES
-
+11/01/89#t0.
 
 Price Stern Sloan Inc. said#e1 it hired#e2 an investment banking firm to assist#e4 in evaluating#e5 restructuring or merger alternatives and reported#e6 a net loss#e7 of $8.1 million, or $2.14 a share, for the#t41>third#t41>quarter#t41 ended Sept.#t42>30#t42.
 

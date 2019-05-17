@@ -1,10 +1,4 @@
-
-wsj_0950
-10/26/89#t0
-
-WSJ891026-0108 = 891026 891026-0108.
-GM Hughes @ Profit Fell 22% @ In Third Period @ --- @ GMAC Net Slipped 3.1%; @ Electronic Data Systems @ Says Earnings Rose 16% @ ---- @ By Neal Templin @ Staff Reporter of The Wall Street Journal 10/26/89 WALL STREET JOURNAL (J) GM GME GMH AUTOMOBILES (AUT) EARNINGS (ERN)
-
+10/26/89#t0.
 
 General Motors Corp.'s big defense and automotive electronics unit, GM Hughes Electronics, said#e2 net income fell#e3 22% in the#t74>third#t74>quarter#t74, reflecting declining military spending and slumping GM vehicle production#e75.
 

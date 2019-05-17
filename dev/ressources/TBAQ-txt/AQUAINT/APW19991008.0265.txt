@@ -1,12 +1,5 @@
-
-APW19991008.0265
-1999-10-08#t0
-
-
-APW19991008.0265  1999-10-08 08:30:43
-international  Arrest Made in US Embassy Bombings
-
-
+1999-10-08#t0.
+.
 
 CAPE TOWN, South Africa (AP) --
 
@@ -26,4 +19,4 @@ Seventeen people have been indicted#e20 in the case. Eight of those are in custo
 
 Bin Laden, who is accused#e26 of masterminding the attack#e47, is on the FBI's 10 Most Wanted List. A $5 million reward#e48 has been offered#e27 for his capture#e49.
 
-The bombs went#e28 off almost simultaneously on#s1 Aug.#t6>7,#t6>1998#t6 at U.S. embassies in Nairobi, Kenya and Dar es Salaam, Tanzania.
+The bombs went#e28 off almost simultaneously on#s1 Aug.#t6>7#t6>1998#t6 at U.S. embassies in Nairobi, Kenya and Dar es Salaam, Tanzania.

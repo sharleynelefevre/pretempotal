@@ -1,18 +1,5 @@
-
-NYT20000329.0359
-2000-03-29#t0
-MIAMI AREA POLITICIANS CAUTION U.S. ON FORCIBLY TAKING CUBAN BOY
-
-NYT20000329.0359  NEWS STORY  2000-03-29 21:25
-A1649 &Cx1f; tta-z
-u a BC-CUBAN-BOY-NYT &LR;      03-29 0443
-BC-CUBAN-BOY-NYT
-MIAMI AREA POLITICIANS CAUTION U.S. ON FORCIBLY TAKING CUBAN BOY
-(Eds.: more to follow)  (bl)
-By RICK BRAGG
-c.2000 N.Y. Times News Service
-
-
+2000-03-29#t0.
+MIAMI AREA POLITICIANS CAUTION U.S. ON FORCIBLY TAKING CUBAN BOY.
 
 MIAMI _
 
@@ -33,7 +20,3 @@ In Havana, Cuban President Fidel Castro said#e30 that the boy's father, Juan Mig
 Asked to comment#e41 on Castro's announcement#e71, a Justice Department spokesman said#e42:
 
 ``Certainly it changes#e43 things. How it changes#e44 things is a little hard to say#e45 at this point. If the father shows#e46 up in Miami and decides to go#e47 and ring#e48 the doorbell of his relatives and find#e49 his son, well, the family in Miami is on record as saying#e50 they would turn#e51 over Elian to him. Whether they actually do#e52 this remains to be seen#e74.''
-
-
-
-NYT-03-29-00 2125EST &QL;

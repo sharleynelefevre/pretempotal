@@ -1,21 +1,5 @@
-
-APW199980817.1193
-1998-08-17#t0
-Albright bringing message of American support to Tanzania, Kenya
-
-APW19980817.1193 
- NEWS STORY 
- 08/17/1998 20:57:00
-w2440 &Cx1f; wstm-
-r i &Cx13;  &Cx11;  BC-Albright-EmbassyBombi     08-17 0541
-BC-Albright-Embassy Bombings,0540
-Albright bringing message of American support to Tanzania, Kenya
-&UR; Eds: RECAPS pvs. Will be led after Albright's arrival scheduled for
-0500 GMT &QL; 
- &UR; By DIANNA CAHN &QC; 
- &UR; Associated Press Writer &QC;
-
-
+1998-08-17#t0.
+Albright bringing message of American support to Tanzania, Kenya.
 
 DAR ES SALAAM, Tanzania (AP) _
 
@@ -40,8 +24,3 @@ The warnings came#e41 after Pakistan handed#e42 over to Kenyan officials a suspe
 The first batch of evidence from the Nairobi bombing#e96 arrived#e44 over the#t8>weekend#t8 at the FBI lab at the bureau's Washington headquarters and is being analyzed#e45, FBI officials said#e46 Monday#t9.
 
 Many more shipments are expected#e47, but the first batch contained#e48 cotton swabs taken#e49 at the blast#e99 site in hopes of picking#e50 up microscopic residues that could positively identify#e51 what the bomb was made of. A U.S. official said#e53 last#t10>week#t10 that field tests suggested#e54 the presence of a Czech-made plastic explosive called Semtex that has been used#e57 by terrorist groups before.
-
-
-
-(PROFILE (WS SL:BC-Albright-Embassy Bombings; CT:i; (REG:EURO;) (REG:BRIT;) (REG:SCAN;) (REG:MEST;) (REG:AFRI;) (REG:INDI;) (REG:ENGL;) (REG:ASIA;) (LANG:ENGLISH;)) )
-AP-NY-08-17-98 2057EDT

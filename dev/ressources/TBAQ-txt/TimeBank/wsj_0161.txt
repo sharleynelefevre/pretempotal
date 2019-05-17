@@ -1,10 +1,4 @@
-
-wsj_0161
-11/02/89#t0
-
-WSJ891102-0030 = 891102 891102-0030.
-Business Brief -- Hadson Corp.: @ Company Expects to Report @ Deficit for Third Quarter 11/02/89 WALL STREET JOURNAL (J) HAD
-
+11/02/89#t0.
 
 Hadson Corp. said#e1 it expects#e2 to report#e4 a third-quarter#t28 net loss#e5 of $17 million to $19 million because of special reserves and continued low natural-gas prices.
 

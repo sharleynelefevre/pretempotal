@@ -1,11 +1,5 @@
-
-APW19990216.0198
-1999-02-16#t0>12:55:33#t0
-Independence, Mo., NATO Event Set
-
-APW19990216.0198  1999-02-16 12:55:33  washington  Independence, Mo., NATO Event Set 
-
-
+1999-02-16#t0>12:55:33#t0.
+Independence, Mo., NATO Event Set.
 
 WASHINGTON (AP) --
 

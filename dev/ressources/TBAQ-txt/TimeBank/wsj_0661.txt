@@ -1,10 +1,4 @@
-
-wsj_0661
-10/30/89#t0
-
-WSJ891030-0036 = 891030 891030-0036.
-Investor Group Makes @ Bid for Dataproducts; @ Liquidation Is Sought 10/30/89 WALL STREET JOURNAL (J) DPC TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) WOODLAND HILLS, Calif.
-
+10/30/89#t0.
 
 A unit of DPC Acquisition Partners launched#e1 a $10-a-share tender offer#e2 for the shares outstanding of Dataproducts Corp., and said#e3 it would seek#e4 to liquidate#e7 the computer-printer maker "as#t80>soon#t80>as#t80>possible#t80," even if a merger#e82 isn't consummated#e10.
 

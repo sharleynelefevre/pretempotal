@@ -1,10 +1,4 @@
-
-wsj_0568
-10/30/89#t0
-
-WSJ891030-0132 = 891030 891030-0132.
-Unisys' $648.2 Million 3rd-Period Loss @ Shows Intensified Fight for Turnaround @ ---- @ By Paul B. Carroll @ Staff Reporter of The Wall Street Journal 10/30/89 WALL STREET JOURNAL (J) UIS EARNINGS (ERN) COMPUTERS AND INFORMATION TECHNOLOGY (CPR)
-
+10/30/89#t0.
 
 Unisys Corp.'s announcement#e1 Friday#t209 of a $648.2 million loss#e2 for the#t211>third#t211>quarter#t211 showed that the company is moving#e212 even faster than expected#e5 to take#e7 write-offs#e2065 on its various problems and prepare#e9 for a turnaround#e213 next#t214>year#t214.
 

@@ -1,10 +1,4 @@
-
-wsj_0810
-10/27/89#t0
-
-WSJ891027-0085 = 891027 891027-0085.
-International: @ Navigation Mixte Chairman Says Board @ Rejected Paribas Bid to Raise Its Stake @ ---- @ By E.S. Browning @ Staff Reporter of The Wall Street Journal 10/27/89 WALL STREET JOURNAL (J) F.CNM F.CFP G.ALL F.SGF F.CLC TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) FOOD PRODUCTS (FOD) TRANSPORTATION, TRUCK AND SHIP LINES, RAILROADS (TRA) INSURANCE (INS) PARIS
-
+10/27/89#t0.
 
 Cie. de Navigation Mixte Chairman Marc Fournier said#e1 his board unanimously rejected#e2 as too low the $1.77 billion bid#e3 by Cie. Financiere de Paribas to bring#e5 its stake in Navigation Mixte to 66.7%.
 

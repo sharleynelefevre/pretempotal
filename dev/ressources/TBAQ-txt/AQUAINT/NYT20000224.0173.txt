@@ -1,20 +1,5 @@
-
-NYT20000224.0173
-2000-02-24#t0
-ELIAN SAGA TESTING CUBAN FAMILY'S TIES
-
-NYT20000224.0173  NEWS STORY  2000-02-24 13:50
-A7207 &Cx1f; tad-z
-u w BC-CUBA-FAMILY-$ADV26-CO     02-24 1140
-BC-CUBA-FAMILY-$ADV26-COX
-&HT;
-&HT;    ELIAN SAGA TESTING CUBAN FAMILY'S TIES
-&HT;    Moving in both (i) International and (w) Washington categories.
-&HT;    For Use Sat., Feb. 26 And Thereafter.
-&HT;    By MIKE WILLIAMS
-&HT;    c.2000 Cox News Service
-
-
+2000-02-24#t0.
+ELIAN SAGA TESTING CUBAN FAMILY'S TIES.
 
 MIAMI _
 
@@ -85,10 +70,3 @@ To his credit, Lazaro Gonzalez has issued#e123 a statement asking#e124 Miami's e
 Manuel Gonzalez has told#e126 reporters that he believes#e127 his family will recover#e128 _ at least partially _ from the divisions Elian's case has brought#e129.
 
 ``The wounds of the problem will heal#e198,'' he told#e130 the Los Angeles Times newspaper. ``But the scars will always be there.''
-
-
-
-ENDIT
-Story Filed By Cox Newspapers
-For Use By Clients of the New York Times News Service
-NYT-02-24-00 1350EST &QL;

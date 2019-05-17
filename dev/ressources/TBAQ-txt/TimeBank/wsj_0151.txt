@@ -1,10 +1,4 @@
-
-wsj_0151
-11/02/89#t0
-
-WSJ891102-0040 = 891102 891102-0040.
-Business Brief -- Intelogic Trace Inc.: @ Shareholder Sells 18% Stake @ In $9.9 Million Buy-Back 11/02/89 WALL STREET JOURNAL (J) IT DPC BUYBACKS, REDEMPTIONS, SWAP OFFERS (BBK)
-
+11/02/89#t0.
 
 Intelogic Trace Inc., San Antonio, Texas, said#e1 it bought#e2 2.7 million shares, or about 18%, of its common stock from an unaffiliated shareholder for $3.625 a share, or $9.9 million.
 

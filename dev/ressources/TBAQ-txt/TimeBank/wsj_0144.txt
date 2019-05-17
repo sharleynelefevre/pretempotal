@@ -1,10 +1,4 @@
-
-wsj_0144
-11/02/89#t0
-
-WSJ891102-0047 = 891102 891102-0047.
-Travelers Profit Rose @ 11% in Third Quarter @ Despite Hugo Claims 11/02/89 WALL STREET JOURNAL (J) TIC EARNINGS (ERN) HARTFORD, Conn.
-
+11/02/89#t0.
 
 Travelers Corp.'s third-quarter#t28 net income rose#e1 11%, even though claims stemming from Hurricane Hugo reduced#e4 results $40 million.
 

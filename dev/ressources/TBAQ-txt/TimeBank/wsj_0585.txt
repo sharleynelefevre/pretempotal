@@ -1,10 +1,4 @@
-
-wsj_0585
-10/30/89#t0
-
-WSJ891030-0114 = 891030 891030-0114.
-OTC Focus: @ Sell Programs @ Are Hurting @ Market Makers @ ---- @ By Sonja Steptoe and Craig Smith @ Staff Reporters of The Wall Street Journal 10/30/89 WALL STREET JOURNAL (J) STOCK MARKET, OFFERINGS (STK) STOCK INDEXES (NDX) SECURITIES INDUSTRY (SCR) NEW YORK
-
+10/30/89#t0.
 
 Market makers in Nasdaq over-the-counter stocks are adding#e1 their voices to the swelling chorus of complaints about program trading.
 

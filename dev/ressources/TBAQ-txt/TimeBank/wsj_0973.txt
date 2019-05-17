@@ -1,10 +1,4 @@
-
-wsj_0973
-10/26/89#t0
-
-WSJ891026-0085 = 891026 891026-0085.
-Westinghouse @ Sees Big Gains @ For Next Year @ --- @ Boost in Operating Margins, @ Double-Digit Per-Share @ Growth Forecast by Firm @ ---- @ By Gregory Stricharchuk @ Staff Reporter of The Wall Street Journal 10/26/89 WALL STREET JOURNAL (J) WX ELECTRICAL COMPONENTS AND EQUIPMENT (ELQ) NEW YORK
-
+10/26/89#t0.
 
 Westinghouse Electric Corp., capitalizing#e1 on a major restructuring program, expects#e3 operating margins of more than 10% and double-digit per-share earnings growth next#t119>year#t119, top officers told#e4 securities analysts here.
 

@@ -1,10 +1,4 @@
-
-wsj_0152
-11/02/89#t0
-
-WSJ891102-0039 = 891102 891102-0039.
-Business Brief -- Dow Jones amp Co.: @ Offer for Telerate Common @ Is Extended Until Nov. 9 11/02/89 WALL STREET JOURNAL (J) DJ TLR TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) MEDIA, PUBLISHING, BROADCASTING, ELECTRONIC PUBLISHING (MED)
-
+11/02/89#t0.
 
 Dow Jones amp Co. said#e1 it extended#e2 its $18-a-share offer#e3 for Telerate Inc. common stock until 5#t27>p.m.#t27>EST#t27>Nov.#t27>9#t27.
 

@@ -1,9 +1,4 @@
-
-VOA19980331.1700.1533
-19980331#t0
-
-VOA19980331.1700.1533 NEWS STORY
-
+19980331#t0.
 
 The US government recently announced#e1 new regulations designed#e3 to change#e5 the way transplant organs are made available to sick patients. Under the new guidelines, donor organs will be made available to the sickest people first, wherever they live in the country. Currently, transplant organs are rationed through a regional system of distribution. The private group that runs#e11 the current system, United Network for Organ Sharing, or UNOS, objects to the new regulations. UNOS says#e13 the regulations put#e15 the federal government in charge of deciding#e16 who gets#e17 transplants and that many hospital transplant centers would be forced#e19 to close#e22. Health and Human Services Secretary Do- Donna Shalala says#e23 patients who need#e24 an organ transplant should not have to take#e30 a chance that an organ will become#e31 available in their local area, nor should patients have to travel#e34 to transplant centers far from their homes to improve#e38 their chances of getting#e39 an organ. UNOS spokeswoman Donna Henry Wright says#e40 the new policy would not necessarily be more fair#e121 or effective#e122 because allowances are already made#e43 for the most needy patients.
 

@@ -1,10 +1,4 @@
-
-wsj_0906
-10/26/89#t0
-
-WSJ891026-0153 = 891026 891026-0153.
-Diversified Investment Group 10/26/89 WALL STREET JOURNAL (J) DING STSS TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) PHILADELPHIA
-
+10/26/89#t0.
 
 Diversified Investment Group Inc. said#e1 it agreed#e2 to be acquired#e4 by Star States Corp. for stock valued#e5 at $13.75 a share, or about $24.4 million.
 

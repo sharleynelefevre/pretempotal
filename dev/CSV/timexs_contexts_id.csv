@@ -701,42 +701,42 @@
 699;Thursday;AP900815-0044;t213;DATE;1990-08-09;;True;NONE;;;;;t0;will|meet#e211|Bush|on#s11;in|Kennebunkport|,|Maine;MD|NN|NNP|IN;IN|NNP|,|NNP;will|meet|bush|on;in|kennebunkport|,|main;False;True;992;41;25
 700;today;AP900815-0044;t215;DATE;1990-08-15;;True;NONE;;;;;t0;adviser|,|was|asked#e214;about|the|message|the;NN|,|VBD|VBN;IN|DT|NN|DT;advis|,|wa|ask;about|the|messag|the;False;False;1012;42;26
 701;this crucial moment;AP900815-0044;t1192;DATE;PRESENT_REF;;True;NONE;;;;;t215;would|be|traveling#e225|at#s12;if|the|Iraqi|leadership;MD|VB|VBG|IN;IN|DT|NNP|NN;would|be|travel|at;if|the|iraqi|leadership;False;True;1053;43;27
-702;Tuesday;AP900815-0044;t252;DATE;1990-08-07;;True;NONE;;;;;t0;On#s14;,|the|United|States;IN;,|DT|NNP|NNPS;On;,|the|unit|state;False;False;1162;48;28
-703;Tuesday;AP900815-0044;t269;DATE;1990-08-07;;True;NONE;;;;;t0;a|news|conference|on#s15;that|the|naval|barricade;DT|NN|NN|IN;IN|DT|JJ|NN;a|news|confer|on;that|the|naval|barricad;False;False;1277;53;29
-704;now;AP900815-0044;t271;DATE;PRESENT_REF;;True;NONE;;;;;t0;that|the|naval|barricade;in|force|might|be;IN|DT|NN|NN;IN|NN|MD|VB;that|the|naval|barricad;in|forc|might|be;False;True;1282;53;30
-705;today;AP900815-0044;t275;DATE;1990-08-15;;True;NONE;;;;;t0;In|Saudi|Arabia|,;is|the|eighth#t276>day#t276|of;IN|NN|NNP|,;VBZ|DT|NN|IN;In|saudi|arabia|,;is|the|eighth|day|of;False;False;1313;54;31
-706;eighth day;AP900815-0044;t276;DATE;1990-08-15;;True;NONE;;;;;t275;,|today#t275|is|the;of|``|Desert|Shield;,|NN|VBZ|DT;IN|``|NNP|NNP;,|today|is|the;of|``|desert|shield;False;False;1316;54;32
-707;now;AP900815-0044;t282;DATE;PRESENT_REF;;True;NONE;;;;;t0;estimated|200,000|Iraqi|soldiers;in|Kuwait|.;VBN|CD|NN|NNS;IN|NNP|.;estim|200,000|iraqi|soldier;in|kuwait|.;False;False;1333;54;33
-708;weeks;AP900815-0044;t1460;DURATION;PXW;;False;NONE;;;;;;to|Desert|Shield|within;,|including|Marines|,;TO|NN|NN|IN;,|VBG|NNS|,;to|desert|shield|within;,|includ|marin|,;False;False;1360;56;34
+702;Tuesday;AP900815-0044;t252;DATE;1990-08-07;;True;NONE;;;;;t0;On#s14;,|the|United|States;IN;,|DT|NNP|NNPS;On;,|the|unit|state;False;False;1161;48;28
+703;Tuesday;AP900815-0044;t269;DATE;1990-08-07;;True;NONE;;;;;t0;a|news|conference|on#s15;that|the|naval|barricade;DT|NN|NN|IN;IN|DT|JJ|NN;a|news|confer|on;that|the|naval|barricad;False;False;1276;53;29
+704;now;AP900815-0044;t271;DATE;PRESENT_REF;;True;NONE;;;;;t0;that|the|naval|barricade;in|force|might|be;IN|DT|NN|NN;IN|NN|MD|VB;that|the|naval|barricad;in|forc|might|be;False;True;1281;53;30
+705;today;AP900815-0044;t275;DATE;1990-08-15;;True;NONE;;;;;t0;In|Saudi|Arabia|,;is|the|eighth#t276>day#t276|of;IN|NN|NNP|,;VBZ|DT|NN|IN;In|saudi|arabia|,;is|the|eighth|day|of;False;False;1312;54;31
+706;eighth day;AP900815-0044;t276;DATE;1990-08-15;;True;NONE;;;;;t275;,|today#t275|is|the;of|``|Desert|Shield;,|NN|VBZ|DT;IN|``|NNP|NNP;,|today|is|the;of|``|desert|shield;False;False;1315;54;32
+707;now;AP900815-0044;t282;DATE;PRESENT_REF;;True;NONE;;;;;t0;estimated|200,000|Iraqi|soldiers;in|Kuwait|.;VBN|CD|NN|NNS;IN|NNP|.;estim|200,000|iraqi|soldier;in|kuwait|.;False;False;1332;54;33
+708;weeks;AP900815-0044;t1460;DURATION;PXW;;False;NONE;;;;;;to|Desert|Shield|within;,|including|Marines|,;TO|NN|NN|IN;,|VBG|NNS|,;to|desert|shield|within;,|includ|marin|,;False;False;1359;56;34
 709;08-16-90 2041EDT;AP900816-0139;t0;TIME;1990-08-16T20:41;;False;CREATION_TIME;;;;;;;.;;.;;.;False;False;1;1;1
 710;Thursday;AP900816-0139;t288;DATE;1990-08-16;;True;NONE;;;;;t0;a|more|personal|turn;when|Iraq|'s|Saddam;DT|RBR|JJ|NN;WRB|NNP|POS|NNP;a|more|person|turn;when|iraq|'s|saddam;False;False;18;2;2
 711;two-week;AP900816-0139;t289;DURATION;P2W;;False;NONE;;;;;;,|commenting#e7|on|the;gulf|crisis#e8|from|his;,|VBG|IN|DT;NN|NN|IN|PRP$;,|comment|on|the;gulf|crisi|from|hi;False;False;50;3;3
 712;two-hour;AP900816-0139;t290;DURATION;PT2H;;False;NONE;;;;;;After#s1|a;meeting#e210|at|his|Kennebunkport;IN|DT;NN|IN|PRP$|NNP;after|a;meet|at|hi|kennebunkport;False;False;98;4;4
 713;Thursday;AP900816-0139;t291;DATE;1990-08-16;;True;NONE;;;;;t0;Bush|also|said#e19;that|King|Hussein|assured#e20;NNP|RB|VBD;IN|NNP|NNP|NN;bush|also|said;that|king|hussein|assur;False;False;137;5;5
-714;now;AP900816-0139;t316;DATE;PRESENT_REF;;True;NONE;;;;;t0;in|Kuwait|and|they;number|about|160,000|.;IN|NNP|CC|PRP;NN|IN|CD|.;in|kuwait|and|they;number|about|160,000|.;False;False;465;17;6
-715;Aug. 2;AP900816-0139;t292;DATE;1990-08-02;;True;NONE;;;;;t0;international|quarantine|since|his;power-grab#e239|,|or|what;JJ|NN|IN|PRP$;NN|,|CC|WP;intern|quarantin|sinc|hi;power-grab|,|or|what;False;False;478;18;7
-716;Thursday;AP900816-0139;t293;DATE;1990-08-16;;True;NONE;;;;;t0;read|on|Iraqi|television;,|Saddam|repeatedly|called#e57;NN|IN|NN|NN;,|NNP|RB|VBD;read|on|iraqi|televis;,|saddam|repeatedli|call;False;False;502;19;8
-717;a fairly lengthy period;AP900816-0139;t339;DURATION;PXX;;False;NONE;;;;;;there|to|stay#e90|for#s3;.;RB|TO|NN|IN;.;there|to|stay|for;.;False;False;716;23;9
-718;now;AP900816-0139;t295;DATE;PRESENT_REF;;True;NONE;;;;;t0;Iraq;controls#e129|20|percent|of;NN;NN|CD|NN|IN;iraq;control|20|percent|of;False;False;956;35;10
-719;now;AP900816-0139;t299;DATE;PRESENT_REF;;True;NONE;;;;;t0;Iraq|'s|only|outlet#e267;that|an|international|noose;NN|POS|RB|NN;DT|DT|JJ|NN;iraq|'s|onli|outlet;that|an|intern|noos;False;False;1082;41;11
-720;A day earlier;AP900816-0139;t352;DURATION;P1D;;False;NONE;;;;;;'';,|scores|of|trucks;'';,|NNS|IN|NNS;'';,|score|of|truck;False;False;1171;45;12
-721;this week;AP900816-0139;t300;DATE;1990-W33;;True;NONE;;;;;t0;The|Jordanian|monarch|met#e158;with|Saddam|,|but;DT|JJ|NN|NN;IN|NNP|,|CC;the|jordanian|monarch|met;with|saddam|,|but;False;False;1203;46;13
-722;Wednesday;AP900816-0139;t301;DATE;1990-08-15;;True;NONE;;;;;t0;filed#e175|compliance|reports|by;,|and|all|were;VBN|NN|NNS|IN;,|CC|DT|VBD;file|complianc|report|by;,|and|all|were;False;False;1308;50;14
-723;Thursday;AP900816-0139;t302;DATE;1990-08-16;;True;NONE;;;;;t0;Also#s5;,|Saudi|Arabia|called#e177;RB;,|NNP|NNP|NN;also;,|saudi|arabia|call;False;False;1319;51;15
-724;September;AP900816-0139;t303;DATE;1990-09;;True;NONE;;;;;t0;its|oil|supply|in#s6;.;PRP$|NN|NN|IN;.;it|oil|suppli|in;.;False;False;1391;53;16
-725;Thursday;AP900816-0139;t304;DATE;1990-08-16;;True;NONE;;;;;t0;East|News|Agency|said#e188;that|Saddam|was|the;NN|NNS|NN|VBD;DT|NNP|VBD|DT;east|new|agenc|said;that|saddam|wa|the;False;False;1403;54;17
+714;now;AP900816-0139;t316;DATE;PRESENT_REF;;True;NONE;;;;;t0;in|Kuwait|and|they;number|about|160,000|.;IN|NNP|CC|PRP;NN|IN|CD|.;in|kuwait|and|they;number|about|160,000|.;False;False;464;17;6
+715;Aug. 2;AP900816-0139;t292;DATE;1990-08-02;;True;NONE;;;;;t0;international|quarantine|since|his;power-grab#e239|,|or|what;JJ|NN|IN|PRP$;NN|,|CC|WP;intern|quarantin|sinc|hi;power-grab|,|or|what;False;False;477;18;7
+716;Thursday;AP900816-0139;t293;DATE;1990-08-16;;True;NONE;;;;;t0;read|on|Iraqi|television;,|Saddam|repeatedly|called#e57;NN|IN|NN|NN;,|NNP|RB|VBD;read|on|iraqi|televis;,|saddam|repeatedli|call;False;False;501;19;8
+717;a fairly lengthy period;AP900816-0139;t339;DURATION;PXX;;False;NONE;;;;;;there|to|stay#e90|for#s3;``;RB|TO|NN|IN;``;there|to|stay|for;``;False;False;715;23;9
+718;now;AP900816-0139;t295;DATE;PRESENT_REF;;True;NONE;;;;;t0;Iraq;controls#e129|20|percent|of;NN;NN|CD|NN|IN;iraq;control|20|percent|of;False;False;955;35;10
+719;now;AP900816-0139;t299;DATE;PRESENT_REF;;True;NONE;;;;;t0;Iraq|'s|only|outlet#e267;that|an|international|noose;NN|POS|RB|NN;DT|DT|JJ|NN;iraq|'s|onli|outlet;that|an|intern|noos;False;False;1081;41;11
+720;A day earlier;AP900816-0139;t352;DURATION;P1D;;False;NONE;;;;;;;,|scores|of|trucks;;,|NNS|IN|NNS;;,|score|of|truck;False;False;1169;45;12
+721;this week;AP900816-0139;t300;DATE;1990-W33;;True;NONE;;;;;t0;The|Jordanian|monarch|met#e158;with|Saddam|,|but;DT|JJ|NN|NN;IN|NNP|,|CC;the|jordanian|monarch|met;with|saddam|,|but;False;False;1201;46;13
+722;Wednesday;AP900816-0139;t301;DATE;1990-08-15;;True;NONE;;;;;t0;filed#e175|compliance|reports|by;,|and|all|were;VBN|NN|NNS|IN;,|CC|DT|VBD;file|complianc|report|by;,|and|all|were;False;False;1306;50;14
+723;Thursday;AP900816-0139;t302;DATE;1990-08-16;;True;NONE;;;;;t0;Also#s5;,|Saudi|Arabia|called#e177;RB;,|NNP|NNP|NN;also;,|saudi|arabia|call;False;False;1317;51;15
+724;September;AP900816-0139;t303;DATE;1990-09;;True;NONE;;;;;t0;its|oil|supply|in#s6;.;PRP$|NN|NN|IN;.;it|oil|suppli|in;.;False;False;1389;53;16
+725;Thursday;AP900816-0139;t304;DATE;1990-08-16;;True;NONE;;;;;t0;East|News|Agency|said#e188;that|Saddam|was|the;NN|NNS|NN|VBD;DT|NNP|VBD|DT;east|new|agenc|said;that|saddam|wa|the;False;False;1401;54;17
 726;02/13/1998 14:26:00;APW19980213.1310;t0;TIME;1998-02-13T14:26:00;;False;CREATION_TIME;;;;;;;.;;.;;.;False;False;1;1;1
 727;210 years;APW19980213.1310;t110;DURATION;P210Y;;False;NONE;;;;;;_#e1>Turning#e1|its|back|on#s1;of|loyalty|to|the;NN|PRP$|RB|IN;IN|NN|TO|DT;_|e1|turn|e1|it|back|on;of|loyalti|to|the;False;False;13;2;2
 728;Friday;APW19980213.1310;t111;DATE;1998-02-13;;True;NONE;;;;;t0;constitutional|convention|voted#e2|overwhelmingly;to|make#e4|Australia|a;JJ|NN|VBD|RB;TO|VB|NNP|DT;constitut|convent|vote|overwhelmingli;to|make|australia|a;False;False;27;2;3
 729;next year;APW19980213.1310;t112;DATE;1999;;True;NONE;;;;;t0;to|a|national|referendum#e9;after#s2|convention|delegates|voted#e10;TO|DT|JJ|NN;JJ|NN|NNS|VBP;to|a|nation|referendum;after|convent|deleg|vote;False;False;56;3;4
-730;Friday;APW19980213.1310;t114;DATE;1998-02-13;;True;NONE;;;;;t0;to|support#e30|the|republic;``|This|convention|will;TO|NN|DT|NN;``|DT|NN|MD;to|support|the|republ;``|thi|convent|will;False;True;177;7;5
-731;2000;APW19980213.1310;t121;DATE;2000;;False;NONE;;;;;;the|opening#e36|of|the;Olympics|and|the|100th;DT|NN|IN|DT;NNS|CC|DT|NNS;the|open|of|the;olymp|and|the|100th;False;False;213;8;6
-732;several years ago;APW19980213.1310;t117;DATE;PAST_REF;;True;NONE;;;;;t0;from|about|35|percent;to|about|51|percent;IN|IN|CD|NN;TO|IN|CD|NN;from|about|35|percent;to|about|51|percent;False;False;357;11;7
-733;this year;APW19980213.1310;t358;DATE;1998;;True;NONE;;;;;t0;to|about|51|percent;,|as|pro-monarchist|sentiment;TO|IN|CD|NN;,|IN|JJ|NN;to|about|51|percent;,|as|pro-monarchist|sentiment;False;False;362;11;8
-734;1901;APW19980213.1310;t118;DATE;1901;;False;NONE;;;;;;has|been|independent#e374|since#s3;,|but|like|many;VBZ|VBN|JJ|IN;,|CC|IN|JJ;ha|been|independ|sinc;,|but|like|mani;False;False;374;12;9
-735;20th century;APW19980213.1310;t1000;DATE;19;;;;;;;;;me..|she|is|a;democrat|,|understands#e79|that;NN|PRP|VBZ|DT;NN|,|NN|IN;me..|she|is|a;democrat|,|understand|that;False;False;451;13;10
-736;almost a hundred years;APW19980213.1310;t119;DURATION;P100Y;LESS_THAN;False;NONE;;;;;;as|it|has#e85|for#s4;.;IN|PRP|VBZ|IN;.;as|it|ha|for;.;False;False;475;13;11
-737;1996;APW19980213.1310;t120;DATE;1996;;False;NONE;;;;;;spotlight|in|his|unsuccessful;campaign#e97|for|re-election|,;NN|IN|PRP$|JJ;NN|IN|NN|,;spotlight|in|hi|unsuccess;campaign|for|re-elect|,;False;False;535;15;12
+730;Friday;APW19980213.1310;t114;DATE;1998-02-13;;True;NONE;;;;;t0;to|support#e30|the|republic;``|This|convention|will;TO|NN|DT|NN;``|DT|NN|MD;to|support|the|republ;``|thi|convent|will;False;True;176;7;5
+731;2000;APW19980213.1310;t121;DATE;2000;;False;NONE;;;;;;the|opening#e36|of|the;Olympics|and|the|100th;DT|NN|IN|DT;NNS|CC|DT|NNS;the|open|of|the;olymp|and|the|100th;False;False;212;8;6
+732;several years ago;APW19980213.1310;t117;DATE;PAST_REF;;True;NONE;;;;;t0;from|about|35|percent;to|about|51|percent;IN|IN|CD|NN;TO|IN|CD|NN;from|about|35|percent;to|about|51|percent;False;False;356;11;7
+733;this year;APW19980213.1310;t358;DATE;1998;;True;NONE;;;;;t0;to|about|51|percent;,|as|pro-monarchist|sentiment;TO|IN|CD|NN;,|IN|JJ|NN;to|about|51|percent;,|as|pro-monarchist|sentiment;False;False;361;11;8
+734;1901;APW19980213.1310;t118;DATE;1901;;False;NONE;;;;;;has|been|independent#e374|since#s3;,|but|like|many;VBZ|VBN|JJ|IN;,|CC|IN|JJ;ha|been|independ|sinc;,|but|like|mani;False;False;373;12;9
+735;20th century;APW19980213.1310;t1000;DATE;19;;;;;;;;;me..|she|is|a;democrat|,|understands#e79|that;NN|PRP|VBZ|DT;NN|,|NN|IN;me..|she|is|a;democrat|,|understand|that;False;False;450;13;10
+736;almost a hundred years;APW19980213.1310;t119;DURATION;P100Y;LESS_THAN;False;NONE;;;;;;as|it|has#e85|for#s4;``;IN|PRP|VBZ|IN;``;as|it|ha|for;``;False;False;474;13;11
+737;1996;APW19980213.1310;t120;DATE;1996;;False;NONE;;;;;;spotlight|in|his|unsuccessful;campaign#e97|for|re-election|,;NN|IN|PRP$|JJ;NN|IN|NN|,;spotlight|in|hi|unsuccess;campaign|for|re-elect|,;False;False;534;15;12
 738;02/13/1998 14:35:00;APW19980213.1320;t0;TIME;1998-02-13T14:35:00;;False;CREATION_TIME;;;;;;;.;;.;;.;False;False;1;1;1
 739;August;APW19980213.1320;t43;DATE;1998-08;;True;NONE;;;;;t0;Australia|and|India|by;in|the|search#e2|for;NNP|CC|NNP|IN;IN|DT|NN|IN;australia|and|india|by;in|the|search|for;False;False;21;2;2
 740;a month;APW19980213.1320;t44;DURATION;P1M;;False;NONE;;;;;;This|move#e28|comes|barely;after#s1|Qantas|suspended#e5|a;DT|NN|VBZ|RB;NN|NNP|VBZ|DT;thi|move|come|bare;after|qanta|suspend|a;False;False;40;3;3
@@ -954,10 +954,10 @@
 952;Thursday;NYT19980206.0466;t31;DATE;1998-02-05;;True;NONE;;;;;t0;statements|made|Friday#t30|and#s1;by|Lawrence|Wechsler|,;NNS|VBN|NNP|CC;IN|NNP|NNP|,;statement|made|friday|and;by|lawrenc|wechsler|,;False;False;11;2;3
 953;Friday;NYT19980206.0466;t32;DATE;1998-02-06;;True;NONE;;;;;t0;New|York|Times|on#s2;about|her|statements#e44|regarding;NNP|NNP|NNS|IN;IN|PRP$|NN|NN;new|york|time|on;about|her|statement|regard;False;False;51;2;4
 954;Thursday;NYT19980206.0466;t33;DATE;1998-02-05;;True;NONE;;;;;t0;president|:|Wechsler|on#s3;``|Without|commenting|on;NN|:|NN|IN;``|IN|VBG|IN;presid|:|wechsler|on;``|without|comment|on;False;False;64;2;5
-955;Thursday;NYT19980206.0466;t34;DATE;1998-02-05;;True;NONE;;;;;t0;''White|House|on#s4;``|N|For#s5|the#t35>past#t35>few#t35>weeks#t35;NNS|NNP|IN;``|NNP|NNP|NN;''white|hous|on;``|N|for|the|past|few|week;False;False;111;3;6
+955;Thursday;NYT19980206.0466;t34;DATE;1998-02-05;;True;NONE;;;;;t0;White|House|on#s4;``|N|For#s5|the#t35>past#t35>few#t35>weeks#t35;NNP|NNP|IN;``|NNP|NNP|NN;white|hous|on;``|N|for|the|past|few|week;False;False;111;3;6
 956;the past few weeks;NYT19980206.0466;t35;DURATION;PXW;;True;NONE;;;;;t34;Thursday#t34|``|N|For#s5;we|ve|been|subjected#e11;NNP|``|NN|IN;PRP|VBP|VBN|JJ;thursday|``|N|for;we|ve|been|subject;False;False;115;3;7
-957;Friday;NYT19980206.0466;t37;DATE;1998-02-06;;True;NONE;;;;;t0;''McCurry|on#s6;``|I|want#e17|to;NN|IN;``|PRP|VBP|TO;''mccurri|on;``|I|want|to;False;False;149;5;8
-958;Friday;NYT19980206.0466;t38;DATE;1998-02-06;;True;NONE;;;;;t0;''Clinton|on#s7;``|Once|again|,;NN|IN;``|RB|RB|,;''clinton|on;``|onc|again|,;False;False;215;7;9
+957;Friday;NYT19980206.0466;t37;DATE;1998-02-06;;True;NONE;;;;;t0;McCurry|on#s6;``|I|want#e17|to;NN|IN;``|PRP|VBP|TO;mccurri|on;``|I|want|to;False;False;149;5;8
+958;Friday;NYT19980206.0466;t38;DATE;1998-02-06;;True;NONE;;;;;t0;Clinton|on#s7;``|Once|again|,;NN|IN;``|RB|RB|,;clinton|on;``|onc|again|,;False;False;215;7;9
 959;today;NYT19980206.0466;t39;DATE;1998-02-06;;True;NONE;;;;;t38;know#e26|about|the|stories;.;VB|IN|DT|NNS;.;know|about|the|stori;.;False;False;237;8;10
 960;this morning;NYT19980206.0466;t40;TIME;1998-02-06TMO;;True;NONE;;;;;t38;'s|lawyers|stated#e27|unambiguously;_|unambiguously|_|that;POS|NNS|VBN|RB;RB|RB|VBZ|IN;'s|lawyer|state|unambigu;_|unambigu|_|that;False;False;249;9;11
 961;02/12/1998 01:58:00;NYT19980212.0019;t0;TIME;1998-02-12T01:58:00;;False;CREATION_TIME;;;;;;;.;;.;;.;False;False;1;1;1
@@ -975,7 +975,7 @@
 973;Saturday, April 25;NYT19980424.0421;t74;DATE;1998-04-25;;True;NONE;;;;;t0;in|an|editorial|on#s1;:|The|Supreme|Court;IN|DT|NN|IN;:|DT|NNP|NNP;in|an|editori|on;:|the|suprem|court;False;False;12;2;2
 974;this week;NYT19980424.0421;t75;DATE;1998-W17;;True;NONE;;;;;t0;Court|took#e4|a|detour;from|the|core|principle;NNP|VBD|DT|NN;IN|DT|NN|NN;court|took|a|detour;from|the|core|principl;False;False;20;2;3
 975;two years ago;NYT19980424.0421;t76;DATE;1996;;True;NONE;;;;;t0;gender|fairness|it|vindicated#e5;in|its|ruling#e2031|invalidating#e8;NN|NN|PRP|VBN;IN|PRP$|NN|NN;gender|fair|it|vindic;in|it|rule|invalid;False;False;30;2;4
-976;current;NYT19980424.0421;t77;DATE;PRESENT_REF;;True;NONE;;;;;t0;when#s2|those|stereotypes|reflect#e65;realities|.;WRB|DT|NNS|NN;NNS|.;when|those|stereotyp|reflect;realiti|.;False;False;391;13;5
+976;current;NYT19980424.0421;t77;DATE;PRESENT_REF;;True;NONE;;;;;t0;when#s2|those|stereotypes|reflect#e65;realities.|``;WRB|DT|NNS|NN;NN|``;when|those|stereotyp|reflect;realities.|``;False;False;391;13;5
 977;19980115;PRI19980115.2000.0186;t0;DATE;1998-01-15;;False;CREATION_TIME;;;;;;;.;;.;;.;False;False;1;1;1
 978;nineteen ninety-one;PRI19980115.2000.0186;t30;DATE;1991;;False;NONE;;;;;;In#s1;Charles|Keating|was|convicted#e5;IN;NNP|NNP|VBD|NN;In;charl|keat|wa|convict;False;False;44;5;2
 979;nineteen ninety-six;PRI19980115.2000.0186;t31;DATE;1996;;False;NONE;;;;;;were|thrown#e14|out|in#s2;on|a|technicality|.;VBD|NN|IN|IN;IN|DT|NN|.;were|thrown|out|in;on|a|technic|.;False;False;97;7;3
@@ -1067,21 +1067,21 @@
 1065;March;WSJ900813-0157;t702;DATE;1990-03;;True;NONE;;;;;t0;been|on|patrol|since#s7;and|was|scheduled#e391|to;VBN|IN|NN|IN;CC|VBD|VBN|TO;been|on|patrol|sinc;and|wa|schedul|to;False;False;1796;57;15
 1066;02/25/91;WSJ910225-0066;t0;DATE;1991-02-25;;False;CREATION_TIME;;;;;;;``|So|far|,;;``|RB|RB|,;;``|So|far|,;False;False;1;1;1
 1067;late yesterday;WSJ910225-0066;t451;DATE;1991-02-24;END;True;NONE;;;;;t0;spokesman|Marlin|Fitzwater|said#e8;that|``|the|operation#e9;NN|NN|NN|VBD;IN|``|DT|NN;spokesman|marlin|fitzwat|said;that|``|the|oper;False;False;45;2;2
-1068;yesterday;WSJ910225-0066;t463;DATE;1991-02-24;;True;NONE;;;;;t0;President|Francois|Mitterrand|said#e77;that|some|allied|forces;NNP|NN|NN|VBD;DT|DT|VBD|NNS;presid|francoi|mitterrand|said;that|some|alli|forc;False;False;412;14;3
-1069;the weekend;WSJ910225-0066;t472;DATE;1991-W08-WE;;True;NONE;;;;;t0;,|American|officials|over#s1;became#e84|more|open#e473|in;,|JJ|NNS|IN;RB|RBR|NNS|IN;,|american|offici|over;becam|more|open|in;False;False;466;15;4
-1070;Feb. 11;WSJ910225-0066;t494;DATE;1991-02-11;;True;NONE;;;;;t0;aides|tentatively|decided#e235|on#s2;that|a|ground|war#e236;NNS|RB|VBD|IN;IN|DT|NN|NN;aid|tent|decid|on;that|a|ground|war;False;False;1126;35;5
-1071;a week or so ago;WSJ910225-0066;t496;DATE;1991-02-18;APPROX;True;NONE;;;;;t0;Then#s3|,;,|Gen.|Schwarzkopf|secretly;RB|,;,|NNP|NNP|RB;then|,;,|gen.|schwarzkopf|secretli;False;False;1174;37;6
-1072;Saturday night;WSJ910225-0066;t498;TIME;1991-02-23TNI;;True;NONE;;;;;t0;Gen.|Schwarzkopf|secretly|picked#e244;as|the|optimal|time;NN|NN|RB|NNS;IN|DT|JJ|NN;gen.|schwarzkopf|secretli|pick;as|the|optim|time;False;False;1180;37;7
-1073;a week;WSJ910225-0066;t505;DURATION;P1W;;True;NONE;t507;;;;;that|Iraq|withdraw#e267|within;,|starting#e268|at#s4|noon#t507>Saturday#t507;IN|NN|NN|IN;,|JJ|NN|NN;that|iraq|withdraw|within;,|start|at|noon|saturday;False;False;1266;41;8
-1074;noon Saturday;WSJ910225-0066;t507;TIME;1991-02-16T12:00;;True;NONE;;;;;t0;a#t505>week#t505|,|starting#e268|at#s4;.;DT|,|VBG|IN;.;a|week|,|start|at;.;False;False;1270;41;9
-1075;last August;WSJ910225-0066;t508;DATE;1990-08;;True;NONE;;;;;t0;began#e284|after|the|invasion#e285;.;VBD|IN|DT|NN;.;began|after|the|invas;.;False;False;1336;43;10
-1076;a week;WSJ910225-0066;t518;DURATION;P1W;;False;NONE;;;;;;,|he|offered#e291|him;to|withdraw#e293|UCP|fully;,|PRP|VBN|PRP;TO|VB|NNP|RB;,|he|offer|him;to|withdraw|ucp|fulli;False;False;1359;44;11
-1077;the four days;WSJ910225-0066;t519;DURATION;P4D;;False;NONE;;;;;;fully|,|instead|of;he|originally|considered#e294|,;RB|,|RB|IN;PRP|RB|VBZ|,;fulli|,|instead|of;he|origin|consid|,;False;False;1367;44;12
-1078;nearly an hour;WSJ910225-0066;t520;DURATION;PT1H;APPROX;False;NONE;;;;;;in|a|talk#e511|lasting;,|the|President|took#e300;IN|DT|NN|VBG;,|DT|NNP|NN;in|a|talk|last;,|the|presid|took;False;False;1401;45;13
-1079;Saturday night;WSJ910225-0066;t514;TIME;1991-02-16TNI;;True;NONE;;;;;t0;begin#e313|as|previously|planned#e314;.;NN|IN|RB|VBN;.;begin|as|previous|plan;.;False;True;1455;46;14
-1080;the first hours;WSJ910225-0066;t21;DURATION;PTXH;;;;;;;;;prisoners|were|taken#e332|in#s7;of|the|ground|war#e334;NNS|VBD|VBN|IN;IN|DT|NN|NN;prison|were|taken|in;of|the|ground|war;False;False;1538;50;15
-1081;the next few days;WSJ910225-0066;t517;DURATION;PXD;;True;NONE;t0;;;;;and|its|allies|over#s8;.;CC|PRP$|NNS|IN;.;and|it|alli|over;.;False;False;1604;52;16
-1082;eight-year;WSJ910225-0066;t521;DURATION;P8Y;;False;NONE;;;;;;first|into|a|fruitless;war#e347|against|Iran|and;RB|IN|DT|NN;NN|IN|NNP|CC;first|into|a|fruitless;war|against|iran|and;False;False;1622;53;17
+1068;yesterday;WSJ910225-0066;t463;DATE;1991-02-24;;True;NONE;;;;;t0;President|Francois|Mitterrand|said#e77;that|some|allied|forces;NNP|NN|NN|VBD;DT|DT|VBD|NNS;presid|francoi|mitterrand|said;that|some|alli|forc;False;False;413;14;3
+1069;the weekend;WSJ910225-0066;t472;DATE;1991-W08-WE;;True;NONE;;;;;t0;,|American|officials|over#s1;became#e84|more|open#e473|in;,|JJ|NNS|IN;RB|RBR|NNS|IN;,|american|offici|over;becam|more|open|in;False;False;467;15;4
+1070;Feb. 11;WSJ910225-0066;t494;DATE;1991-02-11;;True;NONE;;;;;t0;aides|tentatively|decided#e235|on#s2;that|a|ground|war#e236;NNS|RB|VBD|IN;IN|DT|NN|NN;aid|tent|decid|on;that|a|ground|war;False;False;1127;35;5
+1071;a week or so ago;WSJ910225-0066;t496;DATE;1991-02-18;APPROX;True;NONE;;;;;t0;Then#s3|,;,|Gen.|Schwarzkopf|secretly;RB|,;,|NNP|NNP|RB;then|,;,|gen.|schwarzkopf|secretli;False;False;1175;37;6
+1072;Saturday night;WSJ910225-0066;t498;TIME;1991-02-23TNI;;True;NONE;;;;;t0;Gen.|Schwarzkopf|secretly|picked#e244;as|the|optimal|time;NN|NN|RB|NNS;IN|DT|JJ|NN;gen.|schwarzkopf|secretli|pick;as|the|optim|time;False;False;1181;37;7
+1073;a week;WSJ910225-0066;t505;DURATION;P1W;;True;NONE;t507;;;;;that|Iraq|withdraw#e267|within;,|starting#e268|at#s4|noon#t507>Saturday#t507;IN|NN|NN|IN;,|JJ|NN|NN;that|iraq|withdraw|within;,|start|at|noon|saturday;False;False;1267;41;8
+1074;noon Saturday;WSJ910225-0066;t507;TIME;1991-02-16T12:00;;True;NONE;;;;;t0;a#t505>week#t505|,|starting#e268|at#s4;.;DT|,|VBG|IN;.;a|week|,|start|at;.;False;False;1271;41;9
+1075;last August;WSJ910225-0066;t508;DATE;1990-08;;True;NONE;;;;;t0;began#e284|after|the|invasion#e285;.;VBD|IN|DT|NN;.;began|after|the|invas;.;False;False;1337;43;10
+1076;a week;WSJ910225-0066;t518;DURATION;P1W;;False;NONE;;;;;;,|he|offered#e291|him;to|withdraw#e293|UCP|fully;,|PRP|VBN|PRP;TO|VB|NNP|RB;,|he|offer|him;to|withdraw|ucp|fulli;False;False;1360;44;11
+1077;the four days;WSJ910225-0066;t519;DURATION;P4D;;False;NONE;;;;;;fully|,|instead|of;he|originally|considered#e294|,;RB|,|RB|IN;PRP|RB|VBZ|,;fulli|,|instead|of;he|origin|consid|,;False;False;1368;44;12
+1078;nearly an hour;WSJ910225-0066;t520;DURATION;PT1H;APPROX;False;NONE;;;;;;in|a|talk#e511|lasting;,|the|President|took#e300;IN|DT|NN|VBG;,|DT|NNP|NN;in|a|talk|last;,|the|presid|took;False;False;1402;45;13
+1079;Saturday night;WSJ910225-0066;t514;TIME;1991-02-16TNI;;True;NONE;;;;;t0;begin#e313|as|previously|planned#e314;.;NN|IN|RB|VBN;.;begin|as|previous|plan;.;False;True;1456;46;14
+1080;the first hours;WSJ910225-0066;t21;DURATION;PTXH;;;;;;;;;prisoners|were|taken#e332|in#s7;of|the|ground|war#e334;NNS|VBD|VBN|IN;IN|DT|NN|NN;prison|were|taken|in;of|the|ground|war;False;False;1539;50;15
+1081;the next few days;WSJ910225-0066;t517;DURATION;PXD;;True;NONE;t0;;;;;and|its|allies|over#s8;.;CC|PRP$|NNS|IN;.;and|it|alli|over;.;False;False;1605;52;16
+1082;eight-year;WSJ910225-0066;t521;DURATION;P8Y;;False;NONE;;;;;;first|into|a|fruitless;war#e347|against|Iran|and;RB|IN|DT|NN;NN|IN|NNP|CC;first|into|a|fruitless;war|against|iran|and;False;False;1623;53;17
 1083;11/02/89;wsj_0006;t0;DATE;1989-11-02;;False;CREATION_TIME;;;;;;;.;;.;;.;False;False;1;1;1
 1084;year-end;wsj_0006;t10;DATE;1989-12-31;;True;NONE;;;;;t0;complete#e7|the|transaction#e20|by;.;JJ|DT|NN|IN;.;complet|the|transact|by;.;False;False;45;3;2
 1085;11/02/89;wsj_0026;t0;DATE;1989-11-02;;False;CREATION_TIME;;;;;;;.;;.;;.;False;False;1;1;1
@@ -1198,15 +1198,15 @@
 1196;one-year term;wsj_0168;t23;DURATION;P1Y;;False;NONE;;;;;;a|share|during|its;.;DT|NN|IN|PRP$;.;a|share|dure|it;.;False;False;88;5;2
 1197;an additional year;wsj_0168;t25;DURATION;P1Y;;True;NONE;t0;;;;;the|McAlpine|group|for#s1;with|an|increase#e12|in;DT|NN|NN|IN;IN|DT|NN|IN;the|mcalpin|group|for;with|an|increas|in;False;False;100;6;3
 1198;11/02/89;wsj_0169;t0;DATE;1989-11-02;;False;CREATION_TIME;;;;;;;.;;.;;.;False;False;1;1;1
-1199;mid-afternoon yesterday;wsj_0169;t28;TIME;1989-11-01TAF;MID;True;NONE;;;;;t0;''In|London|at#s2;,|Ratners|'s|shares;NNS|NNP|IN;,|NNP|POS|NNS;''in|london|at;,|ratner|'s|share;False;False;89;5;2
+1199;mid-afternoon yesterday;wsj_0169;t28;TIME;1989-11-01TAF;MID;True;NONE;;;;;t0;In|London|at#s2;,|Ratners|'s|shares;IN|NNP|IN;,|NNP|POS|NNS;In|london|at;,|ratner|'s|share;False;False;89;5;2
 1200;Dec. 10;wsj_0169;t36;DATE;1989-12-10;;True;NONE;;;;;t0;scheduled#e17|for|completion#e18|by;.;VBN|IN|NN|IN;.;schedul|for|complet|by;.;False;False;133;6;3
 1201;already;wsj_0169;t101;DATE;PRESENT_REF;;True;NONE;;;;;t0;of|Ratners|'s|profit;is|derived#e20|from|the;IN|NNS|POS|NN;VBZ|VBN|IN|DT;of|ratner|'s|profit;is|deriv|from|the;False;False;157;8;4
 1202;11/02/89;wsj_0171;t0;DATE;1989-11-02;;False;CREATION_TIME;;;;;;;.;;.;;.;False;False;1;1;1
 1203;third-quarter;wsj_0171;t28;DATE;1989-Q3;;True;NONE;;;;;t0;as|it|reported#e2|a;loss#e1995|of|$|70.7;IN|PRP|VBD|DT;NN|IN|$|CD;as|it|report|a;loss|of|$|70.7;False;False;19;2;2
 1204;a year ago;wsj_0171;t29;DATE;1988-Q3;;True;NONE;;;;;t28;cents|a|share|,;.;NNS|DT|NN|,;.;cent|a|share|,;.;False;False;53;3;3
 1205;future;wsj_0171;t30;DATE;FUTURE_REF;;True;NONE;;;;;t0;would|substantially|eliminate#e8|all;losses#e2000|at|the|unit;MD|RB|NN|DT;NN|IN|DT|NN;would|substanti|elimin|all;loss|at|the|unit;False;True;99;5;4
-1206;1990;wsj_0171;t31;DATE;1990;;False;NONE;;;;;;near|record|earnings#e1998|in#s1;.;IN|NN|NNS|IN;.;near|record|earn|in;.;False;False;151;7;5
-1207;currently;wsj_0171;t2003;DATE;PRESENT_REF;;True;NONE;;;;;t0;''Valley|Federal|is;being|examined#e21|by|regulators;NN|JJ|VBZ;VBG|VBN|IN|NNS;''valley|feder|is;be|examin|by|regul;False;False;156;8;6
+1206;1990;wsj_0171;t31;DATE;1990;;False;NONE;;;;;;near|record|earnings#e1998|in#s1;``;IN|NN|NNS|IN;``;near|record|earn|in;``;False;False;151;7;5
+1207;currently;wsj_0171;t2003;DATE;PRESENT_REF;;True;NONE;;;;;t0;Valley|Federal|is;being|examined#e21|by|regulators;NNP|JJ|VBZ;VBG|VBN|IN|NNS;valley|feder|is;be|examin|by|regul;False;False;156;8;6
 1208;the quarter;wsj_0171;t32;DATE;1989-Q3;;True;NONE;;;;;t0;$|6.6|million|in#s2;compared|with|$|361.8;$|CD|CD|IN;VBN|IN|$|CD;$|6.6|million|in;compar|with|$|361.8;False;False;174;9;7
 1209;a year ago;wsj_0171;t33;DATE;1988-Q3;;True;NONE;;;;;t32;with|$|361.8|million;.;IN|$|CD|CD;.;with|$|361.8|million;.;False;False;180;9;8
 1210;11/02/89;wsj_0172;t0;DATE;1989-11-02;;False;CREATION_TIME;;;;;;;.;;.;;.;False;False;1;1;1
@@ -1432,7 +1432,7 @@
 1430;the past several quarters;wsj_0568;t249;DATE;PAST_REF;;False;NONE;;;;;;in|the|U.S.|over#s8;.;IN|DT|NNP|IN;.;in|the|u.s.|over;.;False;False;435;14;13
 1431;every quarter;wsj_0568;t256;SET;P1Q;;False;NONE;;;every;;;100|million|in|interest;,|on|top|of;CD|CD|IN|NN;,|IN|NN|IN;100|million|in|interest;,|on|top|of;False;False;551;19;14
 1432;next year;wsj_0568;t259;DATE;1990;;True;NONE;;;;;t0;industry|will|continue#e128|through;.;NN|MD|NN|IN;.;industri|will|continu|through;.;False;True;621;22;15
-1433;the near term;wsj_0568;t1998;DATE;FUTURE_REF;;True;NONE;;;;;t0;minimize#e158|the|challenges#e160|of;.;VB|DT|NNS|IN;.;minim|the|challeng|of;.;False;False;750;26;16
+1433;the near term;wsj_0568;t1998;DATE;FUTURE_REF;;True;NONE;;;;;t0;minimize#e158|the|challenges#e160|of;``;VB|DT|NNS|IN;``;minim|the|challeng|of;``;False;False;750;26;16
 1434;this year;wsj_0568;t2000;DATE;1989;;True;NONE;;;;;t0;burned#e162|repeatedly|on|Unisys;.;VBN|RB|IN|NNP;.;burn|repeatedli|on|unisi;.;False;False;765;27;17
 1435;this year;wsj_0568;t2003;DATE;1989;;True;NONE;;;;;t0;4|a|share|for#s9;,|up|from|last#t2008>year#t2008;CD|DT|NN|IN;,|RB|IN|NN;4|a|share|for;,|up|from|last|year;False;False;779;28;18
 1436;last year;wsj_0568;t2008;DATE;1988;;True;NONE;;;;;t0;this#t2003>year#t2003|,|up|from;'s|fully|diluted|$;DT|,|RB|IN;POS|RB|VBN|$;thi|year|,|up|from;'s|fulli|dilut|$;False;False;783;28;19
@@ -1443,7 +1443,7 @@
 1441;next year;wsj_0568;t2022;DATE;1990;;True;NONE;;;;;t0;his|earnings|estimate#e2709|for#s12;to|$|2|a;PRP$|NNS|NN|IN;TO|$|CD|DT;hi|earn|estim|for;to|$|2|a;False;False;875;31;24
 1442;next year;wsj_0568;t2029;DATE;1990;;True;NONE;;;;;t0;1|a|share|for#s13;but|said#e182|he|wonders#e183;CD|DT|NN|IN;CC|NN|PRP|VBD;1|a|share|for;but|said|he|wonder;False;False;917;32;25
 1443;next year;wsj_0568;t2034;DATE;1990;;True;NONE;;;;;t0;The|break-even|point|for#s14;is|much|lower#e2032|,;DT|NN|NN|IN;VBZ|JJ|NN|,;the|break-even|point|for;is|much|lower|,;False;False;935;32;26
-1444;Friday;wsj_0568;t2038;DATE;1989-10-27;;True;NONE;;;;;t0;16.25|in|composite|trading;on|the|New|York;CD|IN|JJ|NN;IN|DT|NNP|NNP;16.25|in|composit|trade;on|the|new|york;False;False;966;34;27
+1444;Friday;wsj_0568;t2038;DATE;1989-10-27;;True;NONE;;;;;t0;16.25|in|composite|trading;on|the|New|York;CD|IN|JJ|NN;IN|DT|NNP|NNP;16.25|in|composit|trade;on|the|new|york;False;False;967;34;27
 1445;10/30/89;wsj_0570;t0;DATE;1989-10-30;;False;CREATION_TIME;;;;;;;.;;.;;.;False;False;1;1;1
 1446;the past;wsj_0570;t84;DATE;PAST_REF;;True;NONE;;;;;t0;Crane|said#e11|that|in#s1;it|considered#e12|seeking#e13|control;NNP|VBD|IN|IN;PRP|VBZ|NNS|NN;crane|said|that|in;it|consid|seek|control;False;False;66;4;2
 1447;from time to time;wsj_0570;t88;DATE;FUTURE_REF;;True;NONE;;;;;t0;to|evaluate#e20|an|acquisition#e21;.;TO|NN|DT|NN;.;to|evalu|an|acquisit;.;False;False;97;4;3
@@ -1463,24 +1463,24 @@
 1461;months ago;wsj_0575;t204;DURATION;PXM;;True;NONE;;t0;;;;Corp.|,|which|just;was|hemorrhaging#e1|financially|,;NNP|,|WDT|RB;VBD|VBN|RB|,;corp.|,|which|just;wa|hemorrhag|financi|,;False;False;9;2;2
 1462;soon;wsj_0575;t206;DATE;FUTURE_REF;;False;NONE;;;;;;will|be|healthy#e2438|enough;to|consider#e3|repurchasing#e4|public;MD|VB|JJ|RB;TO|VB|JJ|JJ;will|be|healthi|enough;to|consid|repurchas|public;False;True;20;2;3
 1463;now;wsj_0575;t2041;DATE;PRESENT_REF;;True;NONE;;;;;t0;nearly|proved#e6|fatal|,;sees#e7|alliances|with|others;RB|VBN|NN|,;NN|NNS|IN|NNS;nearli|prove|fatal|,;see|allianc|with|other;False;False;42;3;4
-1464;five-year;wsj_0575;t209;DURATION;P5Y;;False;NONE;;;;;;to|the|company|'s;restructuring|effort#e22|.;TO|DT|NN|POS;VBG|NN|.;to|the|compani|'s;restructur|effort|.;False;False;103;3;5
-1465;that time;wsj_0575;t213;DURATION;P5Y;;True;NONE;;;;;t209;During#s1;,|Control|Data|had#e24;IN;,|NNP|NNP|NN;dure;,|control|data|had;False;False;108;4;6
-1466;this year;wsj_0575;t2110;DATE;1989;;True;NONE;;;;;t0;by|more|than|one-third;alone|,|Control|Data;IN|RBR|IN|NN;RB|,|NNP|NNP;by|more|than|one-third;alon|,|control|data;False;False;133;5;7
-1467;next year;wsj_0575;t218;DATE;1990;;True;NONE;;;;;t0;in|subordinated|convertible|debentures;``|We|'d|like#e221;IN|VBN|JJ|NNS;``|PRP|MD|VB;in|subordin|convert|debentur;``|We|'d|like;False;True;166;6;8
-1468;recent;wsj_0575;t222;DATE;PAST_REF;;True;NONE;;;;;t0;automatically|triggered#e49|by|the;sale#e50|of|Control|Data;RB|VBN|IN|DT;NN|IN|NNP|NNP;automat|trigger|by|the;sale|of|control|data;False;False;222;8;9
-1469;1990;wsj_0575;t224;DATE;1990;;False;NONE;;;;;;that|to|continue#e62|into;.;IN|TO|NN|IN;.;that|to|continu|into;.;False;False;276;8;10
-1470;a good part of 1990;wsj_0575;t228;DATE;1990;;False;NONE;;;;;;bank|lines|``|for#s2;.;NN|NNS|``|IN;.;bank|line|``|for;.;False;False;293;9;11
-1471;next year;wsj_0575;t229;DATE;1990;;True;NONE;;;;;t0;''Sometime;,|Control|Data|will;NN;,|NNP|NNP|MD;''sometim;,|control|data|will;False;True;296;10;12
-1472;recent months;wsj_0575;t232;DURATION;PXM;;True;NONE;;t0;;;;In#s3;a|group|of|lenders;IN;DT|NN|IN|NNS;In;a|group|of|lender;False;False;315;12;13
-1473;January;wsj_0575;t237;DATE;1990-01;;True;NONE;;;;;t0;in|revolving|loans|through;,|as|well|as;IN|VBG|NNS|IN;,|RB|RB|IN;in|revolv|loan|through;,|as|well|as;False;False;340;12;14
-1474;Last week;wsj_0575;t238;DATE;1989-WXX;;True;NONE;;;;;t0;;Control|Data|reported#e80|third-quarter#t239;;NNP|NNP|VBZ|NN;;control|data|report|third-quart;False;False;374;14;15
-1475;third-quarter;wsj_0575;t239;DATE;1989-Q3;;True;NONE;;;;;t0;Last#t238>week#t238|Control|Data|reported#e80;earnings#e240|of|$|9.8;JJ|NN|NNS|VBD;NN|IN|$|CD;last|week|control|data|report;earn|of|$|9.8;False;False;378;14;16
-1476;the first nine months;wsj_0575;t241;DURATION;P9M;;True;NONE;;t0;;;;Through;,|the|company|had#e242;IN;,|DT|NN|NN;through;,|the|compani|had;False;False;399;15;17
-1477;recently;wsj_0575;t1991;DATE;PAST_REF;;True;NONE;;;;;t0;business|profitable|--|it;achieved#e127|profitability|after#s4|several#t1994>quarters#t1994;NN|JJ|:|PRP;JJ|NN|NN|NN;busi|profit|--|it;achiev|profit|after|sever|quarter;False;False;582;21;18
-1478;several quarters;wsj_0575;t1994;DURATION;PXQ;;False;NONE;;;;;;recently#t1991|achieved#e127|profitability|after#s4;of|losses#e2430|--|calls;RB|VBN|NN|IN;IN|NN|:|NNS;recent|achiev|profit|after;of|loss|--|call;False;False;586;21;19
-1479;recently;wsj_0575;t1995;DATE;PAST_REF;;True;NONE;;;;;t0;Control|Data;announced#e135|an|agreement#e136|with;NN|NNS;IN|DT|NN|IN;control|data;announc|an|agreement|with;False;False;618;23;20
-1480;the end of 1990;wsj_0575;t2000;DATE;1990;END;False;NONE;;;;;;costs|in|half|by;.;NNS|IN|NN|IN;.;cost|in|half|by;.;False;False;662;24;21
-1481;this past spring;wsj_0575;t2001;DATE;1989-SP;;True;NONE;;;;;t0;Systems|Inc.|supercomputer|business;,|those|costs|were;NNS|NNP|NN|NN;,|DT|NNS|VBD;system|inc.|supercomput|busi;,|those|cost|were;False;False;677;25;22
+1464;five-year;wsj_0575;t209;DURATION;P5Y;;False;NONE;;;;;;to|the|company|'s;restructuring|effort#e22|.;TO|DT|NN|POS;VBG|NN|.;to|the|compani|'s;restructur|effort|.;False;False;104;3;5
+1465;that time;wsj_0575;t213;DURATION;P5Y;;True;NONE;;;;;t209;During#s1;,|Control|Data|had#e24;IN;,|NNP|NNP|NN;dure;,|control|data|had;False;False;109;4;6
+1466;this year;wsj_0575;t2110;DATE;1989;;True;NONE;;;;;t0;by|more|than|one-third;alone|,|Control|Data;IN|RBR|IN|NN;RB|,|NNP|NNP;by|more|than|one-third;alon|,|control|data;False;False;134;5;7
+1467;next year;wsj_0575;t218;DATE;1990;;True;NONE;;;;;t0;in|subordinated|convertible|debentures;``|We|'d|like#e221;IN|VBN|JJ|NNS;``|PRP|MD|VB;in|subordin|convert|debentur;``|We|'d|like;False;True;167;6;8
+1468;recent;wsj_0575;t222;DATE;PAST_REF;;True;NONE;;;;;t0;automatically|triggered#e49|by|the;sale#e50|of|Control|Data;RB|VBN|IN|DT;NN|IN|NNP|NNP;automat|trigger|by|the;sale|of|control|data;False;False;223;8;9
+1469;1990;wsj_0575;t224;DATE;1990;;False;NONE;;;;;;that|to|continue#e62|into;``;IN|TO|NN|IN;``;that|to|continu|into;``;False;False;277;8;10
+1470;a good part of 1990;wsj_0575;t228;DATE;1990;;False;NONE;;;;;;bank|lines|``|for#s2;``;NN|NNS|``|IN;``;bank|line|``|for;``;False;False;294;9;11
+1471;next year;wsj_0575;t229;DATE;1990;;True;NONE;;;;;t0;Sometime;,|Control|Data|will;RB;,|NNP|NNP|MD;sometim;,|control|data|will;False;True;297;10;12
+1472;recent months;wsj_0575;t232;DURATION;PXM;;True;NONE;;t0;;;;In#s3;a|group|of|lenders;IN;DT|NN|IN|NNS;In;a|group|of|lender;False;False;316;12;13
+1473;January;wsj_0575;t237;DATE;1990-01;;True;NONE;;;;;t0;in|revolving|loans|through;,|as|well|as;IN|VBG|NNS|IN;,|RB|RB|IN;in|revolv|loan|through;,|as|well|as;False;False;341;12;14
+1474;Last week;wsj_0575;t238;DATE;1989-WXX;;True;NONE;;;;;t0;;Control|Data|reported#e80|third-quarter#t239;;NNP|NNP|VBZ|NN;;control|data|report|third-quart;False;False;375;14;15
+1475;third-quarter;wsj_0575;t239;DATE;1989-Q3;;True;NONE;;;;;t0;Last#t238>week#t238|Control|Data|reported#e80;earnings#e240|of|$|9.8;JJ|NN|NNS|VBD;NN|IN|$|CD;last|week|control|data|report;earn|of|$|9.8;False;False;379;14;16
+1476;the first nine months;wsj_0575;t241;DURATION;P9M;;True;NONE;;t0;;;;Through;,|the|company|had#e242;IN;,|DT|NN|NN;through;,|the|compani|had;False;False;400;15;17
+1477;recently;wsj_0575;t1991;DATE;PAST_REF;;True;NONE;;;;;t0;business|profitable|--|it;achieved#e127|profitability|after#s4|several#t1994>quarters#t1994;NN|JJ|:|PRP;JJ|NN|NN|NN;busi|profit|--|it;achiev|profit|after|sever|quarter;False;False;583;21;18
+1478;several quarters;wsj_0575;t1994;DURATION;PXQ;;False;NONE;;;;;;recently#t1991|achieved#e127|profitability|after#s4;of|losses#e2430|--|calls;RB|VBN|NN|IN;IN|NN|:|NNS;recent|achiev|profit|after;of|loss|--|call;False;False;587;21;19
+1479;recently;wsj_0575;t1995;DATE;PAST_REF;;True;NONE;;;;;t0;Control|Data;announced#e135|an|agreement#e136|with;NN|NNS;IN|DT|NN|IN;control|data;announc|an|agreement|with;False;False;619;23;20
+1480;the end of 1990;wsj_0575;t2000;DATE;1990;END;False;NONE;;;;;;costs|in|half|by;.;NNS|IN|NN|IN;.;cost|in|half|by;.;False;False;663;24;21
+1481;this past spring;wsj_0575;t2001;DATE;1989-SP;;True;NONE;;;;;t0;Systems|Inc.|supercomputer|business;,|those|costs|were;NNS|NNP|NN|NN;,|DT|NNS|VBD;system|inc.|supercomput|busi;,|those|cost|were;False;False;678;25;22
 1482;10/30/89;wsj_0583;t0;DATE;1989-10-30;;False;CREATION_TIME;;;;;;;.;;.;;.;False;False;1;1;1
 1483;Friday;wsj_0583;t200;DATE;1989-10-27;;True;NONE;;;;;t0;,|which|was|announced#e23;``|The|myths|that;,|WDT|VBD|VBD;``|DT|NNS|IN;,|which|wa|announc;``|the|myth|that;False;False;125;5;2
 1484;the year;wsj_0583;t204;DURATION;P1Y;;True;NONE;;t205;;;;6.4|billion|yen|for#s1;ending|tomorrow#t205|and|its;CD|CD|NN|IN;VBG|NN|CC|PRP$;6.4|billion|yen|for;end|tomorrow|and|it;False;False;175;8;3
@@ -1501,13 +1501,13 @@
 1499;the weekend;wsj_0584;t307;DATE;1989-W43-WE;;True;NONE;;;;;t0;Over#s4;,|McCaw|continued#e88|to;IN;,|NNP|NN|TO;over;,|mccaw|continu|to;False;False;431;18;6
 1500;June 1994;wsj_0584;t322;DATE;1994-06;;False;NONE;;;;;;an|auction|process#e141|in#s5;for|remaining|shares|at;DT|NN|NN|IN;IN|VBG|NNS|IN;an|auction|process|in;for|remain|share|at;False;False;624;25;7
 1501;five years;wsj_0584;t326;DURATION;P5Y;;False;NONE;;;;;;,|if|,|after#s6;,|the|trading|value;,|IN|,|IN;,|DT|NN|NN;,|if|,|after;,|the|trade|valu;False;False;669;26;8
-1502;1990;wsj_0584;t351;DATE;1990;;False;NONE;;;;;;9|%|in|both;and#s7|1991#t352|and|by;CD|NN|IN|DT;RB|CD|CC|IN;9|%|in|both;and|1991|and|by;False;False;892;34;9
-1503;1991;wsj_0584;t352;DATE;1991;;False;NONE;;;;;;in|both|1990#t351|and#s7;and|by|significantly|less;IN|DT|CD|CC;CC|IN|RB|JJR;in|both|1990|and;and|by|significantli|less;False;False;894;34;10
-1504;1988;wsj_0584;t358;DATE;1988;;False;NONE;;;;;;For#s8;,|BellSouth|earned#e196|$;IN;,|NNP|VBD|$;for;,|bellsouth|earn|$;False;False;919;36;11
-1505;1990;wsj_0584;t359;DATE;1990;;False;NONE;;;;;;Analysts|were|predicting#e197;BellSouth|earnings|in|the;NNS|VBD|VBG;NNP|NNS|IN|DT;analyst|were|predict;bellsouth|earn|in|the;False;False;943;37;12
-1506;now;wsj_0584;t361;DATE;PRESENT_REF;;True;NONE;;;;;t0;1.9|billion|,|but;those|estimates#e362|are|being;CD|CD|,|CC;DT|NNS|VBP|VBG;1.9|billion|,|but;those|estim|are|be;False;False;961;37;13
-1507;Friday;wsj_0584;t364;DATE;1989-10-27;;True;NONE;;;;;t0;In|composite|trading#e363;on|the|New|York;IN|JJ|NN;IN|DT|NNP|NNP;In|composit|trade;on|the|new|york;False;False;972;38;14
-1508;1984;wsj_0584;t370;DATE;1984;;False;NONE;;;;;;the|Bell|system|in#s9;.;DT|NNP|NN|IN;.;the|bell|system|in;.;False;False;1103;41;15
+1502;1990;wsj_0584;t351;DATE;1990;;False;NONE;;;;;;9|%|in|both;and#s7|1991#t352|and|by;CD|NN|IN|DT;RB|CD|CC|IN;9|%|in|both;and|1991|and|by;False;False;893;34;9
+1503;1991;wsj_0584;t352;DATE;1991;;False;NONE;;;;;;in|both|1990#t351|and#s7;and|by|significantly|less;IN|DT|CD|CC;CC|IN|RB|JJR;in|both|1990|and;and|by|significantli|less;False;False;895;34;10
+1504;1988;wsj_0584;t358;DATE;1988;;False;NONE;;;;;;For#s8;,|BellSouth|earned#e196|$;IN;,|NNP|VBD|$;for;,|bellsouth|earn|$;False;False;920;36;11
+1505;1990;wsj_0584;t359;DATE;1990;;False;NONE;;;;;;Analysts|were|predicting#e197;BellSouth|earnings|in|the;NNS|VBD|VBG;NNP|NNS|IN|DT;analyst|were|predict;bellsouth|earn|in|the;False;False;944;37;12
+1506;now;wsj_0584;t361;DATE;PRESENT_REF;;True;NONE;;;;;t0;1.9|billion|,|but;those|estimates#e362|are|being;CD|CD|,|CC;DT|NNS|VBP|VBG;1.9|billion|,|but;those|estim|are|be;False;False;962;37;13
+1507;Friday;wsj_0584;t364;DATE;1989-10-27;;True;NONE;;;;;t0;In|composite|trading#e363;on|the|New|York;IN|JJ|NN;IN|DT|NNP|NNP;In|composit|trade;on|the|new|york;False;False;973;38;14
+1508;1984;wsj_0584;t370;DATE;1984;;False;NONE;;;;;;the|Bell|system|in#s9;.;DT|NNP|NN|IN;.;the|bell|system|in;.;False;False;1104;41;15
 1509;10/30/89;wsj_0585;t0;DATE;1989-10-30;;False;CREATION_TIME;;;;;;;.;;.;;.;False;False;1;1;1
 1510;September;wsj_0585;t295;DATE;1989-09;;True;NONE;;;;;t0;than|13|%|in#s1;.;IN|CD|NN|IN;.;than|13|%|in;.;False;False;163;7;2
 1511;this month;wsj_0585;t303;DATE;1989-10;;True;NONE;;;;;t0;slide#e57|in|stock|prices;has|turned#e58|some|of;NN|IN|NN|NNS;VBZ|VBN|DT|IN;slide|in|stock|price;ha|turn|some|of;False;False;286;13;3
@@ -1569,7 +1569,7 @@
 1567;current;wsj_0610;t200;DATE;PRESENT_REF;;True;NONE;;;;;t0;Kellogg|'s;share|is|believed#e19|to;NNP|POS;NN|VBZ|VBN|TO;kellogg|'s;share|is|believ|to;False;False;136;9;5
 1568;this year;wsj_0610;t419;DATE;1989;;True;NONE;;;;;t0;%|share|so|far#s3;,|mostly|at|the;NN|NN|RB|RB;,|RB|IN|DT;%|share|so|far;,|mostli|at|the;False;False;173;10;6
 1569;soon;wsj_0610;t207;DATE;FUTURE_REF;;True;NONE;;;;;t0;Flakes|sales|that|it;will|begin#e33|selling#e34|boxes;NNS|NNS|IN|PRP;MD|VB|NN|NNS;flake|sale|that|it;will|begin|sell|box;False;True;238;13;7
-1570;right now;wsj_0610;t209;DATE;PRESENT_REF;;True;NONE;;;;;t0;people|at|Battle|Creek;.;NNS|IN|NNP|NN;.;peopl|at|battl|creek;.;False;False;298;13;8
+1570;right now;wsj_0610;t209;DATE;PRESENT_REF;;True;NONE;;;;;t0;people|at|Battle|Creek;``;NNS|IN|NNP|NN;``;peopl|at|battl|creek;``;False;False;298;13;8
 1571;recently;wsj_0610;t210;DATE;PAST_REF;;True;NONE;;;;;t0;Richmond|,|Va.|,;went#e1061|to|a|``;NN|,|NN|,;NN|TO|DT|``;richmond|,|va.|,;went|to|a|``;False;False;339;15;9
 1572;Friday;wsj_0610;t211;DATE;1989-10-27;;True;NONE;;;;;t0;stock|,|which|closed#e48;at|$|71.75|,;NN|,|WDT|VBD;IN|$|CD|,;stock|,|which|close;at|$|71.75|,;False;False;353;15;10
 1573;this year;wsj_0610;t214;DATE;1989;;True;NONE;;;;;t0;back|to|40|%;,|``|he|said#e53.;RB|TO|CD|NN;,|``|PRP|VBD;back|to|40|%;,|``|he|said;False;False;381;15;11
@@ -1631,7 +1631,7 @@
 1629;Aug. 31;wsj_0674;t50;DATE;1989-08-31;;True;NONE;;;;;t0;income|for#s1|the#t49>year#t49|ended;$|,|C|$;NN|IN|DT|VBN;$|,|NNP|$;incom|for|the|year|end;$|,|C|$;False;False;159;6;5
 1630;last year;wsj_0674;t52;DATE;1988;;True;NONE;;;;;t0;Canadian|cents|a|share;.;JJ|NNS|DT|NN;.;canadian|cent|a|share;.;False;False;189;6;6
 1631;1988;wsj_0674;t58;DATE;1988;;False;NONE;;;;;;$|252|million|in#s2;.;$|CD|CD|IN;.;$|252|million|in;.;False;False;209;7;7
-1632;earlier this year;wsj_0674;t69;DATE;1989;START;True;NONE;;;;;t0;Innopac|and|Mobil|Corp.;opened#e37|the|first|U.S.;NN|CC|NNP|NNP;IN|DT|JJ|NNP;innopac|and|mobil|corp.;open|the|first|u.s.;False;False;317;11;8
+1632;earlier this year;wsj_0674;t69;DATE;1989;START;True;NONE;;;;;t0;Innopac|and|Mobil|Corp.;opened#e37|the|first|U.S.;NN|CC|NNP|NNP;IN|DT|JJ|NNP;innopac|and|mobil|corp.;open|the|first|u.s.;False;False;318;11;8
 1633;10/30/89;wsj_0675;t0;DATE;1989-10-30;;False;CREATION_TIME;;;;;;;.;;.;;.;False;False;1;1;1
 1634;September;wsj_0675;t139;DATE;1989-09;;True;NONE;;;;;t0;rose#e30|0.2|%|in#s1;,|the|smallest|gain;VBD|CD|NN|IN;,|DT|JJS|NN;rose|0.2|%|in;,|the|smallest|gain;False;False;101;7;2
 1635;third-quarter;wsj_0675;t237;DATE;1989-Q3;;True;NONE;;;;;t0;fueled#e35|much|of|the;GNP|growth#e232|.;VBD|JJ|IN|DT;NNP|NN|.;fuel|much|of|the;gnp|growth|.;False;False;125;8;3
@@ -1718,28 +1718,28 @@
 1716;the past two months;wsj_0768;t175;DURATION;P2M;;True;NONE;;t0;;;;In#s1;the|nation|'s|88;IN;DT|NN|POS|CD;In;the|nation|'s|88;False;False;69;4;3
 1717;the past two months;wsj_0768;t176;DURATION;P2M;;True;NONE;;t0;;;;fund|assets|,|in#s2;.;NN|NNS|,|IN;.;fund|asset|,|in;.;False;False;170;7;4
 1718;recent;wsj_0768;t185;DATE;PAST_REF;;True;NONE;;;;;t0;exacerbated#e24|investors|concern|about;declines#e179|in|junk-bond|prices.;VBN|NNS|NN|IN;NN|IN|NN|NN;exacerb|investor|concern|about;declin|in|junk-bond|prices.;False;False;183;8;5
-1719;the weeks ahead;wsj_0768;t186;DURATION;PXW;;True;NONE;t0;;;;;pay#e51|departing|investors|in#s3;.;NN|VBG|NNS|IN;.;pay|depart|investor|in;.;False;False;266;10;6
-1720;recent years;wsj_0768;t196;DATE;PAST_REF;;True;NONE;;;;;t0;the|takeover|boom#e73|of;.;DT|NN|NN|IN;.;the|takeov|boom|of;.;False;False;374;15;7
-1721;the past two months;wsj_0768;t198;DURATION;P2M;BEFORE;True;NONE;;t0;;;;$|150|million|in#s4;.;$|CD|CD|IN;.;$|150|million|in;.;False;False;448;19;8
-1722;last week;wsj_0768;t199;DATE;1989-WXX;;True;NONE;;;;;t0;60|million|streamed#e83|out;alone|,|double|the;CD|CD|VBD|IN;RB|,|JJ|DT;60|million|stream|out;alon|,|doubl|the;False;False;456;20;9
-1723;week;wsj_0768;t201;DATE;1989-WXX;;True;NONE;;;;;t200;the|level|of|the;following|last#t200>month#t200|'s|Campeau;DT|NN|IN|DT;VBG|NN|POS|NNP;the|level|of|the;follow|last|month|'s|campeau;False;False;464;20;10
-1724;last month;wsj_0768;t200;DATE;1989-09;;True;NONE;;;;;t0;of|the|week#t201|following;'s|Campeau|Corp.|credit;IN|DT|NN|VBG;POS|NNP|NNP|NN;of|the|week|follow;'s|campeau|corp.|credit;False;False;466;20;11
-1725;every month;wsj_0768;t2332;SET;P1M;;False;NONE;;;EVERY;;;positive|-RCB-|net|sales#e195;for#s5|the#t204>last#t204>three#t204>years#t204|--|until#s6;JJ|NN|NN|NNS;NN|NN|:|JJ;posit|-rcb-|net|sale;for|the|last|three|year|--|until;False;False;583;24;12
-1726;the last three years;wsj_0768;t204;DURATION;P3Y;;True;NONE;;;;;;net|sales#e195|every#t2332>month#t2332|for#s5;--|until#s6|this#t205>month#t205|.;NN|NNS|DT|IN;:|JJ|NN|.;net|sale|everi|month|for;--|until|thi|month|.;False;False;585;24;13
-1727;this month;wsj_0768;t205;DATE;1989-10;;True;NONE;;;;;t0;for#s5|the#t204>last#t204>three#t204>years#t204|--|until#s6;.;IN|DT|:|IN;.;for|the|last|three|year|--|until;.;False;False;588;24;14
-1728;early September;wsj_0768;t206;DATE;1989-09;START;True;NONE;;;;;t0;million|flow#e110|out|since#s7;";|$|14|million";CD|NN|IN|IN;:|$|CD|CD;million|flow|out|sinc;";|$|14|million";False;False;607;25;15
-1729;Friday Oct. 13;wsj_0768;t210;DATE;1989-10-13;;True;NONE;;;;;;of|that|seeped#e208|out;alone|.;IN|IN|VBD|IN;RB|.;of|that|seep|out;alon|.;False;False;616;25;16
-1730;now;wsj_0768;t211;DATE;PRESENT_REF;;True;NONE;;;;;t0;The|fund;holds#e116|a|cash|position;DT|NN;VB|DT|NN|NN;the|fund;hold|a|cash|posit;False;False;643;27;17
-1731;the past two months;wsj_0768;t213;DURATION;P2M;;True;NONE;;t0;;;;$|182|million|in#s8;.;$|CD|CD|IN;.;$|182|million|in;.;False;False;673;28;18
-1732;this year;wsj_0768;t214;DATE;1989;;True;NONE;;;;;t0;fund|'s|sales|picture;through|August#t216.|``|The#t217>last#t217>two#t217>months#t217;NN|POS|NNS|NN;IN|NNP|``|NNP;fund|'s|sale|pictur;through|august|``|the|last|two|month;False;False;699;29;19
-1733;August;wsj_0768;t216;DATE;1989-08;;True;NONE;;;;;t0;sales|picture|this#t214>year#t214|through;``|The#t217>last#t217>two#t217>months#t217|have|been;NNS|NN|DT|IN;``|NN|VBP|VBN;sale|pictur|thi|year|through;``|the|last|two|month|have|been;False;False;701;29;20
-1734;The last two months;wsj_0768;t217;DURATION;P2M;;True;NONE;;t0;;;;this#t214>year#t214|through|August#t216.|``;have|been|the|whole;DT|IN|NNP|``;VBP|VBN|DT|NN;thi|year|through|august|``;have|been|the|whole;False;False;703;29;21
-1735;this year;wsj_0768;t1997;DATE;1989;;True;NONE;;;;;t0;have|barely|broken#e127|even;,|as|fat|interest;VB|RB|NN|RB;,|IN|JJ|NN;have|bare|broken|even;,|as|fat|interest;False;False;726;30;22
-1736;Oct. 19;wsj_0768;t1998;DATE;1989-10-19;;True;NONE;;;;;t0;Through;,|high-yield|funds|had#e1992;IN;,|JJ|NNS|NN;through;,|high-yield|fund|had;False;False;740;31;23
-1737;this year;wsj_0768;t2000;DATE;1989;;True;NONE;;;;;t0;has|fallen#e133|2.08|%;through|Oct.#t2001>19#t2001|,|Lipper;VBZ|VBN|CD|NN;IN|NNP|,|NNP;ha|fallen|2.08|%;through|oct.|19|,|lipper;False;False;793;32;24
-1738;Oct. 19;wsj_0768;t2001;DATE;1989-10-19;;True;NONE;;;;;t0;2.08|%|this#t2000>year#t2000|through;",|Lipper|says#e134|;";CD|NN|DT|IN;,|NNP|NN|:;2.08|%|thi|year|through;",|lipper|say|;";False;False;795;32;25
-1739;now;wsj_0768;t2003;DATE;PRESENT_REF;;True;NONE;;;;;;remain#e138|in|junk|funds;could|get#e140|hit#e142|again;NN|IN|NN|NNS;MD|VB|NN|RB;remain|in|junk|fund;could|get|hit|again;False;True;824;33;26
-1740;recent weeks and months;wsj_0768;t2004;DATE;PAST_REF;;True;NONE;;;;;t0;Many|funds|in#s9;have|been|selling#e144|their;JJ|NNS|IN;VBP|VBN|VBN|PRP$;mani|fund|in;have|been|sell|their;False;False;840;34;27
+1719;the weeks ahead;wsj_0768;t186;DURATION;PXW;;True;NONE;t0;;;;;pay#e51|departing|investors|in#s3;.;NN|VBG|NNS|IN;.;pay|depart|investor|in;.;False;False;267;10;6
+1720;recent years;wsj_0768;t196;DATE;PAST_REF;;True;NONE;;;;;t0;the|takeover|boom#e73|of;.;DT|NN|NN|IN;.;the|takeov|boom|of;.;False;False;375;15;7
+1721;the past two months;wsj_0768;t198;DURATION;P2M;BEFORE;True;NONE;;t0;;;;$|150|million|in#s4;.;$|CD|CD|IN;.;$|150|million|in;.;False;False;449;19;8
+1722;last week;wsj_0768;t199;DATE;1989-WXX;;True;NONE;;;;;t0;60|million|streamed#e83|out;alone|,|double|the;CD|CD|VBD|IN;RB|,|JJ|DT;60|million|stream|out;alon|,|doubl|the;False;False;457;20;9
+1723;week;wsj_0768;t201;DATE;1989-WXX;;True;NONE;;;;;t200;the|level|of|the;following|last#t200>month#t200|'s|Campeau;DT|NN|IN|DT;VBG|NN|POS|NNP;the|level|of|the;follow|last|month|'s|campeau;False;False;465;20;10
+1724;last month;wsj_0768;t200;DATE;1989-09;;True;NONE;;;;;t0;of|the|week#t201|following;'s|Campeau|Corp.|credit;IN|DT|NN|VBG;POS|NNP|NNP|NN;of|the|week|follow;'s|campeau|corp.|credit;False;False;467;20;11
+1725;every month;wsj_0768;t2332;SET;P1M;;False;NONE;;;EVERY;;;positive|-RCB-|net|sales#e195;for#s5|the#t204>last#t204>three#t204>years#t204|--|until#s6;JJ|NN|NN|NNS;NN|NN|:|JJ;posit|-rcb-|net|sale;for|the|last|three|year|--|until;False;False;584;24;12
+1726;the last three years;wsj_0768;t204;DURATION;P3Y;;True;NONE;;;;;;net|sales#e195|every#t2332>month#t2332|for#s5;--|until#s6|this#t205>month#t205.|``;NN|NNS|DT|IN;:|NN|IN|``;net|sale|everi|month|for;--|until|thi|month|``;False;False;586;24;13
+1727;this month;wsj_0768;t205;DATE;1989-10;;True;NONE;;;;;t0;for#s5|the#t204>last#t204>three#t204>years#t204|--|until#s6;``;IN|DT|:|IN;``;for|the|last|three|year|--|until;``;False;False;589;24;14
+1728;early September;wsj_0768;t206;DATE;1989-09;START;True;NONE;;;;;t0;million|flow#e110|out|since#s7;";|$|14|million";CD|NN|IN|IN;:|$|CD|CD;million|flow|out|sinc;";|$|14|million";False;False;608;25;15
+1729;Friday Oct. 13;wsj_0768;t210;DATE;1989-10-13;;True;NONE;;;;;;of|that|seeped#e208|out;alone|.;IN|IN|VBD|IN;RB|.;of|that|seep|out;alon|.;False;False;617;25;16
+1730;now;wsj_0768;t211;DATE;PRESENT_REF;;True;NONE;;;;;t0;The|fund;holds#e116|a|cash|position;DT|NN;VB|DT|NN|NN;the|fund;hold|a|cash|posit;False;False;644;27;17
+1731;the past two months;wsj_0768;t213;DURATION;P2M;;True;NONE;;t0;;;;$|182|million|in#s8;.;$|CD|CD|IN;.;$|182|million|in;.;False;False;674;28;18
+1732;this year;wsj_0768;t214;DATE;1989;;True;NONE;;;;;t0;fund|'s|sales|picture;through|August#t216.|``|The#t217>last#t217>two#t217>months#t217;NN|POS|NNS|NN;IN|NNP|``|NNP;fund|'s|sale|pictur;through|august|``|the|last|two|month;False;False;700;29;19
+1733;August;wsj_0768;t216;DATE;1989-08;;True;NONE;;;;;t0;sales|picture|this#t214>year#t214|through;``|The#t217>last#t217>two#t217>months#t217|have|been;NNS|NN|DT|IN;``|NN|VBP|VBN;sale|pictur|thi|year|through;``|the|last|two|month|have|been;False;False;702;29;20
+1734;The last two months;wsj_0768;t217;DURATION;P2M;;True;NONE;;t0;;;;this#t214>year#t214|through|August#t216.|``;have|been|the|whole;DT|IN|NNP|``;VBP|VBN|DT|NN;thi|year|through|august|``;have|been|the|whole;False;False;704;29;21
+1735;this year;wsj_0768;t1997;DATE;1989;;True;NONE;;;;;t0;have|barely|broken#e127|even;,|as|fat|interest;VB|RB|NN|RB;,|IN|JJ|NN;have|bare|broken|even;,|as|fat|interest;False;False;727;30;22
+1736;Oct. 19;wsj_0768;t1998;DATE;1989-10-19;;True;NONE;;;;;t0;Through;,|high-yield|funds|had#e1992;IN;,|JJ|NNS|NN;through;,|high-yield|fund|had;False;False;741;31;23
+1737;this year;wsj_0768;t2000;DATE;1989;;True;NONE;;;;;t0;has|fallen#e133|2.08|%;through|Oct.#t2001>19#t2001|,|Lipper;VBZ|VBN|CD|NN;IN|NNP|,|NNP;ha|fallen|2.08|%;through|oct.|19|,|lipper;False;False;794;32;24
+1738;Oct. 19;wsj_0768;t2001;DATE;1989-10-19;;True;NONE;;;;;t0;2.08|%|this#t2000>year#t2000|through;",|Lipper|says#e134|;";CD|NN|DT|IN;,|NNP|NN|:;2.08|%|thi|year|through;",|lipper|say|;";False;False;796;32;25
+1739;now;wsj_0768;t2003;DATE;PRESENT_REF;;True;NONE;;;;;;remain#e138|in|junk|funds;could|get#e140|hit#e142|again;NN|IN|NN|NNS;MD|VB|NN|RB;remain|in|junk|fund;could|get|hit|again;False;True;825;33;26
+1740;recent weeks and months;wsj_0768;t2004;DATE;PAST_REF;;True;NONE;;;;;t0;Many|funds|in#s9;have|been|selling#e144|their;JJ|NNS|IN;VBP|VBN|VBN|PRP$;mani|fund|in;have|been|sell|their;False;False;841;34;27
 1741;10/27/89;wsj_0778;t0;DATE;1989-10-27;;False;CREATION_TIME;;;;;;;.;;.;;.;False;False;1;1;1
 1742;last June;wsj_0778;t233;DATE;1989-06;;True;NONE;;;;;t0;the|U.S.|Supreme|Court;.;DT|NNP|NNP|NNP;.;the|u.s.|suprem|court;.;False;False;114;5;2
 1743;soon;wsj_0778;t234;DATE;FUTURE_REF;;True;NONE;;;;;t0;him|that|they|may;seek#e75|an|indictment|on;PRP|IN|PRP|MD;NN|DT|NN|IN;him|that|they|may;seek|an|indict|on;False;True;306;9;3
@@ -1760,7 +1760,7 @@
 1758;Yesterday;wsj_0781;t285;DATE;1989-10-26;;True;NONE;;;;;t0;;,|Compaq|plunged#e69|further;;,|NNP|VBZ|RBR;;,|compaq|plung|further;False;False;338;11;9
 1759;third-quarter;wsj_0781;t1000;DATE;1989-Q3;;;;;;;;;being|attributed#e70|to|a;earnings|report|that|came;VBG|VBN|TO|DT;NNS|NN|WDT|VBD;be|attribut|to|a;earn|report|that|came;False;False;373;12;10
 1760;next week;wsj_0781;t286;DATE;1989-WXX;;True;NONE;;;;;t0;start#e76|producing#e78|bugless|chips;``|We|should|not;NN|VBG|NN|NNS;``|PRP|MD|RB;start|produc|bugless|chip;``|We|should|not;True;True;400;13;11
-1761;late September;wsj_0781;t287;DATE;1989-09;END;True;NONE;;;;;t0;''In;,|IBM|began#e122|shipping#e123;NNS;,|NNP|VBZ|NN;''in;,|ibm|began|ship;False;False;589;19;12
+1761;late September;wsj_0781;t287;DATE;1989-09;END;True;NONE;;;;;t0;In;,|IBM|began#e122|shipping#e123;IN;,|NNP|VBZ|NN;In;,|ibm|began|ship;False;False;589;19;12
 1762;Monday;wsj_0781;t288;DATE;1989-10-23;;True;NONE;;;;;t0;the|company|told#e127|customers;about|the|bugs|and;DT|NN|NN|NNS;IN|DT|NNS|CC;the|compani|told|custom;about|the|bug|and;False;False;620;20;13
 1763;Nov. 6;wsj_0781;t289;DATE;1989-11-06;;True;NONE;;;;;t0;new|486|products|on#s3;.;JJ|CD|NNS|IN;.;new|486|product|on;.;False;False;690;22;14
 1764;several years;wsj_0781;t1001;DURATION;PXY;;;;;;;;;buy|for|at|least;.;VB|IN|IN|JJS;.;buy|for|at|least;.;False;False;852;27;15
@@ -2033,7 +2033,7 @@
 2031;the current year;wsj_1014;t2056;DATE;1989;;True;NONE;;;;;t0;to|42.5|%|in#s4;``|Anheuser|is|the;TO|CD|NN|IN;``|NNP|VBZ|DT;to|42.5|%|in;``|anheus|is|the;False;False;497;17;14
 2032;yesterday;wsj_1014;t2196;DATE;1989-10-25;;True;NONE;;;;;t0;Mr.|Doyle|,|who;trimmed#e144|his|1990#t2201|Anheuser;NNP|NN|,|WP;VB|PRP$|CD|NNP;mr.|doyl|,|who;trim|hi|1990|anheus;False;False;701;22;15
 2033;1990;wsj_1014;t2201;DATE;1990;;False;NONE;;;;;;who|yesterday#t2196|trimmed#e144|his;Anheuser|earnings|projection|to;WP|NN|VBN|PRP$;NNP|NNS|NN|TO;who|yesterday|trim|hi;anheus|earn|project|to;False;False;704;22;16
-2034;third-quarter;wsj_1014;t2210;DATE;1989-Q3;;True;NONE;;;;;t0;''While|the;earnings|were|a|``;NN|DT;NNS|VBD|DT|``;''while|the;earn|were|a|``;False;False;727;23;17
+2034;third-quarter;wsj_1014;t2210;DATE;1989-Q3;;True;NONE;;;;;t0;While|the;earnings|were|a|``;IN|DT;NNS|VBD|DT|``;while|the;earn|were|a|``;False;False;727;23;17
 2035;last year;wsj_1014;t2238;DATE;1988;;True;NONE;;;;;t0;a|21.2|%|stake;.;DT|CD|NN|NN;.;a|21.2|%|stake;.;False;False;787;24;18
 2036;10/26/89;wsj_1025;t0;DATE;1989-10-26;;False;CREATION_TIME;;;;;;;.;;.;;.;False;False;1;1;1
 2037;third quarter;wsj_1025;t21;DATE;1989-Q3;;True;NONE;;;;;t0;for|the|seasonally|slow;narrowed#e4|from|a#t22>year#t22>earlier#t22|on;IN|DT|RB|VB;NN|IN|NN|IN;for|the|season|slow;narrow|from|a|year|earlier|on;False;False;25;2;2

@@ -1,10 +1,4 @@
-
-wsj_0781
-10/27/89#t0
-
-WSJ891027-0114 = 891027 891027-0114.
-Chip by Intel @ Contains Flaw @ In Calculating @ --- @ `Bugs' Could Stall Makers @ Of Certain Computers; @ Most Users Unaffected @ ---- @ By Stephen Kreider Yoder @ Staff Reporter of The Wall Street Journal 10/27/89 WALL STREET JOURNAL (J) INTC IBM CPQ SEMICONDUCTORS, INTEGRATED CHIPS (SEM) COMPUTERS AND INFORMATION TECHNOLOGY (CPR)
-
+10/27/89#t0.
 
 Intel Corp.'s most powerful computer chip has#e1 flaws that could delay#e2 several computer makers' marketing efforts#e4, but the "bugs" aren't expected#e5 to hurt#e8 Intel and most computer makers.
 

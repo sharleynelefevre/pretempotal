@@ -1,10 +1,4 @@
-
-wsj_0340
-11/01/89#t0
-
-WSJ891101-0024 = 891101 891101-0024.
-International Brief -- Cie. de Navigation Mixte: @ Credit Lyonnais Unit Buys @ Stock to Help Defeat Bid 11/01/89 WALL STREET JOURNAL (J) F.CNM F.CLC F.CFP TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) INSURANCE (INS) FOOD PRODUCTS (FOD)
-
+11/01/89#t0.
 
 The portfolio unit of the French bank group Credit Lyonnais told#e1 stock market regulators that it bought#e2 43,000 shares of Cie. de Navigation Mixte, apparently to help#e3 fend#e4 off an unwelcome takeover bid for the company.
 

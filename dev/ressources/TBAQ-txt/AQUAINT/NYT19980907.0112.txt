@@ -1,18 +1,5 @@
-
-NYT19980907.0112
-1998-09-07#t0
-BOMBINGS CAST A SHADOW ON EAST AFRICAN TOURISM
-
-NYT19980907.0112  NEWS STORY  1998-09-07 16:53
-A2547 &Cx1f; taf-z
-s t &Cx13;  &Cx11;  BC-TRAVEL-AFRICA-$ADV13-     09-07 0853
-BC-TRAVEL-AFRICA-$ADV13-NYT
-BOMBINGS CAST A SHADOW ON EAST AFRICAN TOURISM
-(For release Sun., Sept. 13)  (JT)
-By PHILIP SHENON
-c.1998 N.Y. Times News Service
-
-
+1998-09-07#t0.
+BOMBINGS CAST A SHADOW ON EAST AFRICAN TOURISM.
 
 WASHINGTON _
 
@@ -47,8 +34,3 @@ Ebrahim, whose company has been sending#e67 American travelers on East African s
 ``We had one cancellation#e133 from a couple who decided they were just going to wait#e72 and see#e73 what happened,'' he said#e75. ``Our clients are adventure travelers and most of them are very savvy. They read#e76 a lot, they stay on top of world events.'' They understand#e78, he said#e79, that increasingly terrorism knows no borders.
 
 The U.S. Embassy in Nairobi is now#t10 operating out of the offices of the Agency for International Development on The Crescent, in the neighborhood of Nairobi known as the Parklands; (254-2) 751-613. The Embassy in Dar es Salaam is at 285 Toure Drive; (255-51) 666-015.
-
-
-
-&QL;
-NYT-09-07-98 1653EDT &QL;

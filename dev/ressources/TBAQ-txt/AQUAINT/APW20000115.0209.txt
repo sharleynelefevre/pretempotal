@@ -1,13 +1,5 @@
-
-APW20000115.0209
-2000-01-15#t0
-Cuba Presses for Boy's Repatriation
-
-APW20000107.0088  NEWS STORY  2000-01-07 03:03
-Cuba Presses for Boy's Repatriation
-By ANITA SNOW Associated Press Writer
-
-
+2000-01-15#t0.
+Cuba Presses for Boy's Repatriation.
 
 HAVANA (AP) --
 
@@ -38,7 +30,3 @@ His mother died#e105 in a boating accident#e98 trying#e45 to get#e46 Elian and h
 But Elian's relatives in Miami have fought#e48 to keep#e49 the boy, saying#e50 they could provide#e51 him with a better life. Since the INS decision#e100 was announced#e52 Wednesday#t12, they have said#e53 they will appeal#e54 the decision#e101.
 
 Gonzalez has not appeared#e55 publicly since the announcement#e102. Neither he nor Elian's four grandparents could be located#e56 in their hometown of Cardenas, east of Havana.
-
-
-
-AP-NY-01-07-00 0303

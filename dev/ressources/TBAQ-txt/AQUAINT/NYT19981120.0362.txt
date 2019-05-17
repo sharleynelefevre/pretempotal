@@ -1,20 +1,5 @@
-
-NYT19981120.0362
-1998-11-20#t0>19:30#t0
-ANTIABORTION ACTIVIST MAY BE IN MEXICO
-
-NYT19981120.0362 
- NEWS STORY 
-1998-11-20 19:30
-A2192 &Cx1f; tdt-z
-u a &Cx13;  &Cx11;  BC-ABORTION-SUSPECT-BOS &LR;      11-20 0316
-BC-ABORTION-SUSPECT-BOS
-ANTIABORTION ACTIVIST MAY BE IN MEXICO
-(For use by New York Times News Service clients)
-By RIC KAHN
-c.1998 The Boston Globe
-
-
+1998-11-20#t0>19:30#t0.
+ANTIABORTION ACTIVIST MAY BE IN MEXICO.
 
 The antiabortion activist wanted#e1 for questioning#e2 in last#t2>month#t2's shooting death#e3 of a doctor in a Buffalo suburb may have fled#e4 to Mexico, according to a newspaper report.
 
@@ -33,8 +18,3 @@ Authorities want#e22 to question#e23 the unidentified woman who allegedly travel
 A task force of US and Canadian officials is investigating#e31 the similarities between the attack#e32 on Slepian and four others#e38 on abortion providers in Canada and upstate New York in#s3 the past four#t6>years#t6.
 
 The US Justice Department is offering#e33 a $500,000 reward for information leading#e34 to the arrest#e35 and conviction#e36 of those responsible for Slepian's slaying#e37.
-
-
-
-&QL; (Material from the Associated Press was used in this report.)
-NYT-11-20-98 1930EST &QL;

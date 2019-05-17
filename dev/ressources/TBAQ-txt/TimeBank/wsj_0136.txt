@@ -1,10 +1,4 @@
-
-wsj_0136
-11/02/89#t0
-
-WSJ891102-0055 = 891102 891102-0055.
-Business Brief -- Oshkosh Truck Corp.: @ Firm Says Net Fell Sharply @ In Its Fiscal Fourth Quarter 11/02/89 WALL STREET JOURNAL (J) OTRKB EARNINGS (ERN)
-
+11/02/89#t0.
 
 Oshkosh Truck Corp., Oshkosh, Wis., estimated#e17 earnings for its fourth#t2027>quarter#t2027 ended Sept.#t2023>30#t2023 fell#e2 50% to 75% below the year-earlier $4.5 million, or 51 cents a share.
 

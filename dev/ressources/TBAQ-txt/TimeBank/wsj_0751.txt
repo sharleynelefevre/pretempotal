@@ -1,10 +1,4 @@
-
-wsj_0751
-10/27/89#t0
-
-WSJ891027-0144 = 891027 891027-0144.
-Dime Savings Bank Purchase 10/27/89 WALL STREET JOURNAL (J) DME STPT TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) SAVINGS AND LOANS, THRIFTS, CREDIT UNIONS (SAL) GARDEN CITY, N.Y.
-
+10/27/89#t0.
 
 Dime Savings Bank of New York was cleared#e1 by the Federal Deposit Insurance Corp. to acquire#e3 Starpointe Savings Bank of Somerset, N.J., the banks said#e4.
 

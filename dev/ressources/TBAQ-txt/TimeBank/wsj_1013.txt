@@ -1,10 +1,4 @@
-
-wsj_1013
-10/26/89#t0
-
-WSJ891026-0043 = 891026 891026-0043.
-Columbia SampL Posts $226.3 Million Loss @ After Writing Down High-Yield Portfolio @ ---- @ By Pauline Yoshihashi @ Staff Reporter of The Wall Street Journal 10/26/89 WALL STREET JOURNAL (J) CSV EARNINGS (ERN) BEVERLY HILLS, Calif.
-
+10/26/89#t0.
 
 Columbia Savings amp Loan Association, reeling#e1 from thrift-accounting changes#e2 mandated#e4 by Congress and the recent collapse#e5 of the junk-bond market, announced#e7 a loss#e8 for the#t164>third#t164>quarter#t164 of $226.3 million, or $11.57 a share.
 

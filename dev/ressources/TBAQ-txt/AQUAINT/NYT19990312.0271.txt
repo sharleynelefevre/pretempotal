@@ -1,15 +1,5 @@
-
-NYT19990312.0271
-1999-03-12#t0>18:41#t0
-NATO GROWS TO EMBRACE 3 FORMER ENEMIES
-
-NYT19990312.0271  NEWS STORY  1999-03-12 18:41 A8538 &Cx1f; tta-z
-u i &Cx13;  &Cx11;  BC-NATO-ART-625(2TAKES)-     03-12 0677 BC-NATO-ART-625(2TAKES)-NYT NATO GROWS TO EMBRACE 3 FORMER ENEMIES
-(ART ADV: Graphic is being sent to NYT graphic clients.Non-subscribers can make individual purchase by calling (888)603-1036.) (wg)
-By JANE PERLEZ
-c.1999 N.Y. Times News Service
-
-
+1999-03-12#t0>18:41#t0.
+NATO GROWS TO EMBRACE 3 FORMER ENEMIES.
 
 INDEPENDENCE, Mo. _ The North Atlantic Treaty Organization embraced#e1 three of its former rivals, the Czech Republic, Hungary and Poland on#s1 Friday#t3, formally ending#e2 the Soviet domination#e3 of those nations that began#e4 after#s2 World War#e5 II and opening#e6 a new path for the military alliance.
 
@@ -61,7 +51,7 @@ But Martonyi also emphasized#e148 that Hungary understood#e149 NATO membership c
 
 The location for Friday's#t15 ceremony#e154 was chosen#e155 by Albright, who as secretary of state is#e156 the depository of NATO's accession accords.
 
-The secretary made the fairly unorthodox decision#e157 to choose#e158 a site outside Washington because she wanted#e159 the ceremony#e160 to resonate#e161 with the memories of President Truman, under whom NATO was founded#e162. On#s14 April#t16>4,#t16>1949#t16, on behalf of the United States, Truman's secretary of state, Dean Acheson, signed#e163 the Washington Treaty, which created#e164 NATO. Acheson is Albright's favorite predecessor, her aides said#e165.
+The secretary made the fairly unorthodox decision#e157 to choose#e158 a site outside Washington because she wanted#e159 the ceremony#e160 to resonate#e161 with the memories of President Truman, under whom NATO was founded#e162. On#s14 April#t16>4#t16>1949#t16, on behalf of the United States, Truman's secretary of state, Dean Acheson, signed#e163 the Washington Treaty, which created#e164 NATO. Acheson is Albright's favorite predecessor, her aides said#e165.
 
 Formed#e166 in reaction to the threat of the Soviet Union under Stalin, NATO calls#e167 for the collective defense#e168 of its members and was brought#e169 into being with an original 12 members.
 
@@ -84,7 +74,3 @@ Poland has been#e207 sensitive to the reactions#e208 of Russia to its membership
 Even so, on the secretary of state's plane carrying Albright and the three foreign ministers to the ceremony#e214 Friday#t24, the ministers were asked#e215 whether they could ever foresee#e216 Russia as a member of NATO.
 
 There was a long pause#e217 among the three ministers. Then Martonyi replied#e218: ``Silence#e219 is your answer.''
-
-
-
- NYT-03-12-99 1841EST &QL; 

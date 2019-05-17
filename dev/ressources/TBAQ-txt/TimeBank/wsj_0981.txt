@@ -1,10 +1,4 @@
-
-wsj_0981
-10/26/89#t0
-
-WSJ891026-0077 = 891026 891026-0077.
-MGM Grand to Pay @ $93 Million, Stock @ For Resort Site @ ---- @ By David J. Jefferson @ Staff Reporter of The Wall Street Journal 10/26/89 WALL STREET JOURNAL (J) MGMG RAM TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) REAL ESTATE, REITS, LAND DEVELOPMENT (REL) CASINOS AND GAMBLING (CNO) STOCK MARKET, OFFERINGS (STK) BEVERLY HILLS, Calif.
-
+10/26/89#t0.
 
 MGM Grand Inc. has agreed#e1 to pay#e3 $93 million and nearly 1.8 million common shares to buy#e5 117 acres of land along the Las Vegas, Nev., Strip as a site for its planned movie-studio and theme-park resort.
 

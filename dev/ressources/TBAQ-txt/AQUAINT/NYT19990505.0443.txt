@@ -1,20 +1,5 @@
-
-NYT19990505.0443
-1999-05-05#t0>21:01#t0
-U.S. ISSUING ARREST WARRANT FOR ABORTION FOE LINKED TO DOCTOR'S MURDER
-
-NYT19990505.0443 
-NEWS STORY 
-1999-05-05 21:01
-A5896 &Cx1f; taf-z
-u a &Cx13;  &Cx11;  BC-NY-DOCTOR-KILLED-NYT &LR;      05-05 0495
-BC-NY-DOCTOR-KILLED-NYT
-U.S. ISSUING ARREST WARRANT FOR ABORTION FOE LINKED TO DOCTOR'S MURDER
-(bl)
-By JOSEPH BERGER
-c.1999 N.Y. Times News Service
-
-
+1999-05-05#t0>21:01#t0.
+U.S. ISSUING ARREST WARRANT FOR ABORTION FOE LINKED TO DOCTOR'S MURDER.
 
 Federal law enforcement officials said#e1 Wednesday#t2 that they had concluded#e2 that James Kopp, an impassioned and nomadic opponent of abortion, fired#e3 the shots that killed#e4 a Buffalo, N.Y., abortion-clinic doctor last October#t3.
 
@@ -33,7 +18,3 @@ No weapon was recovered#e41 in the first police searches of the area around Slep
 Clark, the Erie district attorney, said#e51 afterwards that investigators think#e52 the doctor's killer buried#e53 the rifle in#s4 the days#t8 before#s5 the shooting#e55, unearthed#e56 the weapon to fire#e57 the fatal shots, then hurriedly reburied#e58 it and fled#e59.
 
 The 44-year-old Kopp, who in FBI photographs appears#e60 as gaunt and scruffily bearded and whose last known addresses were#e61 in Vermont and New Jersey, emerged#e62 as the focus of the investigation within#s6 two#t9>weeks#t9 of the slaying#e63. A jogger observed#e64 Kopp's car at#s7 6#t10>a.m#t10. near Slepian's home 10#t11>days#t11 before#s8 the murder#e65, and, curious#e66 why a stranger would be parked#e67 there so early, wrote#e68 down the license plate number.
-
-
-
-NYT-05-05-99 2101EDT &QL;

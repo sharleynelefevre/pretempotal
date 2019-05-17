@@ -1,12 +1,5 @@
-
-APW20000403.0057
-2000-04-03#t0
-Castro: Elian's Dad May Come Monday
-
-APW20000403.0057  NEWS STORY  2000-04-03 02:54
-Castro: Elian's Dad May Come Monday  By ANITA SNOW, Associated Press Writer
-
-
+2000-04-03#t0.
+Castro: Elian's Dad May Come Monday.
 
 HAVANA (AP) --
 
@@ -49,7 +42,3 @@ Before his Sunday#t9>night#t9 address, Castro played#e77 the affectionate grandf
 Patting some of the kids on the head, Castro assured#e83 them that they formed#e84 a powerful ''commando.''
 
 ''Not even the Pentagon can handle#e85 these kids,'' he joked#e86. ''We are hoping#e87 that they get#e88 their visas.''
-
-
-
-AP-NY-04-03-00 0254

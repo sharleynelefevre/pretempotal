@@ -1,10 +1,4 @@
-
-wsj_0006
-11/02/89#t0
-
-WSJ891102-0188 = 891102 891102-0188.
-Pacific First Financial Corp. 11/02/89 WALL STREET JOURNAL (J) PFFS T.RYL TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) SAVINGS AND LOANS, THRIFTS, CREDIT UNIONS (SAL) SEATTLE
-
+11/02/89#t0.
 
 Pacific First Financial Corp. said#e1 shareholders approved#e2 its acquisition#e8 by Royal Trustco Ltd. of Toronto for $27 a share, or $212 million.
 

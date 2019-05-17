@@ -1,10 +1,4 @@
-
-wsj_0667
-10/30/89#t0
-
-WSJ891030-0030 = 891030 891030-0030.
-Shoney's to Report @ Write-Off in Quarter @ Totaling $2.5 Million 10/30/89 WALL STREET JOURNAL (J) SHN NASHVILLE, Tenn.
-
+10/30/89#t0.
 
 Shoney's Inc. said#e1 it will report#e2 a write-off of $2.5 million, or seven cents a share, for its fourth#t41>quarter#t41 ended yesterday#t42. The restaurant operator cited#e5 transaction costs from its 1988#t47 recapitalization#e45 as a result of a $160 million restructuring#e46 of its bank debt.
 

@@ -1,12 +1,4 @@
-
-wsj_0471
-10/31/89#t0>#t0
-
-WSJ891031-0040 = 891031 891031-0040.
-Business Brief -- Dataproducts Inc.: @ Lawsuit Is Filed to Block @ DPC's Hostile Tender Offer
-10/31/89 
-WALL STREET JOURNAL (J) DPC TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) COMPUTERS AND INFORMATION TECHNOLOGY (CPR)
-
+10/31/89#t0>#t0.
 
 Dataproducts Inc. said#e1 it filed#e2 a lawsuit#e3 in Delaware Chancery Court to block#e5 a tender offer#e36 by DPC Acquisition Partners, alleging#e7 that the hostile offer#e8 violates#e9 a standstill agreement#e10 between the two concerns.
 

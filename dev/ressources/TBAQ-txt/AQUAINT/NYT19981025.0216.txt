@@ -1,17 +1,5 @@
-
-NYT19981025.0216
-1998-10-25#t0>21:57#t0
-AMHERST, N.Y.: happen here.
-
-NYT19981025.0216 
- NEWS STORY 
-1998-10-25 21:57
-A6216 &Cx1f; taf-z
-u a &Cx13;  &Cx11;  BC-ABORT-DOC-SHOOTING-2N     10-25 0584
- BC-ABORT-DOC-SHOOTING-2NDTAKE-NYT
-AMHERST, N.Y.: happen here.
-
-
+1998-10-25#t0>21:57#t0.
+AMHERST, N.Y.: happen here..
 
 Additional details of the slaying#e1 emerged#e2 on#s1 Sunday#t2. Slepian's lawyer, Glenn Edward Murray, said#e4 the sniper's bullet entered#e5 through a partially draped kitchen window, hit#e6 Slepian in the back and exited#e7 through his chest. The doctor's wife and one of his sons were#e8 in the kitchen when the shooting occurred#e9, Murray said#e10.
 
@@ -40,7 +28,3 @@ Many residents said#e81 abortion had gradually dwindled#e82 as a local issue sin
 Little of the vitriol that the issue aroused#e88 in#s6 the late 1980s#t7 and early 1990s#t8 remains#e89, residents said#e90, and many of the local religious leaders who led#e91 the 1992#t9 protests#e92 have moved#e93.
 
 ``The only people that are left#e94 are#e95 the hard-core, fanatical people,'' said#e96 Larry Finkelstien, a high school teacher who works#e97 as an escort at abortion clinics. ``Everyone else has gone#e98 away.''
-
-
-
-NYT-10-25-98 2157EST &QL;

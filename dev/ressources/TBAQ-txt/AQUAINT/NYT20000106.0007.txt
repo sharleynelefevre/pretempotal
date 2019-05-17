@@ -1,17 +1,5 @@
-
-NYT20000106.0007
-2000-01-06#t0
-EDITORIAL: A DECISION ON ELIAN GONZALEZ
-
-NYT20000106.0007  NEWS STORY  2000-01-06 00:06
-A7977 &Cx1f; taf-z
-u k BC-EDIT-GONZALEZ-DECISIO     01-06 0451
-BC-EDIT-GONZALEZ-DECISION-NYT
-EDITORIAL: A DECISION ON ELIAN GONZALEZ
-(rk)
-c.2000 N.Y. Times News Service
-
-
+2000-01-06#t0.
+EDITORIAL: A DECISION ON ELIAN GONZALEZ.
 
 The New York Times says#e1 in an editorial on Thursday#t9, Jan.#t1>6#t1: &QL;
 
@@ -24,7 +12,3 @@ This page has argued#e21 from the start#e59 that Elian not be denied#e22 due pro
 ``This little boy, who has been through so much, belongs with his father,'' Meissner said#e35 Wednesday#t8, adding#e76 that ``the unique relationship between parent and child and family reunification has long been a cornerstone of both American immigration law and INS practice.'' The White House quickly announced#e36 support for the decision#e68.
 
 It is unclear how the political side of this affair will play#e37 out. Elian's relatives in Miami have indicated#e38 they plan#e39 to appeal#e40, as is their right. Some of their more militant supporters in Miami, decrying#e77 the prospect that the boy will be used#e41 as a ``trophy'' by Castro, have indicated#e42 they may try#e43 to disrupt#e44 efforts to reunite#e78 Elian with his father. That would be treating#e45 the boy as a trophy in a diplomatic struggle#e70 that predates his birth#e71 by decades.
-
-
-
-NYT-01-06-00 0006EST &QL;

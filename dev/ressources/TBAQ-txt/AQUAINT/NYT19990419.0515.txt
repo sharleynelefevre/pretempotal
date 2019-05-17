@@ -1,20 +1,5 @@
-
-NYT19990419.0515
-1999-04-19#t0>23:14#t0
-PROSECUTORS TO PRESENT CLINIC DOCTOR'S SLAYING TO GRAND JURY
-
-NYT19990419.0515 
- NEWS STORY 
-1999-04-19 23:14
-A5217 &Cx1f; taf-z
-u a &Cx13;  &Cx11;  BC-NY-ABORTION-DOCTOR-NY     04-19 0575
-BC-NY-ABORTION-DOCTOR-NYT
-PROSECUTORS TO PRESENT CLINIC DOCTOR'S SLAYING TO GRAND JURY
-(nk)
-By JOSEPH BERGER
-c.1999 N.Y. Times News Service
-
-
+1999-04-19#t0>23:14#t0.
+PROSECUTORS TO PRESENT CLINIC DOCTOR'S SLAYING TO GRAND JURY.
 
 With the finding#e1 of a buried rifle 11#t2>days#t2>ago#t2, the authorities in the Buffalo, N.Y., area say#e2 they have gathered#e3 enough evidence in the October#t3 slaying#e4 of Dr. Barnett Slepian to begin#e5 presenting#e6 a murder case to a state grand jury as#s7>early#s7>as#s7 next#t4>week.#t4
 
@@ -37,7 +22,3 @@ If a suspect is caught#e62 and charged#e63 in both state and federal courts, a s
 U.S. Attorney Denise E. O'Donnell declined#e70 to discuss#e71 what federal charges were being pursued#e72, but she said#e73 that in a case like this, potential charges would be#e74 abortion-related violence#e75, the use#e76 of a firearm in an act#e77 of violence, crossing#e78 state lines to commit#e79 a crime, and, if the suspect's act was tied#e80 to an organization, violation of the so-called RICO statutes, which prohibit#e81 an organized criminal enterprise.
 
 Slepian, 52, and the father of four boys, was shot#e82 to death at#s6 10#t15>p.m#t15. as he stood#e83 chatting#e84 with his wife in the kitchen of their home in an affluent enclave in Amherst, which is#e85 the largest Buffalo suburb.
-
-
-
-NYT-04-19-99 2314EDT &QL;

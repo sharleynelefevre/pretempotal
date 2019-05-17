@@ -1,10 +1,4 @@
-
-wsj_0768
-10/27/89#t0
-
-WSJ891027-0127 = 891027 891027-0127.
-Mutual Funds: @ Investors Yank Billions From Junk Funds @ ---- @ By Michael Siconolfi @ Staff Reporter of The Wall Street Journal 10/27/89 WALL STREET JOURNAL (J) TROW MUTUAL AND MONEY-MARKET FUNDS (FND) BOND MARKET NEWS (BON) NEW YORK
-
+10/27/89#t0.
 
 Billions of investors' dollars are pouring#e2 out of the nation's junk-bond mutual funds, undermining#e3 a pillar of support in the already reeling junk market.
 

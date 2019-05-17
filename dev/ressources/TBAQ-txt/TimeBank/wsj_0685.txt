@@ -1,10 +1,4 @@
-
-wsj_0685
-10/30/89#t0
-
-WSJ891030-0010 = 891030 891030-0010.
-CNW Acquisition Completed 10/30/89 WALL STREET JOURNAL (J) CNW TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) TRANSPORTATION, TRUCK AND SHIP LINES, RAILROADS (TRA) CHICAGO
-
+10/30/89#t0.
 
 CNW Corp. said#e1 the final step in the acquisition#e3 of the company has been completed#e5 with the merger#e6 of CNW with a subsidiary of Chicago amp North Western Holdings Corp.
 

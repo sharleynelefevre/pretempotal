@@ -1,12 +1,4 @@
-
-wsj_0325
-11/01/89#t0>#t0
-
-WSJ891101-0039 = 891101 891101-0039.
-Business Brief -- Coast Savings Financial Inc.: @ Thrift Company Posts Loss; @ Restructuring Program Cited
-11/01/89 
-WALL STREET JOURNAL (J) CSA EARNINGS (ERN)
-
+11/01/89#t0>#t0.
 
 Coast Savings Financial Inc. reported#e1 a third-quarter#t31 loss#e37, citing#e2 a previously announced capital restructuring program.
 

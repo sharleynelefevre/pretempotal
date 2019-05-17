@@ -131,7 +131,7 @@ def cleanTexts():
             # écriture des fichiers avec le contenu nettoyé
             fileW.write(cleanedContent)
             
-def addSignalId(): # A AMELIORER + COMMENTER
+def addSignalId(): # A AMELIORER 
     path_input = "ressources/TBAQ-txt-annot-StanfordParser/TimeBank-txt-annot/TimeBank_Connecteurs/"
     path_output = "ressources/TBAQ-txt-annot-StanfordParser/TimeBank-txt-annot/TimeBank_NewInput/"
 
@@ -205,7 +205,7 @@ def addSignalId(): # A AMELIORER + COMMENTER
                     if beforeEvent.split('#')[0].lower() in listConn:
                         for e in beforeEvent.split():
                             if regex.search(e):
-                                # on remplace la partie matché par la regex dans le mot pat un #s+compteur
+                                # on remplace la partie matchée par la regex dans le mot pat un #s+compteur
                                 word[i-1] = re.sub(regex, '#s'+str(j), e)
                                 # incrémentation du compteur
                                 j += 1 
@@ -230,11 +230,13 @@ def addSignalId(): # A AMELIORER + COMMENTER
         # réécriture du fichier dans une chaine vide
         file = ""
         for w in word:
-            if "#s" in w and "," in w or "#s" in w and "." in w:
-                w = w.replace(","," ,").replace("."," .")
+            if "#s" in w and "," in w or "#s" in w and "." in w or "''" in w:
+                w = w.replace(","," ,").replace("."," .").replace("''", "'' ")
+                
             # si il y a un signal dans un timex, on lui enlève son annotation #s    
             if signauxETtimexDansMot.search(w):
                 w = re.sub(signauxETtimexDansMot, r'\4', w)
+            
             file += w + " "
         
         # suppression des connecteurs annotés par addDiscourse (ceux qui ne nous intéressent pas)
@@ -244,10 +246,9 @@ def addSignalId(): # A AMELIORER + COMMENTER
                 
         # écriture des fichiers dans un nouveau dossier        
         with open((path_output+filename), 'w', encoding='utf8') as fileW:
-            fileW.write(file)
 
 
-stanfordParser() 
-addDiscourse()
-cleanTexts()
+#stanfordParser() 
+#addDiscourse()
+#cleanTexts()
 addSignalId()

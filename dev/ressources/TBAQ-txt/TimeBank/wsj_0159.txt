@@ -1,10 +1,4 @@
-
-wsj_0159
-#t0>11/02/89#t0
-
-WSJ891102-0032 = 891102 891102-0032.
-Business Brief -- Dunkin' Donuts Inc.: @ DD Acquisition Extended @ Its $45-a-Share Takeover Bid  11/02/89 WALL STREET JOURNAL (J) UNI.A DUNK T.CAO TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) RESTAURANTS, SUPERMARKETS AND DRUGSTORES (RFD)
-
+#t0>11/02/89#t0.
 
 DD Acquisition Corp., a partnership of Unicorp Canada Corp.'s Kingsbridge Capital Group and Cara Operations Ltd., extended#e2 to Nov.#t41>20#t41 its $45-a-share offer#e3000 for all Dunkin' Donuts Inc. shares outstanding.
 

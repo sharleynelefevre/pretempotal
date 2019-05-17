@@ -1,10 +1,4 @@
-
-wsj_1025
-10/26/89#t0
-
-WSJ891026-0031 = 891026 891026-0031.
-Business Brief -- Sotheby's Holdings Inc.: @ Third-Period Loss Narrowed @ On Operating Revenue Gain 10/26/89 WALL STREET JOURNAL (J) BID EARNINGS (ERN)
-
+10/26/89#t0.
 
 Sotheby's Holdings Inc., the parent of the auction house Sotheby's, said#e1 its net loss#e2 for the seasonally slow third#t21>quarter#t21 narrowed#e4 from a#t22>year#t22>earlier#t22 on a leap#e5 in operating revenue.
 

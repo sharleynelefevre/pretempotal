@@ -1,16 +1,5 @@
-
-APW19980930.0425
-1998-09-30#t0
-U.S. medical team seeks to help victims of embassy bombings
-
-APW19980930.0425  NEWS STORY  09/30/1998 08:45:00
-w1894 &Cx1f; wstm-
-u i &Cx13;  &Cx11;  BC-Kenya-EmbassyBombings     09-30 0284
-BC-Kenya-Embassy Bombings
-U.S. medical team seeks to help victims of embassy bombings
-&UR; AP Photo Planned &QL;
-
-
+1998-09-30#t0.
+U.S. medical team seeks to help victims of embassy bombings.
 
 NAIROBI, Kenya (AP) _
 
@@ -35,9 +24,3 @@ U.S. President Bill Clinton has requested#e29 dlrs 50 million in emergency assis
 The U.S. government already has contributed#e30 dlrs 3.2 million in assistance to the two countries.
 
 On#s4 Friday#t6, the Kenyan government planned to pay#e32 the first 32 death claims of 100,000 Kenyan shillings (dlrs 1,667) each.
-
-
-
-(kjd)
-(PROFILE (WS SL:BC-Kenya-Embassy Bombings; CT:i; (REG:EURO;) (REG:BRIT;) (REG:SCAN;) (REG:ENGL;) (REG:AFRI;) (LANG:ENGLISH;)) )
-AP-NY-09-30-98 0845EDT

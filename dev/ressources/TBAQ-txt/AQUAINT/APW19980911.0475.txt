@@ -1,15 +1,5 @@
-
-APW19980911.0475
-1998-09-11#t0
-Tanzania expels Iraqis, Libyan questioned in U.S. embassy bombings
-
-APW19980911.0475  NEWS STORY  09/11/1998 08:36:00
-w1124 &Cx1f; wstm-
-u i &Cx13;  &Cx11;  BC-Tanzania-EmbassyBombi     09-11 0352
-BC-Tanzania-Embassy Bombing
-Tanzania expels Iraqis, Libyan questioned in U.S. embassy bombings
-
-
+1998-09-11#t0.
+Tanzania expels Iraqis, Libyan questioned in U.S. embassy bombings.
 
 DAR ES SALAAM, Tanzania (AP) _
 
@@ -34,9 +24,3 @@ Reports in Kenya said#e29 the components of the bomb that exploded#e30 in Nairob
 The East African nations share#e32 a long and mostly unguarded border.
 
 On#s3 Sept.#t5>2#t5, police in the Comoros archipelago, off the Tanzanian coast, raided#e33 two homes and searched#e34 for a suspect in the bombings#e51 identified as Abdallah Mohammed Fadhul, a Comorian Muslim who had lived with his wife in Sudan until shortly after the bombings#e52.
-
-
-
-&UR; (VAR-cm-kjd)
-(PROFILE (WS SL:BC-Tanzania-Embassy Bombing; CT:i; (REG:EURO;) (REG:BRIT;) (REG:SCAN;) (REG:ENGL;) (REG:AFRI;) (LANG:ENGLISH;)) )
-AP-NY-09-11-98 0836EDT

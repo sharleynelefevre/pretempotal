@@ -1,10 +1,4 @@
-
-wsj_0173
-11/02/89#t0
-
-WSJ891102-0017 = 891102 891102-0017.
-Business Brief -- Coleco Industries Inc.: @ Ailing Toy Maker Submits @ Chapter 11 Revamp Plan 11/02/89 WALL STREET JOURNAL (J) CLO BANKRUPTCIES (BCY)
-
+11/02/89#t0.
 
 Coleco Industries Inc., a once#t30 high-flying toy maker whose stock peaked#e1 at $65 a share in the#t26>early#t26>1980s#t26, filed#e2 a Chapter 11 reorganization plan that provides#e3 just 1.125 cents a share for common stockholders.
 

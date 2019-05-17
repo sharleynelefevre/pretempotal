@@ -1,10 +1,4 @@
-
-wsj_0816
-10/27/89#t0
-
-WSJ891027-0078 = 891027 891027-0078.
-Thursday's Markets: @ Earnings @ Data Cause @ Stock Fall @ --- @ Industrials Sink 39.55; @ Bonds Slip, but Dollar @ Soars Against Pound @ ---- @ By Douglas R. Sease @ Staff Reporter of The Wall Street Journal 10/27/89 WALL STREET JOURNAL (J) MONETARY NEWS, FOREIGN EXCHANGE, TRADE (MON) STOCK INDEXES (NDX) STOCK MARKET, OFFERINGS (STK) FINANCIAL, ACCOUNTING, LEASING (FIN) BOND MARKET NEWS (BON) FOREIGN-EXCHANGE MARKETS (FRX) TREASURY DEPARTMENT (TRE)
-
+10/27/89#t0.
 
 Some lousy earnings reports whacked#e2 the stock market, but bond prices fell#e89 only slightly and the dollar rose#e6 a little against most major currencies.
 

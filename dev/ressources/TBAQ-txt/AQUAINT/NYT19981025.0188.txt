@@ -1,21 +1,7 @@
+1998-10-25#t0>21:00#t0.
+EDITORIAL: VIOLENCE AGAINST ABORTION DOCTORS.
 
-NYT19981025.0188
-1998-10-25#t0>21:00#t0
-EDITORIAL: VIOLENCE AGAINST ABORTION DOCTORS
-
-NYT19981025.0188 
-NEWS STORY 
-1998-10-25 21:00
-A6157 &Cx1f; taf-z
-u k &Cx13;  &Cx11;  BC-EDIT-ABORTION-DOCTORS     10-25 0638
-BC-EDIT-ABORTION-DOCTORS-NYT
-EDITORIAL: VIOLENCE AGAINST ABORTION DOCTORS
-(lb)
-c.1998 N.Y. Times News Service
-
-
-
-The New York Times said#e1 in an editorial on#s1 Monday,#t2>Oct.#t2>26#t2:
+The New York Times said#e1 in an editorial on#s1 Monday#t2>Oct.#t2>26#t2:
 
 The murder#e2 of Dr. Barnett Slepian is the latest depraved assault#e3 on the small number of courageous physicians who still risk#e4 their safety to perform#e5 legal abortions in this country. Slepian was#e6 one of only three doctors who performed#e7 abortions in the Buffalo, N.Y., area, and harassment and threats against him by anti-abortion groups had become#e8 routine over#s2 the past#t3>decade#t3. He persevered#e9 through courage and a belief in the right of his patients to choose#e10 whether to bear#e11 a child.
 
@@ -36,7 +22,3 @@ Indeed, one particularly virulent anti-abortion Web site lists#e67 the names of 
 The increase#e78 of anti-choice laws and ongoing campaigns#e79 of harassment by protest groups, even short of murder, have worked#e80 to make#e81 abortions harder to obtain#e82. More than 80 percent of counties in this country have#e83 no abortion provider. In 45 states, the number of doctors who performed#e84 abortions declined#e85 between#s9 1982#t11 and 1992#t12.
 
 Slepian was#e86 among those who took#e87 a stand against restricting#e88 reproductive freedom and paid#e89 with his life. Unless these brave doctors are better protected#e90, fewer doctors in the next generation will be willing#e91 to place#e92 themselves and their families in such danger. That is what the terrorists want#e93. They must not be allowed#e94 to succeed#e95.
-
-
-
-NYT-10-25-98 2100EST &QL;

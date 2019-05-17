@@ -1,10 +1,4 @@
-
-wsj_0348
-11/01/89#t0
-
-WSJ891101-0016 = 891101 891101-0016.
-Business Brief -- Ogden Corp.: @ Ogden Estimates Unit Had @ Jump in Third-Period Net 11/01/89 WALL STREET JOURNAL (J) OG EARNINGS (ERN)
-
+11/01/89#t0.
 
 Ogden Projects Inc. said#e1 net income jumped#e2 to $6.6 million, or 18 cents a share, in the#t29>third#t29>quarter#t29.
 

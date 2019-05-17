@@ -1,18 +1,5 @@
-
-NYT20000414.0296
-2000-04-14#t0
-Castro's sister stays above the fray in Miami
-
-NYT20000414.0296  NEWS STORY  2000-04-14 18:32
-A7205 &Cx1f; tad-z
-r a BC-ELIAN-SISTER-COX     04-14 0539
-BC-ELIAN-SISTER-COX
-&HT;
-&HT;    Castro's sister stays above the fray in Miami
-&HT;    By Lyda Longa
-&HT;    c. 2000 Cox News Service
-
-
+2000-04-14#t0.
+Castro's sister stays above the fray in Miami.
 
 MIAMI _
 
@@ -45,9 +32,3 @@ She does not speak#e47 to her brother and hasn't for several years. ``Nobody tal
 Juanita Castro said#e51 she has not visited#e52 the Miami relatives of Elian Gonzalez and has no plans to do#e53 so. Although she supports#e54 the cause of Miami's Cubans in their struggle against her brother's government, she said#e55 she prefers#e56 to keep#e57 a low profile when it comes to politics.
 
 ``I just work#e59 in my pharmacy every#t9>day#t9 and I pray#e60 for a resolution#e82 in our country (Cuba) that is without violence#e83,'' she said#e61. ``And I also pray#e87 for this young boy every#t10>day#t10 because he needs#e62 help#e63. He's been through a lot.''
-
-
-
-Story Filed By Cox Newspapers
-For Use By Clients of the New York Times News Service
-NYT-04-14-00 1832EDT &QL;

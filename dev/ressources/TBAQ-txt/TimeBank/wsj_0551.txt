@@ -1,10 +1,4 @@
-
-wsj_0551
-10/30/89#t0
-
-WSJ891030-0149 = 891030 891030-0149.
-Trustcorp Inc. to Change Name 10/30/89 WALL STREET JOURNAL (J) TTCO SOCI TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) BANKS (BNK) TOLEDO, Ohio
-
+10/30/89#t0.
 
 Trustcorp Inc. will become#e1 Society Bank amp Trust when its merger#e3 is completed#e4 with Society Corp. of Cleveland, the bank said#e5.
 

@@ -1,10 +1,4 @@
-
-wsj_0527
-10/30/89#t0
-
-WSJ891030-0174 = 891030 891030-0174.
-Crossland Savings Stock Plunges as Firm @ Recommends Suspension of Dividends @ ---- @ By Udayan Gupta @ Staff Reporter of The Wall Street Journal 10/30/89 WALL STREET JOURNAL (J) CRL DIVIDENDS (DIV) FINANCIAL, ACCOUNTING, LEASING (FIN) EARNINGS (ERN) NEW YORK
-
+10/30/89#t0.
 
 Crossland Savings Bank's stock plummeted#e1 after management recommended#e4 a suspension#e82 of dividend payments on both its common and preferred stock because Crossland may not meet#e6 the new government capital criteria effective Dec.#t85>7#t85.
 

@@ -1,10 +1,4 @@
-
-wsj_1014
-10/26/89#t0
-
-WSJ891026-0042 = 891026 891026-0042.
-Anheuser-Busch, Slugging It Out, Plans Beer Price Cuts @ ---- @ By James P. Miller @ Staff Reporter of The Wall Street Journal 10/26/89 WALL STREET JOURNAL (J) BUD BEVERAGES (BVG) MARKETING, ADVERTISING (MKT) EARNINGS (ERN)
-
+10/26/89#t0.
 
 Anheuser-Busch Cos. said#e1 it plans#e2 to aggressively discount#e4 its major beer brands, setting#e5 the stage for a potentially bruising price war#e6 as the maturing industry's growth#e192 continues#e8 to slow#e10.
 

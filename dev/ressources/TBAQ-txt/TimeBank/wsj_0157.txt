@@ -1,10 +1,4 @@
-
-wsj_0157
-11/02/89#t0
-
-WSJ891102-0034 = 891102 891102-0034.
-Business Brief -- Tony Lama Co.: @ Equus Investment II Seeks @ To Change Offer for Firm 11/02/89 WALL STREET JOURNAL (J) TLAM TENDER OFFERS, MERGERS, ACQUISITIONS (TNM)
-
+11/02/89#t0.
 
 Tony Lama Co. said#e1 that Equus Investment II Limited Partnership has proposed#e2 changing#e2030 the offer#e1995 for the company to $13.65 in cash and stock from an all-cash transaction#e4.
 

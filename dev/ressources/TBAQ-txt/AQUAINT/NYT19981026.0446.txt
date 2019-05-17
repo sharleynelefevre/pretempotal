@@ -1,20 +1,5 @@
-
-NYT19981026.0446
-1998-10-26#t0>22:54#t0
-KILLING OF DOCTOR BECOMES A FACTOR IN POLITICAL RACES
-
-NYT19981026.0446 
- NEWS STORY 
-1998-10-26 22:54
-A8236 &Cx1f; tta-z
-u a &Cx13;  &Cx11;  BC-ABORTION-DOCTOR-ISSUE     10-26 0882
- BC-ABORTION-DOCTOR-ISSUE-NYT
-KILLING OF DOCTOR BECOMES A FACTOR IN POLITICAL RACES
-(ll)
-By AMY WALDMAN
-c.1998 N.Y. Times News Service
-
-
+1998-10-26#t0>22:54#t0.
+KILLING OF DOCTOR BECOMES A FACTOR IN POLITICAL RACES.
 
 The killing#e1 of Dr. Barnett Slepian, a gynecologist in Buffalo who performed#e2 abortions, has become#e3 a factor in at least two campaigns in New York, say#e4 political consultants and some campaign advisers.
 
@@ -61,7 +46,3 @@ Vacco's campaign manager, Matt Behrmann, said#e111 in a statement that Spitzer h
 Several consultants agreed#e123 that there might be#e124 political hay to be made#e125 in Slepian's death but that it had#e126 to be done carefully.
 
 ``Trying#e127 to score#e128 political points from a homicide#e129 can have#e130 a backlash,'' said#e131 Maureen Connelly, a media consultant not working#e132 for any candidate in next#t14>week#t14's election#e133.
-
-
-
-NYT-10-26-98 2254EST &QL;

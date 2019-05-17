@@ -93,6 +93,7 @@ def createId():
                elif '#t' in new[k]:                   
                    if ">" in new[k]:
                        new.remove(new[k])
+                       
                    if new[k-1] == new[k].split('#')[0]:
                        indexDoublon = new.index(new[k-1])
                        new.remove(new[indexDoublon]) 
@@ -122,7 +123,8 @@ def createId():
                finalText[indexSep-1] += finalText[indexSep] + finalText[indexSep+1]
                finalText.remove(finalText[indexSep+1])
                finalText.remove(finalText[indexSep])
-#           print(finalText)
+
+
            for w in finalText:
                if '#e' in w:
                    eventsTexts.append(w)
@@ -178,6 +180,6 @@ def createId():
        # mise en dataframe du dictionnaire de listes
        res = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in dfId.items()]))
        # ecriture dans le csv
-       res.to_csv('CSV/dataframe_id.csv', sep=';', encoding='utf-8') 
+#       res.to_csv('CSV/dataframe_id.csv', sep=';', encoding='utf-8') 
 
 createId()

@@ -1,10 +1,4 @@
-
-wsj_0026
-11/02/89#t0
-
-WSJ891102-0167 = 891102 891102-0167.
-Duty-Free Status Cleared @ For Certain Watch Imports 11/02/89 WALL STREET JOURNAL (J) MONETARY NEWS, FOREIGN EXCHANGE, TRADE (MON) EXECUTIVE (EXE) WASHINGTON
-
+11/02/89#t0.
 
 The White House said#e1 President Bush has approved#e2 duty-free treatment#e25 for imports of certain types of watches that aren't produced#e3 in "significant quantities" in the U.S., the Virgin Islands and other U.S. possessions.
 

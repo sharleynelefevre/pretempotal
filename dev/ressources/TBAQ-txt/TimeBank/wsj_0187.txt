@@ -1,10 +1,4 @@
-
-wsj_0187
-11/02/89#t0
-
-WSJ891102-0003 = 891102 891102-0003.
-International: @ Finland, Big Creditors @ To Set Up Company @ To Complete Ships 11/02/89 WALL STREET JOURNAL (J) EUROP CCL BANKRUPTCIES (BCY) TRANSPORTATION, TRUCK AND SHIP LINES, RAILROADS (TRA) STOCKHOLM
-
+11/02/89#t0.
 
 The Finnish government and major creditors of bankrupt shipyard Waertsilae Marine Industries Oy agreed#e1 in principle to form#e2 a new company to complete#e3 most of the troubled shipyard's backlog of 15 ships.
 

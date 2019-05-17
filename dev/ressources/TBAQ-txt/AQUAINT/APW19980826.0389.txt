@@ -1,17 +1,5 @@
-
-APW19980826.0389
-1998-08-26#t0
-Bomb-interrupted talks concluded; Tanzania toll rises to 12
-
-APW19980826.0389 
- NEWS STORY 
- 08/26/1998 07:37:00
-w1676 &Cx1f; wstm-
-r i &Cx13;  &Cx11;  BC-Kenya-EmbassyBombings     08-26 0266
-BC-Kenya-Embassy Bombings
-Bomb-interrupted talks concluded; Tanzania toll rises to 12
-
-
+1998-08-26#t0.
+Bomb-interrupted talks concluded; Tanzania toll rises to 12.
 
 NAIROBI, Kenya (AP) _
 
@@ -30,9 +18,3 @@ Kimotho, who was hospitalized#e18 with a head wound, said#e19 he and Bushnell ha
 The blast#e45 in Nairobi occurred at almost exactly the same moment as an explosion#e46 ripped#e24 through the American Embassy in Tanzania's commercial capital Dar es Salaam.
 
 The death toll in the Tanzania blast#e49, initially 10, has risen#e25 to 12, hospital officials and family members said#e26 Wednesday#t5. That brought the toll for both bombings#e52 to 259.
-
-
-
-&UR; (dmc-lk)
-(PROFILE (WS SL:BC-Kenya-Embassy Bombings; CT:i; (REG:EURO;) (REG:BRIT;) (REG:SCAN;) (REG:ENGL;) (REG:AFRI;) (LANG:ENGLISH;)) )
-AP-NY-08-26-98 0737EDT

@@ -1,9 +1,3 @@
-
-wsj_0263
-11/01/89#t0
-
-WSJ891101-0102 = 891101 891101-0102.
-Dividend News: @ Unifirst Corp. 11/01/89 WALL STREET JOURNAL (J) UNF DIVIDENDS (DIV) EARNINGS (ERN)
-
+11/01/89#t0.
 
 UNIFIRST Corp. declared#e1 a 2-for-1 stock split#e1989. The Wilmington, Mass., garment service company also boosted#e2 its quarterly dividend 20% to three cents a share adjusted for the split#e1990. The dividend had been five cents a share. The split and quarterly dividend will be payable#e1995 Jan.#t17>3#t17 to stock of record Nov.#t18>16#t18, the company said#e4. The split#e2044 will raise#e5 the number of shares outstanding to about 10.2 million. Separately, UniFirst reported#e6 that net income rose#e7 21% to $3 million, or 29 cents a share adjusted for the split#e2065, for the#t20>fourth#t20>quarter#t20 ended#e9 Aug.#t19>26#t19. A#t2096>year#t2096>earlier#t2096 UniFirst earned#e10 $2.4 million, or 24 cents a share adjusted for the split#e1994. Sales rose#e12 to $52.4 million from $50.1 million.

@@ -1,16 +1,5 @@
-
-APW19980808.0022
-1998-08-08#t0
-Bomb blasts rock U.S. embassies in Tanzania, Kenya
-
-APW19980808.0022  NEWS STORY  08/08/1998 00:53:00
-w1425 &Cx1f; wstm-
-u i &Cx13;  &Cx11;  BC-Kenya-EmbassyBombings 2ndLd   08-08 0257
-BC-Kenya-Embassy Bombings, 2nd Ld,0256
-Bomb blasts rock U.S. embassies in Tanzania, Kenya; at least 82
-killed &QL;  &UR; Eds: CORRECTS that at least 75 dead in Kenya. &QL;  &UR; With Bombing Scenes, Kenya-Tanzania-Thumbnails, Terror Attacks &QL;  &UR; AP Photos NAI101-125, ROM108, JOH1, LON104-107; AP GraphicKENYA,KENYA2,KENYA3,KENYA TANZANIA &QL;  &UR; By KARIN DAVIES &QC;  &UR; Associated Press Writer &QC;
-
-
+1998-08-08#t0.
+Bomb blasts rock U.S. embassies in Tanzania, Kenya.
 
 NAIROBI, Kenya (AP) _
 
@@ -23,9 +12,3 @@ The suspected car bombings#e29 occurred 700 kilometers (450 miles) from each oth
 ``This appears#e13 to have been a very well-coordinated, very well-planned attack#e30 _ clearly not the work of amateurs,'' U.S. National Security Council spokesman P.J. Crowley said#e16 in Washington. No one has claimed#e17 responsibility.
 
 The blast#e33 in Nairobi occurred at about 10:35#t4>a.m.#t4 (0735 GMT) Friday#t3, toppling#e19 a crowded building toward the embassy and a street packed with cars, trucks and buses. At least 75 people were killed#e21 and 1,643 wounded#e22 there, Red Cross and ambulance officials said#e23.
-
-
-
-&UR; At least, 6th graf pvs
-(PROFILE (WS SL:BC-Kenya-Embassy Bombings, 2nd Ld; CT:i; (REG:EURO;) (REG:BRIT;) (REG:SCAN;) (REG:MEST;) (REG:AFRI;) (REG:INDI;) (REG:ENGL;) (REG:ASIA;) (LANG:ENGLISH;)) )
-AP-NY-08-08-98 0053EDT

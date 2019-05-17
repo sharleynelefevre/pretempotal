@@ -1,17 +1,5 @@
-
-NYT20000424.0319
-2000-04-24#t0
-A CHILD ONCE AGAIN
-
-NYT20000424.0319  NEWS STORY  2000-04-24 18:56
-A5990 &Cx1f; tdt-z
-u k BC-EDITORIAL-ELIAN-BOS &LR;      04-24 0401
-BC-EDITORIAL-ELIAN-BOS
-A CHILD ONCE AGAIN
-(For use by New York Times News Service clients)
-c.2000 The Boston Globe
-
-
+2000-04-24#t0.
+A CHILD ONCE AGAIN.
 
 The Clinton administration's wisdom in returning#e1 Elian Gonzalez to his father was confirmed#e2 over the#t4>weekend#t4 decision of his Miami relatives and their Republican allies to further politicize what ought to be a straightforward child-custody case. Elian is finally getting#e4 time to reconnect#e63 with his father in a quiet, neutral setting where he is no longer a metaphor for the war#e44 between the Cubans.
 
@@ -26,7 +14,3 @@ Juan Miguel Gonzalez apparently is a Castro supporter, but that should not disqu
 Elian has developed#e25 great affection for the Miami relatives. It would be ideal if they could have returned#e26 him to his father yet stayed#e27 in contact while their appeal#e60 was pending in court. Negotiations failed#e28, however, because they insisted#e29 on taking#e30 the place of the father, rather than being treated#e31 as concerned, yet distant, relatives.
 
 Juan and Elian Gonzalez will remain in the United States pending the appeal#e61. The father can remain here, but he can also return#e35 to Cuba if he wishes#e36. Like any other 6-year-old in the care of a loving parent, Elian should go#e38 wherever that parent wants#e39.
-
-
-
-NYT-04-24-00 1856EDT &QL;

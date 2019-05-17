@@ -1,10 +1,4 @@
-
-wsj_1008
-10/26/89#t0
-
-WSJ891026-0048 = 891026 891026-0048.
-Business Brief -- Lawrence Insurance Group Inc.: @ Houston Reinsurance Firm @ Is Acquired for $28 Million 10/26/89 WALL STREET JOURNAL (J) LWR TENDER OFFERS, MERGERS, ACQUISITIONS (TNM)
-
+10/26/89#t0.
 
 Lawrence Insurance Group Inc. said#e1 it acquired#e2 United Republic Reinsurance Co., a Houston property and casualty reinsurance company, from United Savings Association of Texas for $28 million.
 

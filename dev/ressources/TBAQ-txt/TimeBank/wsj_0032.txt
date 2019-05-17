@@ -1,10 +1,4 @@
-
-wsj_0032
-11/02/89#t0
-
-WSJ891102-0161 = 891102 891102-0161.
-Montedison Bid for Erbamont 11/02/89 WALL STREET JOURNAL (J) MNT ERB TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) DRUG MANUFACTURERS (DRG) NEW YORK
-
+11/02/89#t0.
 
 Italian chemical giant Montedison S.p.A., through its Montedison Acquisition N.V. indirect unit, began#e1 its $37-a-share tender offer#e2 for all the common shares outstanding of Erbamont N.V., a maker of pharmaceuticals incorporated in the Netherlands.
 

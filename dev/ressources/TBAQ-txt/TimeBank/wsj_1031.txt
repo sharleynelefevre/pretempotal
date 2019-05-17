@@ -1,10 +1,4 @@
-
-wsj_1031
-10/26/89#t0
-
-WSJ891026-0025 = 891026 891026-0025.
-Business Brief -- Philip Morris Cos.: @ Defense Measure Is Adopted @ By Foods, Tobacco Concern 10/26/89 WALL STREET JOURNAL (J) MO TOBACCO PRODUCTS (TOB) FOOD PRODUCTS (FOD)
-
+10/26/89#t0.
 
 Philip Morris Cos., New York, adopted#e1 a defense measure designed#e3 to make#e5 a hostile takeover#e6 prohibitively expensive.
 

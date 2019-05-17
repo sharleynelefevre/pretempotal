@@ -1,10 +1,4 @@
-
-wsj_0583
-10/30/89#t0
-
-WSJ891030-0116 = 891030 891030-0116.
-International: @ Polly Peck of U.K. @ To Buy 51% Stake @ In Japanese Firm @ ---- @ By Urban C. Lehner @ Staff Reporter of The Wall Street Journal 10/30/89 WALL STREET JOURNAL (J) J.SNE TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) HOME ELECTRONICS, FURNISHINGS, APPLIANCES (HMF) TOKYO
-
+10/30/89#t0.
 
 Polly Peck International Inc.'s agreement#e1 to acquire#e3 51% of Sansui Electric Co. proves that foreign companies can acquire Japanese companies -- if the alternative for the Japanese company is extinction.
 

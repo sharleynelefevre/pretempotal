@@ -1,10 +1,4 @@
-
-wsj_0558
-10/30/89#t0
-
-WSJ891030-0142 = 891030 891030-0142.
-Aetna Life amp Casualty @ Profit Decreased 22% @ In the Third Quarter 10/30/89 WALL STREET JOURNAL (J) AET EARNINGS (ERN) INSURANCE (INS) HARTFORD, Conn.
-
+10/30/89#t0.
 
 Aetna Life amp Casualty Co.'s third-quarter#t44 net income fell#e1 22% to $182.6 million, or $1.63 a share, reflecting the damages#e47 from Hurricane Hugo and lower results#e3 for some of the company's major divisions.
 

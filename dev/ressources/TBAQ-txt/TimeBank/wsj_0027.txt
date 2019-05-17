@@ -1,10 +1,4 @@
-
-wsj_0027
-11/02/89#t0
-
-WSJ891102-0166 = 891102 891102-0166.
-Who's News: @ Magna International's @ Financial Chief Quits; @ Chairman Stepping In 11/02/89 WALL STREET JOURNAL (J) MAGAF WNEWS TORONTO
-
+11/02/89#t0.
 
 Magna International Inc.'s chief financial officer, James McAlpine, resigned#e1 and its chairman, Frank Stronach, is stepping#e2 in to help#e5 turn#e60 the automotive-parts manufacturer around, the company said#e6.
 

@@ -1,9 +1,4 @@
-
-ABC19980304.1830.1636
-19980304#t0
-
-ABC19980304.1830.1636 NEWS STORY
-
+19980304#t0.
 
 Finally today#t32, we learned#e1 that the space agency has finally taken#e2 a giant leap forward. Air Force Lieutenant Colonel Eileen Collins will be named#e3 commander#e37 of the Space Shuttle Columbia for a mission#e38 in December#t33. Colonel Collins has been the co-pilot#e40 before, but this time she's the boss#e41. Here's ABC's Ned Potter.
 

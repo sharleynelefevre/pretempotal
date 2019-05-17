@@ -1,10 +1,4 @@
-
-wsj_0660
-10/30/89#t0
-
-WSJ891030-0037 = 891030 891030-0037.
-International Brief -- Erbamont N.V.: @ Montedison Agrees to Buy @ Rest of Stock for $37 Each 10/30/89 WALL STREET JOURNAL (J) MNT ERB TENDER OFFERS, MERGERS, ACQUISITIONS (TNM)
-
+10/30/89#t0.
 
 Montedison S.p.A. definitively agreed#e1 to buy#e3 all of the publicly held shares of Erbamont N.V. for $37 each.
 

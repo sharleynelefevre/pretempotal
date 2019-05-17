@@ -1,10 +1,4 @@
-
-wsj_0662
-10/30/89#t0
-
-WSJ891030-0035 = 891030 891030-0035.
-Business Brief -- Jayark Corp.: @ Firm Agrees to Buy Kofcoh @ For Cash, Debt and Stock 10/30/89 WALL STREET JOURNAL (J) JAYA TENDER OFFERS, MERGERS, ACQUISITIONS (TNM)
-
+10/30/89#t0.
 
 Jayark Corp. agreed#e1 to pay#e3 $4 million in cash, $2 million of 12% convertible debentures, and 1.6 million common shares to acquire#e7 closely held Kofcoh Imports Inc.
 

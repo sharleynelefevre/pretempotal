@@ -1,9 +1,4 @@
-
-CNN19980213.2130.0155
-19980213#t0
-
-CNN19980213.2130.0155 NEWS STORY
-
+19980213#t0.
 
 President Clinton says#e1 he is committed#e2 to a possible strike#e3 against Iraq, despite objections#e4 from other countries. Steve Hurst has that.
 

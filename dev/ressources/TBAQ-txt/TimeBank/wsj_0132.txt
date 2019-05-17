@@ -1,10 +1,4 @@
-
-wsj_0132
-11/02/89#t0
-
-WSJ891102-0059 = 891102 891102-0059.
-International Brief -- N.V. DSM: @ Third-Period Net Rose 63% @ Because of Lower Charges 11/02/89 WALL STREET JOURNAL (J) EUROP N.DSM EARNINGS (ERN)
-
+11/02/89#t0.
 
 N.V. DSM said#e1 net income in the#t36>third#t36>quarter#t36 jumped#e2 63% as the company had#e73 substantially lower extraordinary charges#e3 to account#e5 for a restructuring program.
 

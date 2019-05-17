@@ -1,10 +1,4 @@
-
-wsj_0918
-10/26/89#t0
-
-WSJ891026-0141 = 891026 891026-0141.
-Du Pont Posts @ 19% Profit Rise @ For 3rd Quarter @ ---- @ By Richard Koenig @ Staff Reporter of The Wall Street Journal 10/26/89 WALL STREET JOURNAL (J) DD VO EARNINGS (ERN) CHEMICALS, PLASTICS (CHM) DIVIDENDS (DIV)
-
+10/26/89#t0.
 
 Du Pont Co. reported#e1 that third-quarter#t139 profit grew#e2 a robust 19% from a#t128>year#t128>ago#t128 on the strength of the company's operations#e3 in various chemicals and fibers, and in petroleum.
 

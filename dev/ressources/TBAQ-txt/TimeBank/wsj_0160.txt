@@ -1,10 +1,4 @@
-
-wsj_0160
-11/02/89#t0
-
-WSJ891102-0031 = 891102 891102-0031.
-Business Brief -- Savin Corp.: @ Office Products Firm Posts @ Net Loss for Third Quarter 11/02/89 WALL STREET JOURNAL (J) SVB EARNINGS (ERN)
-
+11/02/89#t0.
 
 Savin Corp. reported#e1 a third-quarter#t30 net loss#e2 of $35.2 million, or 31 cents a share, compared with year-earlier#t31 profit#e32 of $3.8 million, or one cent a share.
 

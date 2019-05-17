@@ -1,12 +1,5 @@
-
-APW20000405.0276
-2000-04-05#t0
-Castro: Elian, Dad To Be Reunited
-
-APW20000405.0276  NEWS STORY  2000-04-05 23:53
-Castro: Elian, Dad To Be Reunited  By ANITA SNOW, Associated Press Writer
-
-
+2000-04-05#t0.
+Castro: Elian, Dad To Be Reunited.
 
 HAVANA (AP) --
 
@@ -39,7 +32,3 @@ Cuba had asked#e49 for 28 visas for the trip#e70, for Elian's father, his stepmo
 Also on the list was National Assembly President Ricardo Alarcon, who has served#e50 as adviser to Gonzalez over the#t12>past#t12>four#t12>months#t12 and a senior member of Cuba's communist leadership.
 
 Ultimately, U.S. officials approved#e51 and delivered#e52 six visas, for the four family members, a pediatrician and Elian's teacher from his year in kindergarten.
-
-
-
-AP-NY-04-05-00 2353

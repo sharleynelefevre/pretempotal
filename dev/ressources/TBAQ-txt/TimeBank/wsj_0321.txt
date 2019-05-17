@@ -1,10 +1,4 @@
-
-wsj_0321
-11/01/89#t0
-
-WSJ891101-0043 = 891101 891101-0043.
-Business Brief -- StatesWest Airlines: @ Offer for Mesa Withdrawn; @ Firm to Continue Pursuit 11/01/89 WALL STREET JOURNAL (J) SWAL MESA TENDER OFFERS, MERGERS, ACQUISITIONS (TNM)
-
+11/01/89#t0.
 
 StatesWest Airlines, Phoenix, Ariz., said#e1 it withdrew#e2 its offer#e3 to acquire#e5 Mesa Airlines because the Farmington, N.M., carrier didn't respond#e6 to its offer#e8 by the close#e9 of business yesterday#t41, a deadline StatesWest had set#e11 for a response.
 

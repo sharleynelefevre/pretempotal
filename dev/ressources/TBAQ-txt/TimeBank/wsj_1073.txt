@@ -1,10 +1,4 @@
-
-wsj_1073
-10/25/89#t0
-
-WSJ891025-0157 = 891025 891025-0157.
-Advanced Medical Makes Purchase 10/25/89 WALL STREET JOURNAL (J) AMA HENG TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) MEDICAL AND BIOTECHNOLOGY (MTC) SAN FRANCISCO
-
+10/25/89#t0.
 
 Advanced Medical Technologies Inc. said#e2 it purchased#e3 93% of a unit of Henley Group Inc.
 

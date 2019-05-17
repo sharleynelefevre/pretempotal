@@ -1,10 +1,4 @@
-
-wsj_0575
-10/30/89#t0
-
-WSJ891030-0125 = 891030 891030-0125.
-Control Data Says It May Repurchase @ Debt Soon, Seeks Alliances With Others @ ---- @ By Richard Gibson @ Staff Reporter of The Wall Street Journal 10/30/89 WALL STREET JOURNAL (J) CDA COMPUTERS AND INFORMATION TECHNOLOGY (CPR) TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) MINNEAPOLIS
-
+10/30/89#t0.
 
 Control Data Corp., which just months#t204>ago#t204 was hemorrhaging#e1 financially, thinks#e2 it will be healthy#e2438 enough soon#t206 to consider#e3 repurchasing#e4 public debt.
 

@@ -1,9 +1,4 @@
-
-VOA19980303.1600.2745
-19980303#t0
-
-VOA19980303.1600.2745 NEWS STORY
-
+19980303#t0.
 
 While the expansion#e1 of the Internet has been a blessing#e2 for researchers, students and the just plain curious, the new opportunities mentioned#e3 by Mr. Gates are also being used#e4 by some rather unsavory characters. A new report says#e6 there has been a dramatic rise#e7 in the growth#e102 of hate groups in the United States over the#t168>past#t168>year#t168. And many of them are using#e10 the Internet to spread#e12 their messages of racial superiority. VOA's Jim Teple has details from our southeast news bureau.
 

@@ -1,10 +1,4 @@
-
-wsj_0675
-10/30/89#t0
-
-WSJ891030-0020 = 891030 891030-0020.
-What's News -- @ Business and Finance 10/30/89 WALL STREET JOURNAL (J)
-
+10/30/89#t0.
 
 PROGRAM TRADING#e143 is being curbed#e2 by more securities firms, but big institutional investors are expected#e3 to continue#e5 the practice#e144, further roiling#e7 the stock market. Bowing#e319 to criticism#e10, Bear Stearns, Morgan Stanley and Oppenheimer joined#e160 PaineWebber in suspending#e13 stock-index arbitrage trading#e147 for their own accounts. Still, stock-index funds are expected#e16 to continue#e18 launching#e19 big programs#e146 through the market.
 

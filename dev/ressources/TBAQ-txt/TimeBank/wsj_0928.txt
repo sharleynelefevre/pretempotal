@@ -1,10 +1,4 @@
-
-wsj_0928
-10/26/89#t0
-
-WSJ891026-0130 = 891026 891026-0130.
-Sun Microsystems Inc. @ Posts 1st-Quarter Net @ Totaling $5.2 Million 10/26/89 WALL STREET JOURNAL (J) SUNW EARNINGS (ERN) COMPUTERS AND INFORMATION TECHNOLOGY (CPR) MOUNTAIN VIEW, Calif.
-
+10/26/89#t0.
 
 Sun Microsystems Inc., snapping#e1 back to profitability after its first quarterly loss#e2 as a public firm, said#e4 it earned#e5 $5.2 million, or seven cents a share, in the#t64>fiscal#t64>first#t64>quarter#t64.
 

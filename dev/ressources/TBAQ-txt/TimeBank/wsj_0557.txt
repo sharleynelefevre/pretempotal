@@ -1,10 +1,4 @@
-
-wsj_0557
-10/30/89#t0
-
-WSJ891030-0143 = 891030 891030-0143.
-RJR Is Selling @ Candy Brands @ For $370 Million @ ---- @ By Peter Waldman @ Staff Reporter of The Wall Street Journal 10/30/89 WALL STREET JOURNAL (J) RJR Z.NES TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) FOOD PRODUCTS (FOD)
-
+10/30/89#t0.
 
 RJR Nabisco Inc. said#e1 it agreed#e2 to sell#e4 its Baby Ruth, Butterfinger and Pearson candy businesses to Nestle S.A.'s Nestle Foods unit for $370 million.
 

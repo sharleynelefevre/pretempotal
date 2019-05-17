@@ -1,10 +1,4 @@
-
-wsj_0127
-11/02/89#t0
-
-WSJ891102-0064 = 891102 891102-0064.
-International Brief -- Reed International PLC: @ Net Income for 6 Months @ Fell 5% to $141.9 Million 11/02/89 WALL STREET JOURNAL (J) U.REE EARNINGS (ERN)
-
+11/02/89#t0.
 
 Reed International PLC said#e1 that net income#e2014 for the#t31>six#t31>months#t31 ended#e2 Oct.#t25>1#t25 slipped#e3 5% to #89.7 million ($141.9 million), or 16 pence a share, from #94.8 million ($149.9 million), or 17.3 pence a share.
 

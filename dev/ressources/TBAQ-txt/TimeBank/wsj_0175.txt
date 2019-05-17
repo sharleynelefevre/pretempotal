@@ -1,10 +1,4 @@
-
-wsj_0175
-11/02/89#t0
-
-WSJ891102-0015 = 891102 891102-0015.
-Marketing Brief -- Sony Corp.: @ Japanese Concern Completes @ Offer for Columbia Pictures 11/02/89 WALL STREET JOURNAL (J) SNE KPE GPEC WCI TL RECREATION, ENTERTAINMENT, TOYS, MOVIES, PHOTOGRAPHY, SPORTS (REC) TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) MEDIA, PUBLISHING, BROADCASTING, ELECTRONIC PUBLISHING (MED)
-
+11/02/89#t0.
 
 Sony Corp. completed#e1 its tender offer#e2 for Columbia Pictures Entertainment Inc., with Columbia shareholders tendering#e3 99.3% of all common shares outstanding by the Tuesday#t38 deadline.
 

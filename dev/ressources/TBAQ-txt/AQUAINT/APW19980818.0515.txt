@@ -1,24 +1,5 @@
-
-APW19980818.0515
-1998-08-18#t0
-Paying tribute, Albright visits bombing sites in East Africa
-
-APW19980818.0515 
- NEWS STORY 
- 08/18/1998 09:44:00
-w1141 &Cx1f; wstm-
-u i &Cx13;  &Cx11;  BC-EmbassyBombings 5thLd-Writethru   08-18 0798
-BC-Embassy Bombings, 5th Ld-Writethru
-Precede DAR ES SALAAM
-&UR; Paying tribute, Albright visits bombing sites in East Africa &QL; 
- &UR; Eds: UPDATES with Albright arrival in Nairobi, Boeing engine
-overheated, additional comment by Tanzanian foreign minister, 200
-Americans leave Pakistan. Changes dateline, byline. &QL; 
- &UR; AP Photos &QL; 
- &UR; By DAVE CARPENTER &QC; 
- &UR; Associated Press Writer &QC;
-
-
+1998-08-18#t0.
+Paying tribute, Albright visits bombing sites in East Africa.
 
 NAIROBI, Kenya (AP) _
 
@@ -65,9 +46,3 @@ The head of the FBI investigation#e139 in Dar es Salaam, Kenneth Piernick, said#
 In Nairobi, a top Kenyan police official denied#e82 a newspaper report that more arrests#e144 had been made#e152 there. Officials said#e84 last#t7>week#t7 that six people were in custody for questioning#e85 about the bombing#e146.
 
 About 200 Americans _ nonessential U.S. Embassy staff and their families _ left#e86 Pakistan today#t8 on orders from Washington following a ``pattern of threats'' against Americans there since the Africa bombings#e149. The diplomats were flown#e88 to Brussels, Belgium. Other Americans have also been urged#e89 to leave#e90.
-
-
-
-(dc-kjd)
-(PROFILE (WS SL:BC-Embassy Bombings, 5th Ld-Writethru; CT:i; (REG:EURO;) (REG:BRIT;) (REG:SCAN;) (REG:ENGL;) (REG:AFRI;) (LANG:ENGLISH;)) )
-AP-NY-08-18-98 0944EDT

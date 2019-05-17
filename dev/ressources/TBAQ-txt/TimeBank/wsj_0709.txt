@@ -1,10 +1,4 @@
-
-wsj_0709
-10/27/89#t0
-
-WSJ891027-0186 = 891027 891027-0186.
-Service Corp. Earnings 10/27/89 WALL STREET JOURNAL (J) SRV EARNINGS (ERN) HOUSTON
-
+10/27/89#t0.
 
 Service Corp. International said#e1 it expects#e2 to report#e4 net income#e18 of 15 cents a share for the#t26>third#t26>quarter#t26. The company said#e5 it expects#e6 to release#e8 third-quarter results in mid-November#t27.
 

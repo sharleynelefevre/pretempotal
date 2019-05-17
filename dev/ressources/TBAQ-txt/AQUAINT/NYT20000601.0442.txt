@@ -1,17 +1,5 @@
-
-NYT20000601.0442
-2000-06-01#t0
-CUBAN BOY'S MIAMI RELATIVES LOSE RULING ON ASYLUM HEARING
-
-NYT20000601.0442  NEWS STORY  2000-06-01 23:01
-A2407 &Cx1f; ttj-z
-u a BC-ELIAN-ASYLUM-HNS &LR;      06-01 1102
-BC-ELIAN-ASYLUM-HNS
-CUBAN BOY'S MIAMI RELATIVES LOSE RULING ON ASYLUM HEARING
-(For use by New York Times News Service clients)  By KIM COBB
-c.2000 Houston Chronicle
-
-
+2000-06-01#t0.
+CUBAN BOY'S MIAMI RELATIVES LOSE RULING ON ASYLUM HEARING.
 
 (Undated)
 
@@ -74,8 +62,3 @@ Jose Basulto, founder of Brothers to the Rescue, a Cuban exile group that freque
 ``The saga of Elian Gonzalez is a turning#e120 point in relations in the Cuban community and the United States,'' Basulto said#e121. ``This day, in the history of their relations with the United States, will be remembered#e122 in the Cuban community in the same way the Bay of Pigs is remembered#e123.''
 
 Cuban exiles failed#e124 to overthrow#e125 Castro in#s4 1961#t12 when the communist leader repelled#e210 their invasion#e199 at the Bay of Pigs.
-
-
-
-END OF STORY
-NYT-06-01-00 2301EDT &QL;

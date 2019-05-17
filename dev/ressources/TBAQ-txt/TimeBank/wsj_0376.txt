@@ -1,10 +1,4 @@
-
-wsj_0376
-10/31/89#t0
-
-WSJ891031-0138 = 891031 891031-0138.
-International: @ Courtaulds PLC @ Plans to Spin Off @ Textiles Business @ ---- @ By Craig Forman @ Staff Reporter of The Wall Street Journal 10/31/89 WALL STREET JOURNAL (J) COU DIVIDENDS (DIV) STOCK MARKET, OFFERINGS (STK) TEXTILES AND APPAREL (TEX) LONDON
-
+10/31/89#t0.
 
 Courtaulds PLC announced#e1 plans#e85 to spin#e3 off its textiles operations to existing shareholders in a restructuring#e86 to boost#e8 shareholder value.
 
