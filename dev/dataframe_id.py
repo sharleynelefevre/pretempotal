@@ -29,7 +29,7 @@ dfId['idSignal'] = []
 
 
 def openFilesTxt():
-    path_tbaq = 'ressources/TBAQ-new_input/' # modif path
+    path_tbaq = 'ressources/TBAQ-new_input/' 
     texts = {}
     for foldername in os.listdir(path_tbaq):
         if os.path.isdir(path.join(path_tbaq, foldername)):
@@ -180,6 +180,6 @@ def createId():
        # mise en dataframe du dictionnaire de listes
        res = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in dfId.items()]))
        # ecriture dans le csv
-#       res.to_csv('CSV/dataframe_id.csv', sep=';', encoding='utf-8') 
+       res.to_csv('CSV/dataframe_id.csv', sep=';', encoding='utf-8') 
 
 createId()

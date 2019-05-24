@@ -266,7 +266,6 @@ def extractSignaux():
     
     # pour chaque fichier
     for fileName, fileContent in files.items():
-#        print(fileName)
         for w in fileContent.split():
             if '#s' in w:
                 signal = re.split('\#|\>', w)
@@ -377,7 +376,6 @@ def tokenizeTexts():
                 # on supprime le mots qui suit le separateur et le separateur
                 finalText.remove(finalText[indexSep+1])
                 finalText.remove(finalText[indexSep])
-#            print(finalText)
             newToken.append(finalText)
         files[fileName] = newToken
     print("\t\tTerminé : Tokenization des fichiers.")
@@ -699,19 +697,19 @@ def mergeCSV():
     
     
 print("Ouverture des fichiers .tml...")    
-#documents = extractDocuments()
+documents = extractDocuments()
 print("Terminé : Ouverture des fichiers .tml.\n")
 
 print('Ecriture du CSV des events...')
-#writeCsvEvent(documents)
+writeCsvEvent(documents)
 print('Terminé : Ecriture du CSV des events.\n')
 
 print('Ecriture du CSV des timex...')   
-#writeCsvTimex(documents)
+writeCsvTimex(documents)
 print('Terminé : Ecriture du CSV des timex.\n')
 
 print("Création du CSV des signaux...")
-#extractSignaux()
+extractSignaux()
 print("Terminé : Création du CSV des signaux.\n")
 
 print("Création du CSV des identifiants artificiels...") 
@@ -719,9 +717,9 @@ createId()
 print("Terminé : Création du CSV des identifiants artificiels.")
 
 print("Création du CSV des contexts...")
-#dataframeContext()
+dataframeContext()
 print("Terminé : Création du CSV des contexts.\n")
 
 print("Fusion de tous les CSV...")
-#mergeCSV()
+mergeCSV()
 print("Terminé : Fusion de tous les CSV.")

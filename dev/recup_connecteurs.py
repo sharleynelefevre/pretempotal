@@ -225,8 +225,7 @@ def addSignalId(): # A AMELIORER
                                     j += 1
                                     
         # pour trouver les signaux qui se trouvent dans un timex                             
-        signauxETtimexDansMot =  re.compile(r'((\#s)([0-9]{1,}))((\#t)([0-9]{1,}))')
-                                                
+        signauxETtimexDansMot =  re.compile(r'((\#s)([0-9]{1,}))((\#t)([0-9]{1,}))')                        
         # réécriture du fichier dans une chaine vide
         file = ""
         for w in word:
@@ -236,7 +235,6 @@ def addSignalId(): # A AMELIORER
             # si il y a un signal dans un timex, on lui enlève son annotation #s    
             if signauxETtimexDansMot.search(w):
                 w = re.sub(signauxETtimexDansMot, r'\4', w)
-            
             file += w + " "
         
         # suppression des connecteurs annotés par addDiscourse (ceux qui ne nous intéressent pas)
