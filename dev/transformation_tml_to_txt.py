@@ -32,7 +32,9 @@ for foldername in os.listdir(path_tbaq):
             if title:
                 toWrite += str(title.text)+'.'
                 
-            for eventTag in text.find_all('EVENT'):  
+            for eventTag in text.find_all('EVENT'): 
+                if " " in eventTag.text:
+                    eventTag.string = eventTag.string.replace(' ','')                
                 # mettre les events au format libelleE#eid
                 # separateur d'unite lexicale : >
                 new_event = '>'.join(['{}#{}'.format(w, eventTag.get('eid')) for w in eventTag.text.split(' ')]) 

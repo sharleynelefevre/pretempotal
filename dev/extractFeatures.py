@@ -329,20 +329,17 @@ def tokenizeTexts():
                     new.append(t)
                     # et on incremente le compteur de 1 pour dire que le mot qui suit t est t+1
                     i += 1            
-            
+
             """ pour retirer les doublons : on on#s1 / for for#s1 et doublons dans les dates """
             for k in reversed(range(len(new))):
-                if '#s' in new[k]:
-                    if new[k-1] == new[k].split('#')[0]:
-                        indexDoublon = new.index(new[k-1])
-                        new.remove(new[indexDoublon])  
-                    
-                elif '#t' in new[k]:
+                if '#s' in new[k] and new[k-1] == new[k].split('#')[0]:
+                    indexDoublon = new.index(new[k-1])
+                    new.remove(new[indexDoublon]) 
+                        
+                elif '#t' in new[k] and ">" in new[k]:
                     # fichier wsj 122, un espace de trop en fin de timex dans le fichier tml = ">t0" en trop
-                    if ">" in new[k]:
-                        new.remove(new[k])
-                    
-                    
+                    new.remove(new[k])
+                
                     if new[k-1] == new[k].split('#')[0]:
                         indexDoublon = new.index(new[k-1])
                         new.remove(new[indexDoublon]) 
@@ -594,14 +591,12 @@ dfId['idSignal'] = []
 
 def createId():
    finalTokenizedTexts = tokenizeTexts()
-
    
    eventsTexts = []
    timexsTexts = []
    signauxTexts = []
    
    for fileName, tokenizedText in finalTokenizedTexts.items():
-#       print(tokenizedText)
        iterSent  = 0 # iterateur pour les identifiants de phrases
        iterWord  = 0 # iterateur pour les identifiants de mots
        iterEvent = 0 # iterateur pour les identifiants d'events
@@ -621,7 +616,6 @@ def createId():
        for sent in tokenizedText:
            iterSent += 1
            for word in sent:
-#               print(word)
                iterWord += 1
                
                dfId['word'].append(word)

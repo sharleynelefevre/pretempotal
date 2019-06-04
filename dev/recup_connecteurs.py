@@ -244,7 +244,7 @@ def addSignalId(): # A AMELIORER
                 
         # écriture des fichiers dans un nouveau dossier        
         with open((path_output+filename), 'w', encoding='utf8') as fileW:
-
+            fileW.write(file)
 
 #stanfordParser() 
 #addDiscourse()
