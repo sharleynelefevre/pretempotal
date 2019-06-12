@@ -273,7 +273,6 @@ def df_id_to_json():
         f.write(indentedJson)
 
 
-""" diviser en fonctions """
 def find_events(): 
     # appel de la fct qui renvoit les fichiers du corpus au format json
     json_texts = open_json_files()
@@ -290,7 +289,7 @@ def find_events():
     # signaux de type after pour les events
     signalAfterEvents = ['after', 'since', 'when', 'during']
     # signaux de type after pour les timex
-    signalAfterTimex = signalAfterEvents+['at', 'in']    
+    signalAfterTimex = ['after', 'since', 'in', 'at', 'on']
     #signaux de type before (les mêmes pour les events et les timexs)
     signalBefore = ['before', 'until']
     
@@ -301,28 +300,16 @@ def find_events():
             if dct['id'] != None and i[0] in dct['id'] :
                 i[1].append(dct)
         
-    relations = [[signalAfterTimex, '#t', '#e', 'event_timex'], [signalAfterEvents, '#e', '#e', 'event_event']]
+    relations = [[signalAfterEvents, '#e', '#e', 'event_event'], [signalAfterTimex, '#t', '#e', 'event_timex']]
     for relation in relations :   
         # dictionnaire de liste pour les dataframes finaux (écriture dans les csv)
-        dictRel = {}
-        dictRel["docID"] = []
-        dictRel["signal"] = []
-        dictRel["type relation"] = []
-        dictRel["event1"] = []
-        dictRel["event2"] = []
-        dictRel["tag_event1"] = []
-        dictRel["tag_event2"] = []
-        dictRel["id_signal"] = []
-        dictRel["id_event1"] = []
-        dictRel["id_event2"] = []
-        dictRel["relation E1-E2"] = []  
+        dictRel = initOutputDict()
          
         # pour chaque cle dans le corpus json
         for key in json_texts.keys():
             content = json_texts[key]['Dependencies']
             # récupération du filename (qui est le chemin de la destination du fichier donc on récupère le dernier élément qui est le nom du fichier)
             filenameCorpus = key.split('/')[len(key.split('/'))-1]
-            
             allData = []
             allData.extend(dctEvents+dctTimex+dctSignaux)
     
@@ -332,72 +319,87 @@ def find_events():
                 idWord = str(data['idWord'])
                 if filenameCorpus == data['docID']:
                     if idSent in content.keys() and idWord in content[idSent][0].keys():
-                        content[idSent][0][idWord]['idWord'] = data['word'] 
-    
+                        content[idSent][0][idWord]['idWord'] = data['word']    
+
                 # si la valeur de la clé word est un signal et que son filename est le même que celui dans le dataframe des id
                 if "#s" in data['word'] and filenameCorpus == data['docID']:
                     sentence = content[idSent][0]
                     word = sentence[idWord]
                     
-                     
                     # si le signal est de type after ou si le signal est de type before
                     if word['word'].lower() in relation[0] or word['word'].lower() in signalBefore:
-                        wordHead = ""
-                        wordHeadHead = ""
-                        # pour chaque cle, dictionnaire de mot
-                        for key, wordRef in sentence.items():
-                            # si la valeur de l'attribut "adresse" (de la tête) est le même que la valeur de l'attribut "head" (du signal)
-                            if str(wordRef['address']) == str(word['head']):
-                                # la tête est devient dictionnaire du mot de la tête du signal
-                                wordHead = wordRef
-                                break
-                            
-                        # on récupère la tête de la tête du signal    
-                        for key, wordRef in sentence.items():
-                            if str(wordRef['address']) == str(wordHead['head']):
-                                wordHeadHead = wordRef
-                                break
-                            
-                        # si il y a une clé idWord dans le dictionnaire de la tête du signal et dans le dict de la tête de la tête du signal    
-                        if 'idWord' in wordHead and 'idWord' in wordHeadHead:
-                            # si la valeur de idWord contient un #e pour la tête et pour la tête de la tête
-                            if relation[1] in wordHead['idWord'] and relation[2] in wordHeadHead['idWord']:
-                                # on prend le target-path      
-                                path = getTargetPath([word],word,sentence)
-                                
-                                for i in range(len(path)-2):
-                                    signal = path[i]
-                                    event1 = path[i+1]
-                                    event2 = path[i+2]
-        
-                                    if signal['word'].lower() in relation[0] or signal['word'].lower() in signalBefore:
-                                        if signal['word'].lower() in relation[0] :
-                                            typeRelation = " -> "
-                                        elif signal['word'].lower() in signalBefore :
-                                            typeRelation = " <- "
-                                            
-                                    # -3 pour ne pas prendre en compte la relation root avec le symbole "> root"
-                                    if i == len(path)-3:
-                                        datas = [["docID",filenameCorpus],["signal", signal['word']],["type relation",typeRelation],["event1",event1['word']],
-                                                 ["event2",event2['word']], ["tag_event1",event1['tag']], ["tag_event2",event2['tag']], ["id_signal",signal['idWord'].split('#')[1]]]
-                                        # on met les données dans un dictionnaire 
-                                        for i in datas:
-                                            dictRel[i[0]].append(i[1])
-                                        if 'idWord' in event1.keys():
-                                            dictRel["id_event1"].append(event1['idWord'].split('#')[1].replace('.',''))
-                                        if 'idWord' in event2.keys():
-                                            dictRel["id_event2"].append(event2['idWord'].split('#')[1].replace('.',''))
-                                        dictRel["relation E1-E2"].append(event1['rel'])
+                        # Recuperation de toute la chaine de parents
+                        path = getTargetPath([word],word,sentence) 
                         
+                        # Ajout d'une cle idWord dont la valeur est "" pour les mots non-event / non-timex...
+                        for p in path:
+                            if not "idWord" in p.keys():
+                                p["idWord"] = ""
+
+                        # recuperation du parent direct
+                        wordHead = path[1]
+                        # stockage du path dans une variable temporaire
+                        pathWithoutWordHead = path
+                        # suppression du premier mot (signal)
+                        del pathWithoutWordHead[0]
+                        # recuperation du prochain event
+                        wordHeadHead = getNextEvent(pathWithoutWordHead)
+
+                        # si il y a une clé idWord dans le dictionnaire de la tête du signal et dans le dict de la tête de la tête du signal    
+                        if wordHeadHead != None and 'idWord' in wordHeadHead and 'idWord' in wordHead : 
+                            # si la valeur de idWord contient un #e pour la tête et pour la tête de la tête
+                            if relation[1] in wordHead['idWord'] :
+                                signal = word
+                                event1 = wordHead
+                                event2 = wordHeadHead
+                                
+                                # définition du sens de relation selon les listes 
+                                if signal['word'].lower() in relation[0] or signal['word'].lower() in signalBefore:
+                                    if signal['word'].lower() in relation[0] :
+                                        typeRelation = " -> "
+                                    elif signal['word'].lower() in signalBefore :
+                                        typeRelation = " <- "
+                                
+                                datas = [
+                                            ["docID", filenameCorpus],
+                                            ["signal", signal['word']],
+                                            ["type relation", typeRelation],
+                                            ["event1", event1['word']],
+                                            ["event2", event2['word']], 
+                                            ["tag_event1", event1['tag']], 
+                                            ["tag_event2", event2['tag']], 
+                                            ["id_signal", signal['idWord'].split('#')[1].replace('.','')],
+                                            ["id_event1", event1['idWord'].split('#')[1].replace('.','')],
+                                            ["id_event2", event2['idWord'].split('#')[1].replace('.','')],
+                                            ["relation E1-E2", event1['rel']]
+                                        ]
+    
+                                # on met les données dans un dictionnaire 
+                                for item in datas:
+                                    dictRel[item[0]].append(item[1])
+                                
                         df = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in dictRel.items()]))
                         df.to_csv('CSV/relations_'+relation[3]+'.csv', sep=';', encoding='utf-8') 
 
 
+def initOutputDict():
+    dictRel = {}
+    dictRel["docID"] = []
+    dictRel["signal"] = []
+    dictRel["type relation"] = []
+    dictRel["event1"] = []
+    dictRel["event2"] = []
+    dictRel["tag_event1"] = []
+    dictRel["tag_event2"] = []
+    dictRel["id_signal"] = []
+    dictRel["id_event1"] = []
+    dictRel["id_event2"] = []
+    dictRel["relation E1-E2"] = []  
+    return dictRel
+
+
+# Fonction récursive pour obtenir les path des signaux
 def getTargetPath(path, target, sentence):
-    # path : le dictionnaire de la dépendance du signal, le dictionnaire de la dépendance du head
-    # target : la dépendance du head
-    # sentence : la dépendance de chaque mot qui compose une phrase
-    
     # pour chaque clé (idWord) et dépendance du word 
     for key, word in sentence.items() :
         # si l'idWord est le même que l'id du head du mot 
@@ -406,13 +408,35 @@ def getTargetPath(path, target, sentence):
             path.append(word)
             # si le head du mot est 0 
             if word['head'] == 0 : 
-                # alors on retourne le path car après il n'y a plus rien (à par "root")
+                # alors on retourne le path car après il n'y a plus rien (à part "root")
                 return path
             break    
-    if len(path)<3:
+    if len(path)<7: ######################################## Corriger
         return getTargetPath(path, path[len(path)-1],sentence)
     else:    
         return path
+
+
+# Fonction récursive pour remonter dans les dépendances jusqu'a trouver un event
+def getNextEvent(path):
+    if len(path)>1 :
+        if "idWord" in path[1]:
+            # Si le parent est un event
+            if isEvent(path[1]['idWord']):
+                # On retourne le parent
+                return path[1]
+            else:
+                # Sinon, on retire le path du mot courant
+                del path[0]
+                # Recursivite avec le path retiré
+                return getNextEvent(path)
+    
+    
+def isEvent(word):
+    return '#e' in word
+
+def isTimex(word):
+    return '#t' in word
 
 #dependencies_trans_json()
 #df_id_to_json()    
