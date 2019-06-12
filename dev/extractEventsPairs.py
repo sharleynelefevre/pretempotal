@@ -24,11 +24,11 @@ def openFilesTXT():
 def extractEventsPairs():
     files = openFilesTXT()
     toReplace = ['`','"','.',',','!',':',"'"]
-    toDataframe = []  
+    dataframe = []  
     
     for fileName, fileContent in files.items():
         sents = nltk.sent_tokenize(fileContent)
-        allPairsEvents = []
+        allEventsPairs = []
         for sent in sents:
             events = []
             for word in sent.split():
@@ -38,12 +38,12 @@ def extractEventsPairs():
                     events.append(word)
 
             for i in range(len(events)-1):
-                listEventsAttributes = []
-                listEventsAttributes.append(events[i].split("#"))
-                listEventsAttributes.append(events[i+1].split("#"))
-                allPairsEvents.append(listEventsAttributes)
-                
-        for pairs in allPairsEvents:
+                eventsPairs = []
+                eventsPairs.append(events[i].split("#"))
+                eventsPairs.append(events[i+1].split("#"))
+                allEventsPairs.append(eventsPairs)
+
+        for pairs in allEventsPairs:
             dictEventEvent = {}
             dictEventEvent['filename'] = fileName
             dictEventEvent['ev1'] = pairs[0][0]
@@ -55,10 +55,11 @@ def extractEventsPairs():
             dictEventEvent['idEv2'] = pairs[1][1]
             dictEventEvent['classEv2'] = pairs[1][2]
             dictEventEvent['tenseEv2'] = pairs[1][3]
+            
             for punct in toReplace:
                 dictEventEvent['aspectEv2'] = pairs[1][4].replace(punct,'')
             
-            toDataframe.append(dictEventEvent)
-            df = pd.DataFrame(toDataframe)
+            dataframe.append(dictEventEvent)
+            df = pd.DataFrame(dataframe)
         df.to_csv('CSV/regles_events_tense_class.csv', sep=';', columns=["filename","ev1","idEv1", "classEv1", "tenseEv1", "aspectEv1", "ev2", "idEv2", "classEv2", "tenseEv2", "aspectEv2"])
 extractEventsPairs()
