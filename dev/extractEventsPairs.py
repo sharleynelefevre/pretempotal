@@ -26,6 +26,8 @@ def extractEventsPairs():
     dataframe = []
     toReplace = ['`','"','.',',','!',':',"'"]  
     
+#    tempFile = open("p2_STATE.txt", "w")
+    
     for fileName, fileContent in files.items():
         sents = nltk.sent_tokenize(fileContent)
         allEventsPairs = []
@@ -51,40 +53,63 @@ def extractEventsPairs():
             tenseEvent2 = pair[1][3]
             classEvent1 = pair[0][2]
             classEvent2 = pair[1][2]
+            
+#            if classEvent2 == 'STATE':
+#                if tenseAspectEvent1 == 'PAST-NONE' and tenseAspectEvent2 == 'PAST-NONE':
+#                    tempFile.write(sent+"\n\n")
+#                    tempFile.write("Paire d'events : "+str(pair)+"\n\n")
+#                    tempFile.write("---------------------------------------------------------------------------\n\n")
+                    
 
             if classEvent1 == 'OCCURRENCE' and classEvent2 == 'OCCURRENCE':
                 if tenseEvent1 == 'PAST' and tenseEvent2 == 'PAST':
-                    if tenseAspectEvent1 == 'PAST-NONE' and tenseAspectEvent2 == 'PAST-PERFECTIVE' or tenseAspectEvent1 == 'PRESENT-PERFECTIVE' and tenseAspectEvent2 == 'PAST-PERFECTIVE' or tenseAspectEvent1 == 'PRESENT-PERFECTIVE' and tenseAspectEvent2 == 'PAST-NONE' :
-                        relation = '<-'
-                        dictEventEvent['relation'] = relation
+                    if tenseAspectEvent1 == 'PAST-NONE' and tenseAspectEvent2 == 'PAST-PERFECTIVE' or \
+                       tenseAspectEvent1 == 'PRESENT-PERFECTIVE' and tenseAspectEvent2 == 'PAST-PERFECTIVE' or \
+                       tenseAspectEvent1 == 'PRESENT-PERFECTIVE' and tenseAspectEvent2 == 'PAST-NONE' :
+                           
+                       relation = '<-'
+                       dictEventEvent['relation'] = relation
                     else:
-                        relation = '->'
-                        dictEventEvent['relation'] = relation
+                       relation = '->'
+                       dictEventEvent['relation'] = relation
                 
                 if tenseEvent1 == 'FUTURE' and tenseEvent2 == 'FUTURE':
-                    if tenseAspectEvent1 == 'FUTURE-NONE' and tenseAspectEvent2 == 'FUTURE-PERFECTIVE' or tenseAspectEvent1 == 'FUTURE-PERFECTIVE' and tenseAspectEvent2 == 'FUTURE-NONE':
-                        relation = '<-'
-                        dictEventEvent['relation'] = relation
+                    if tenseAspectEvent1 == 'FUTURE-NONE' and tenseAspectEvent2 == 'FUTURE-PERFECTIVE' or \
+                       tenseAspectEvent1 == 'FUTURE-PERFECTIVE' and tenseAspectEvent2 == 'FUTURE-NONE':
+                       
+                       relation = '<-'
+                       dictEventEvent['relation'] = relation
                     else:
-                        relation = '->'
-                        dictEventEvent['relation'] = relation
+                       relation = '->'
+                       dictEventEvent['relation'] = relation
                         
-                if tenseEvent1 == 'PRESENT' and tenseEvent2 == 'PRESENT' or tenseEvent1 == 'PRESENT' and tenseEvent2 == 'PAST' or tenseEvent1 == 'PAST' and tenseEvent2 == 'PRESENT' or tenseEvent1 == 'PRESPART' and tenseEvent2 == 'PRESPART' or tenseEvent1 == 'PRESPART' and tenseEvent2 == 'PAST' or tenseEvent1 == 'PAST' and tenseEvent2 == 'PRESPART':
-                    if tenseAspectEvent1 == 'PRESENT-NONE' or tenseAspectEvent1 == 'PRESPART-NONE':
-                        if tenseAspectEvent2 == 'PAST-PERFECTIVE' or tenseAspectEvent2 == 'PAST-NONE' or tenseAspectEvent2 == 'PRESENT-PERFECTIVE':
-                            relation = '<-'
-                            dictEventEvent['relation'] = relation
-                    else:
-                        relation = '->'
-                        dictEventEvent['relation'] = relation
+                if tenseEvent1 == 'PRESENT' and tenseEvent2 == 'PRESENT' or \
+                   tenseEvent1 == 'PRESENT' and tenseEvent2 == 'PAST' or \
+                   tenseEvent1 == 'PAST' and tenseEvent2 == 'PRESENT' or \
+                   tenseEvent1 == 'PRESPART' and tenseEvent2 == 'PRESPART' or \
+                   tenseEvent1 == 'PRESPART' and tenseEvent2 == 'PAST' or \
+                   tenseEvent1 == 'PAST' and tenseEvent2 == 'PRESPART':
+                  
+                   if tenseAspectEvent1 == 'PRESENT-NONE' or tenseAspectEvent1 == 'PRESPART-NONE':
+                       if tenseAspectEvent2 == 'PAST-PERFECTIVE' or \
+                          tenseAspectEvent2 == 'PAST-NONE' or \
+                          tenseAspectEvent2 == 'PRESENT-PERFECTIVE':
+                              
+                          relation = '<-'
+                          dictEventEvent['relation'] = relation
+                   else:
+                       relation = '->'
+                       dictEventEvent['relation'] = relation
                 
                 if tenseEvent1 == 'FUTURE' and tenseEvent2 == 'PRESENT' or tenseEvent1 == 'PRESENT' and tenseEvent2 == 'FUTURE':
-                    if tenseAspectEvent1 == 'FUTURE-PERFECTIVE' and tenseAspectEvent2 == 'PRESENT-NONE' or tenseAspectEvent1 == 'PRESENT-NONE' and tenseAspectEvent2 == 'FUTURE-NONE':
-                        relation = '<-'
-                        dictEventEvent['relation'] = relation
+                    if tenseAspectEvent1 == 'FUTURE-PERFECTIVE' and tenseAspectEvent2 == 'PRESENT-NONE' or \
+                       tenseAspectEvent1 == 'PRESENT-NONE' and tenseAspectEvent2 == 'FUTURE-NONE':
+                       
+                       relation = '<-'
+                       dictEventEvent['relation'] = relation
                     else:
-                        relation = '->'
-                        dictEventEvent['relation'] = relation
+                       relation = '->'
+                       dictEventEvent['relation'] = relation
             else:
                 relation = ''
                 
@@ -105,4 +130,5 @@ def extractEventsPairs():
             dataframe.append(dictEventEvent)
             df = pd.DataFrame(dataframe)
         df.to_csv('CSV/regles_events_tense_class.csv', sep=';', columns=["filename","ev1","idEv1", "classEv1", "tenseEv1", "aspectEv1", "relation", "ev2", "idEv2", "classEv2", "tenseEv2", "aspectEv2"])
+
 extractEventsPairs()
