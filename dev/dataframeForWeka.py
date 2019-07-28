@@ -9,7 +9,7 @@ import pandas as pd
 import time
 
 
-FILEINPUT = "CSV/events_contexts_id.csv"
+FILEINPUT = "CSV/events_contexts_id2.csv"
 TIMEBANKDENSE = "CSV/timebankDenseCSV.csv"
 RELATIONS_DEPENDENCIES = "CSV/relations_event_event.csv"
 FILEOUTPUT = "CSV/pairesToWeka.csv"
@@ -46,8 +46,9 @@ def getPairesEvents(data) :
                     output[key][(line.id,line2.id)] = {}
                     output[key][(line.id,line2.id)]['rows'] = (line, line2)
                     output[key][(line.id,line2.id)]['timebankDense'] = ""
-                    output[key][(line.id,line2.id)]['rulesAfter'] = ""
-                    output[key][(line.id,line2.id)]['rulesBefore'] = ""
+                    output[key][(line.id,line2.id)]['rules'] = ""
+                    output[key][(line.id,line2.id)]['relationDependency'] = ""
+                    
     print("------- Calcul des paires terminé -------")
     return output
 
@@ -64,8 +65,13 @@ def setRelationsDependencies(data, paires): # ajout des relations à partir du c
     for docId in data.keys():
         for i in range(len(data[docId])):
             row = data[docId][i]
-            if (row.id_event1,row.id_event2) in paires[docId].keys():
-                paires[docId][(row.id_event1,row.id_event2)]['relationDependency'] = row.typeRelation
+            if docId in data and docId in paires :
+#                if data[docId] == paires[docId]:
+                if (row.idEvent1,row.idEvent2) in paires[docId].keys():
+                    paires[docId][(row.idEvent1,row.idEvent2)]['relationDependency'] = row.typeRelation
+
+
+         
 
 
 def wordNet(paires):
@@ -149,46 +155,46 @@ def applyRules(paires):
             e1 = str(tup[0].Tense)+"-"+str(tup[0].Aspect)
             e2 = str(tup[1].Tense)+"-"+str(tup[1].Aspect)
             
-            if value['rulesBefore'] == "" or value['rulesAfter'] == "":
+            if value['rules'] == "" :
                 if tup[0].Tense == "PAST" and tup[1].Tense == "FUTURE" :
-                    value['rulesBefore'] = "b"
+                    value['rules'] = "b"
                 if tup[0].Tense == "FUTURE" and tup[1].Tense == "PAST" :
-                    value['rulesAfter'] = "a"    
+                    value['rules'] = "a"    
                 if tup[0].Tense == "PRESENT" and tup[1].Tense == "FUTURE" :
-                    value['rulesBefore'] = "b" 
+                    value['rules'] = "b" 
                     
                 if e1 == p4 and e2 == p2 :
                     if "that" in str(tup[1].contextMoins4):
-                        value['rulesAfter'] = "a" 
+                        value['rules'] = "a" 
                
                 if "after" in str(tup[1].contextMoins4) or \
                     "when" in str(tup[1].contextMoins4) or \
                     "since" in str(tup[1].contextMoins4) or\
                     "during" in str(tup[1].contextMoins4) :
-                    value['rulesAfter'] = "a" 
+                    value['rules'] = "a" 
                     
-                if "before" in str(tup[1].contextMoins4) or \
+                elif "before" in str(tup[1].contextMoins4) or \
                     "until" in str(tup[1].contextMoins4) :
-                    value['rulesBefore'] = "b" 
+                    value['rules'] = "b" 
                     
-                if tup[0].Class == 'OCCURRENCE' and tup[1].Class == 'OCCURRENCE':
+                elif tup[0].Class == 'OCCURRENCE' and tup[1].Class == 'OCCURRENCE':
                     if e1 == p2 and e2 == p1 or \
                        e1 == p4 and e2 == p1 : 
-                       value['rulesAfter'] = "a" 
+                       value['rules'] = "a" 
                        
                     elif e1 == f1 and e2 == f2 or \
                          e1 == f2 and e2 == f1 :                
-                         value['rulesAfter'] = "a" 
+                         value['rules'] = "a" 
                          
                     elif e1 == n or tup[0].Tense == 'PRESPART' and tup[0].Aspect == "NONE":
                         if e2 == p1 or \
                            e2 == p2 or \
                            e2 == p4:                
-                           value['rulesAfter'] = "a"     
+                           value['rules'] = "a"     
     
                     elif e1 == p4 and e2 == p2 :
                        if not "or" in tup[1].contextMoins4:
-                          value['rulesAfter'] = "a"  
+                          value['rules'] = "a"  
                  
                 elif tup[0].Class == 'REPORTING':
                     if e1 == p2 and e2 == p2:
@@ -198,7 +204,7 @@ def applyRules(paires):
                            not "should" in str(tup[1].contextMoins4) and \
                            not "and" in str(tup[1].contextMoins4)    and \
                            not "slated" in str(tup[0].contextMoins4) :
-                           value['rulesAfter'] = "a"    
+                           value['rules'] = "a"    
                
                         
                 elif tup[0].Class == 'REPORTING' and tup[1].Class in ["OCCURRENCE", "STATE", "I_STATE", "I_ACTION", "PERCEPTION", "ASPECTUAL"]:
@@ -207,17 +213,17 @@ def applyRules(paires):
                        not "could" in str(tup[1].contextMoins4) and \
                        not "might" in str(tup[1].contextMoins4) and \
                        not "should" in str(tup[1].contextMoins4) :
-                       value['rulesAfter'] = "a"  
+                       value['rules'] = "a"  
               
                        
                 elif tup[0].Class == 'REPORTING' and tup[1].Class == 'REPORTING':
                     if tup[0].Tense == 'PRESPART' and tup[0].Aspect == "NONE" and e2 == p1 or \
                        e1 == p2 and tup[1].Tense == 'PAST' and tup[1].Aspect == "PERFECTIVE_PROGRESSIVE" :
-                       value['rulesAfter'] = "a"  
+                       value['rules'] = "a"  
     
                     elif tup[0].Tense == 'PAST' and tup[1].Tense == "PRESENT":
                         if not "will" in str(tup[1].contextMoins4):
-                            value['rulesAfter'] = "a"  
+                            value['rules'] = "a"  
      
                         
                 elif tup[1].Class == "STATE": 
@@ -226,7 +232,7 @@ def applyRules(paires):
                        not "might" in str(tup[1].contextMoins4)  and \
                        not "should" in str(tup[1].contextMoins4) and \
                        not "that" in str(tup[0].contextMoins4) :
-                       value['rulesAfter'] = "a"   
+                       value['rules'] = "a"   
 
                         
                 if  tup[0].Class == "I_STATE" and tup[1].Class in ["OCCURRENCE", "STATE", "I_STATE", "I_ACTION", "PERCEPTION", "ASPECTUAL"]:   
@@ -234,10 +240,10 @@ def applyRules(paires):
                        not "could" in str(tup[0].contextMoins4) and \
                        not "might" in str(tup[0].contextMoins4) and \
                        not "should" in str(tup[0].contextMoins4):
-                       value['rulesAfter'] = "a" 
+                       value['rules'] = "a" 
 
                     if e1 == p2 and e2 == n:
-                        value['rulesAfter'] = "a" 
+                        value['rules'] = "a" 
 
     
 def main(fileInput, fileInputRelation, fileInputRelationDependency, fileOutput):
@@ -261,6 +267,8 @@ def createDataframe(paires, fileOutput):
     df['event1'] = []
     df['event2'] = []
     df['docId'] = []
+    df['lemmeE1'] = []
+    df['lemmeE2'] = []
     df['sameLemme'] = []
     
     df['tenseE1'] = []
@@ -279,11 +287,6 @@ def createDataframe(paires, fileOutput):
     df['posE2'] = []
     df['samePOS'] = []
     
-#    df['contextPOSMoins4E1'] = []
-#    df['contextPOSMoins4E2'] = []
-#    df['contextPOSPlus4E1'] = []
-#    df['contextPOSPlus4E2'] = []
-    
     df['modalE1'] = []
     df['modalE2'] = []
     
@@ -295,8 +298,7 @@ def createDataframe(paires, fileOutput):
     
     df['timebankDense']  = [] 
     df['concordTemps'] = []
-    df['rulesAfter']  = [] 
-    df['rulesBefore']  = [] 
+    df['rules']  = [] 
     df['relationDependency'] = []
     
 
@@ -306,7 +308,8 @@ def createDataframe(paires, fileOutput):
             tup = value['rows']
             df['event1'].append(tup[0].id)
             df['event2'].append(tup[1].id)
-            
+            df['lemmeE1'].append(tup[0].LemmeNltk)
+            df['lemmeE2'].append(tup[1].LemmeNltk) 
             df['sameLemme'].append(tup[0].LemmeNltk == tup[1].LemmeNltk)
             df['docId'].append(docId)
             df['tenseE1'].append(tup[0].Tense) # Temps Ev1
@@ -318,16 +321,11 @@ def createDataframe(paires, fileOutput):
             df['classE1'].append(tup[0].Class) # Classe Ev1
             df['classE2'].append(tup[1].Class) # Classe Ev2
             df['sameClass'].append(tup[0].Class == tup[1].Class)
-#            df['contextPOSMoins4E1'].append(tup[0].contextPOSMoins4)
-#            df['contextPOSMoins4E2'].append(tup[1].contextPOSMoins4)
-#            df['contextPOSPlus4E1'].append(tup[0].contextPOSPlus4)
-#            df['contextPOSPlus4E2'].append(tup[1].contextPOSPlus4)
             df['modalE1'].append(isinstance(tup[0].Modality,str)) # Booléen True si il y a un modal avant Ev1 (NaN = type float (False), sinon type str (True))
             df['modalE2'].append(isinstance(tup[1].Modality,str)) # Booléen True si il y a un modal avant Ev2
             df['polarityE1'].append(tup[0].Polarity) # Polarité Ev1 (POS si non précédé par une négation, sinon NEG)
             df['polarityE2'].append(tup[1].Polarity) # Polarité Ev2 (POS si non précédé par une négation, sinon NEG)
-            df['rulesAfter'].append(value['rulesAfter'] == 'a')
-            df['rulesBefore'].append(value['rulesBefore'] == 'b')
+            df['rules'].append(value['rules'])
             df['synonyme'].append(value['synonyme'])
             df['hyperonyme'].append(value['hyperonyme'])
             df['posE1'].append(tup[0].POS)
@@ -352,7 +350,3 @@ def createDataframe(paires, fileOutput):
     print("------- Extraction du CSV terminée -------")
 
 main(FILEINPUT, TIMEBANKDENSE, RELATIONS_DEPENDENCIES, FILEOUTPUT)
-
-
-
-
